@@ -88,7 +88,7 @@ def get_models():
         'Logistic Regression': LogisticRegression(max_iter=1000, random_state=42),
         'Random Forest': RandomForestClassifier(n_estimators=200, random_state=42),
         'Gradient Boosting': GradientBoostingClassifier(n_estimators=200, random_state=42),
-        'XGBoost': XGBClassifier(n_estimators=200, use_label_encoder=False,
+        'XGBoost': XGBClassifier(n_estimators=200,
                                   eval_metric='logloss', random_state=42, verbosity=0),
         'LightGBM': LGBMClassifier(n_estimators=200, random_state=42, verbose=-1),
     }
