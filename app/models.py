@@ -32,7 +32,7 @@ class LoanApplication(BaseModel):
     credit_score: int = Field(..., ge=300, le=850, description="Credit score (300-850)")
     employment_status: EmploymentStatus
     loan_purpose: LoanPurpose
-    existing_debt: float = Field(0.0, ge=0, description="Total existing debt in USD")
+    existing_debt: float = Field(0.0, ge=0, description="Total annual debt obligations in USD (e.g. existing loan payments per year)")
     num_late_payments: int = Field(0, ge=0, description="Number of late payments in history")
 
 
