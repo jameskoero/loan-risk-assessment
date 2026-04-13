@@ -119,9 +119,8 @@ def run_pipeline(
     print("\n[4/8] Preprocessing (fit on train, transform both)…")
     preprocessor = LoanDataPreprocessor()
     X_train, y_train = preprocessor.fit_transform(train_df)
-    X_test,  y_test  = preprocessor.transform(test_df), test_df['default'].reset_index(drop=True)
-    # Realign y_test index
-    y_test = test_df['default'].reset_index(drop=True)
+    X_test  = preprocessor.transform(test_df)
+    y_test  = test_df['default'].reset_index(drop=True)
     X_test  = X_test.reset_index(drop=True)
     X_train = X_train.reset_index(drop=True)
     y_train = y_train.reset_index(drop=True)

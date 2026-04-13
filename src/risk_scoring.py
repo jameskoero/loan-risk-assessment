@@ -67,7 +67,7 @@ class RiskScorer:
         probs = self.model.predict_proba(X)[:, 1]
 
         df_out['default_probability'] = probs
-        df_out['risk_category']  = [self._categorise(p) for p in probs]
+        df_out['risk_category']  = [self._categorize(p) for p in probs]
         df_out['recommendation'] = [self.get_recommendation(p) for p in probs]
         return df_out
 
@@ -115,7 +115,7 @@ class RiskScorer:
     # Internal helpers
     # ------------------------------------------------------------------
 
-    def _categorise(self, probability: float) -> str:
+    def _categorize(self, probability: float) -> str:
         if probability < self.THRESHOLDS['low']:
             return 'Low'
         if probability < self.THRESHOLDS['medium']:
