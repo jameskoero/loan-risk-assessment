@@ -95,9 +95,11 @@ def main():
     # Title markdown cell
     cells.append(make_markdown_cell(
         '# 🏦 Advanced Loan Default Risk Assessment\n\n'
-        'A comprehensive ML pipeline for credit risk scoring using the '
-        'German Credit dataset. Includes SMOTE balancing, 5 models, SHAP '
-        'explainability, business cost optimisation, and a 4-tier risk scorecard.\n'
+        'A comprehensive ML pipeline for credit risk scoring using the German Credit '
+        'dataset from OpenML. Covers data loading, preprocessing, SMOTE balancing, '
+        '5-model training, SHAP explainability, business cost optimisation, 4-tier '
+        'risk scorecard, calibration/learning curves, 16 professional plots, and '
+        'production export.\n'
     ))
 
     # Colab badge cell

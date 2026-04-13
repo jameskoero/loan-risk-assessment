@@ -78,7 +78,7 @@ python generate_notebook.py
 loan-risk-assessment/
 ├── loan_risk_assessment.py   # Main ML pipeline script
 ├── generate_notebook.py      # Rebuilds the .ipynb from the script
-├── loan_risk_assessment.ipynb# 43-cell Colab-ready notebook
+├── loan_risk_assessment.ipynb  # 43-cell Colab-ready notebook
 ├── requirements.txt          # Python dependencies
 ├── LICENSE                   # MIT License
 ├── README.md                 # This file

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+plots/
+loan_risk_model.joblib
+model_metadata.json
+.ipynb_checkpoints/
