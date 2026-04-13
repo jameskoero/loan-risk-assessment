@@ -1,0 +1,63 @@
+# ============================================================
+# Loan Risk Assessment — Python Dependencies
+# ============================================================
+# Install with:  pip install -r requirements.txt
+# Python version: 3.9+
+# ============================================================
+
+# ------ Data Manipulation & Numerical Computing ------
+numpy==1.26.4          # Foundation for numerical operations; used for array math,
+                       # random-seed control, and feature engineering transformations.
+pandas==2.2.2          # Primary data-wrangling library; loads the German Credit CSV,
+                       # handles missing values, encodes categoricals, and builds
+                       # train/test splits.
+scipy==1.13.0          # Scientific computing utilities; used for statistical tests
+                       # (chi-squared, KS test) during exploratory data analysis.
+
+# ------ Machine Learning ------
+scikit-learn==1.4.2    # Core ML framework; provides Logistic Regression, Random Forest,
+                       # Decision Tree, SVM, cross-validation, GridSearchCV, and all
+                       # evaluation metrics (ROC-AUC, F1, confusion matrix, etc.).
+xgboost==2.0.3         # Gradient-boosted trees; delivers best-in-class performance on
+                       # tabular credit data with built-in feature importance.
+lightgbm==4.3.0        # Lightweight GBM by Microsoft; faster training than XGBoost on
+                       # large datasets; used as an additional ensemble candidate.
+imbalanced-learn==0.12.3  # Provides SMOTE (Synthetic Minority Over-sampling Technique)
+                           # to address the class imbalance inherent in credit datasets
+                           # (~70 % good credit vs ~30 % bad credit).
+
+# ------ Model Interpretability ------
+shap==0.45.1           # SHapley Additive exPlanations; generates global and local
+                       # feature importance plots (beeswarm, waterfall, force plots)
+                       # to make black-box models explainable to stakeholders.
+lime==0.2.0.1          # Local Interpretable Model-agnostic Explanations; supplements
+                       # SHAP with per-instance explanations using surrogate models.
+
+# ------ Visualisation ------
+matplotlib==3.8.4      # Low-level plotting library; draws ROC curves, confusion matrices,
+                       # learning curves, and custom subplots throughout the notebook.
+seaborn==0.13.2        # Statistical data visualisation built on matplotlib; produces
+                       # correlation heatmaps, distribution plots, and pairplots.
+plotly==5.22.0         # Interactive HTML charts; used for the interactive ROC curve
+                       # comparison and feature importance dashboard.
+
+# ------ Data Source ------
+ucimlrepo==0.0.7       # Official UCI ML Repository Python client; fetches the Statlog
+                       # (German Credit Data) dataset programmatically, ensuring
+                       # reproducibility without manual CSV downloads.
+
+# ------ Notebook & Reporting ------
+jupyter==1.0.0         # Jupyter metapackage; installs the classic Notebook server,
+                       # JupyterLab, and nbconvert for running the .ipynb workflow.
+ipywidgets==8.1.2      # Interactive widgets (sliders, dropdowns) used in the notebook
+                       # for real-time risk-score exploration.
+nbformat==5.10.4       # Notebook format library required for notebook validation and
+                       # programmatic cell manipulation.
+
+# ------ Utilities ------
+joblib==1.4.2          # Efficient model serialisation (pickle replacement); saves
+                       # trained pipelines to disk for later inference.
+tqdm==4.66.4           # Progress bars for long-running loops such as cross-validation
+                       # and hyperparameter search iterations.
+python-dotenv==1.0.1   # Loads environment variables from a .env file; keeps API keys
+                       # and paths out of the notebook source code.
