@@ -6,7 +6,7 @@ A production-quality machine learning pipeline for predicting loan default risk.
 
 ## Features
 
-- **Synthetic Data Generation** — Realistic loan dataset with ~20 % default rate, controlled by a logistic model seeded from real-world credit features.
+- **Synthetic Data Generation** — Realistic loan dataset with ~20% default rate, controlled by a logistic model seeded from real-world credit features.
 - **Feature Engineering** — Derived indicators: monthly payment, debt burden, credit-utilisation risk, loan-to-income ratio, payment-to-income ratio, and a composite raw risk score.
 - **Multiple Classifiers** — Logistic Regression, Random Forest, Gradient Boosting, and XGBoost trained in parallel and compared by cross-validated AUC-ROC.
 - **Class Imbalance Handling** — SMOTE oversampling via `imbalanced-learn`.

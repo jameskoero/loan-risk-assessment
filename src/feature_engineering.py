@@ -47,7 +47,21 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     credit_score_clamped = df['credit_score'].clip(300, 850)
     df['credit_utilization_risk'] = 1.0 - (credit_score_clamped - 300.0) / 550.0
 
-    # Guard against zero income
+    # Guard against zero income — flag these rows and fill derived ratios with
+    # a high-risk sentinel (1.0 for ratios) rather than silently using the median,
+    # because zero-income applications are genuinely high-risk and should not be
+    # obscured by an average value.
+    zero_income_mask = df['annual_income'] == 0
+    if zero_income_mask.any():
+        import warnings
+        n_zero = int(zero_income_mask.sum())
+        warnings.warn(
+            f"{n_zero} loan application(s) have annual_income=0. "
+            "loan_to_income and payment_to_income will be set to 1.0 "
+            "(maximum risk sentinel) for these rows.",
+            UserWarning,
+            stacklevel=2,
+        )
     safe_income = df['annual_income'].replace(0, np.nan)
     df['loan_to_income'] = df['loan_amount'] / safe_income
     df['payment_to_income'] = df['monthly_payment'] / (safe_income / 12.0)
@@ -65,9 +79,17 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
         + 0.10 * df['payment_to_income'].clip(0, 1)
     )
 
-    # Replace any infinities introduced by edge-case divisions
+    # Replace infinities (e.g. from remaining division edge-cases)
     df.replace([np.inf, -np.inf], np.nan, inplace=True)
-    # Fill NaN derived columns with column median (safe fallback)
+
+    # For zero-income rows the ratio columns are NaN — set them to the
+    # maximum-risk sentinel value (1.0) so these applications are treated as
+    # high-risk rather than average.
+    if zero_income_mask.any():
+        for col in ('loan_to_income', 'payment_to_income'):
+            df.loc[zero_income_mask, col] = 1.0
+
+    # Fill any remaining NaN derived columns with column median (safe fallback)
     derived_cols = [
         'monthly_payment', 'debt_burden', 'credit_utilization_risk',
         'loan_to_income', 'payment_to_income', 'risk_score_raw',
