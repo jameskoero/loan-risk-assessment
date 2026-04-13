@@ -1,0 +1,56 @@
+# ============================================================
+# Loan Risk Assessment — Python Dependencies
+# ============================================================
+# Install with:  pip install -r requirements.txt
+# Python version: 3.9+
+# ============================================================
+
+# ------------------------------------------------------------
+# Core Data Manipulation & Numerical Computing
+# ------------------------------------------------------------
+numpy==1.26.4          # Fundamental package for n-dimensional arrays; underpins almost every ML library
+pandas==2.2.1          # DataFrame-based data manipulation — used for loading, cleaning, and feature engineering
+
+# ------------------------------------------------------------
+# Machine Learning
+# ------------------------------------------------------------
+scikit-learn==1.4.2    # Gold-standard ML library — provides classifiers (Logistic Regression, Random Forest, etc.), preprocessing, pipelines, and evaluation metrics
+xgboost==2.0.3         # Gradient-boosted trees; consistently top performer on tabular/credit data
+lightgbm==4.3.0        # Microsoft's fast gradient boosting — efficient on large datasets with categorical features
+imbalanced-learn==0.12.2  # Provides SMOTE and other resampling strategies for handling class imbalance in credit data
+
+# ------------------------------------------------------------
+# Explainability / Interpretability
+# ------------------------------------------------------------
+shap==0.45.0           # SHapley Additive exPlanations — model-agnostic feature importance and local/global explanations
+
+# ------------------------------------------------------------
+# Data Visualisation
+# ------------------------------------------------------------
+matplotlib==3.8.4      # Low-level plotting library; used for custom charts, ROC curves, and confusion matrices
+seaborn==0.13.2        # Statistical data visualisation built on Matplotlib — correlation heatmaps, distribution plots
+plotly==5.20.0         # Interactive charts; useful for dynamic EDA dashboards in Jupyter
+
+# ------------------------------------------------------------
+# Jupyter / Notebook Environment
+# ------------------------------------------------------------
+jupyter==1.0.0         # Classic Jupyter Notebook server
+jupyterlab==4.1.6      # Next-generation Jupyter interface with tabbed layout and extensions
+ipywidgets==8.1.2      # Interactive widgets (sliders, dropdowns) inside Jupyter notebooks
+
+# ------------------------------------------------------------
+# Statistical Analysis
+# ------------------------------------------------------------
+scipy==1.13.0          # Scientific computing — statistical tests (chi-squared, KS test) used in EDA
+statsmodels==0.14.2    # Regression diagnostics, VIF calculation, and statistical summaries
+
+# ------------------------------------------------------------
+# Model Persistence
+# ------------------------------------------------------------
+joblib==1.4.0          # Efficient serialisation of large NumPy arrays; standard tool for saving scikit-learn models
+
+# ------------------------------------------------------------
+# Utilities
+# ------------------------------------------------------------
+tqdm==4.66.2           # Progress bars for loops and data pipelines
+python-dotenv==1.0.1   # Loads environment variables from a .env file (API keys, paths)
