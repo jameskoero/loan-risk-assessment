@@ -16,7 +16,7 @@ pandas==2.2.1          # DataFrame-based data manipulation — used for loading,
 # ------------------------------------------------------------
 scikit-learn==1.4.2    # Gold-standard ML library — provides classifiers (Logistic Regression, Random Forest, etc.), preprocessing, pipelines, and evaluation metrics
 xgboost==2.0.3         # Gradient-boosted trees; consistently top performer on tabular/credit data
-lightgbm==4.3.0        # Microsoft's fast gradient boosting — efficient on large datasets with categorical features
+lightgbm==4.6.0        # Microsoft's fast gradient boosting — efficient on large datasets with categorical features
 imbalanced-learn==0.12.2  # Provides SMOTE and other resampling strategies for handling class imbalance in credit data
 
 # ------------------------------------------------------------
@@ -35,7 +35,7 @@ plotly==5.20.0         # Interactive charts; useful for dynamic EDA dashboards i
 # Jupyter / Notebook Environment
 # ------------------------------------------------------------
 jupyter==1.0.0         # Classic Jupyter Notebook server
-jupyterlab==4.1.6      # Next-generation Jupyter interface with tabbed layout and extensions
+jupyterlab==4.2.5      # Next-generation Jupyter interface with tabbed layout and extensions
 ipywidgets==8.1.2      # Interactive widgets (sliders, dropdowns) inside Jupyter notebooks
 
 # ------------------------------------------------------------

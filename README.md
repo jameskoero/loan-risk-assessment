@@ -76,7 +76,7 @@ pandas==2.2.1          # DataFrame toolkit for data loading, cleaning, and featu
 # Machine Learning
 scikit-learn==1.4.2    # Classifiers, preprocessing, pipelines, and evaluation metrics
 xgboost==2.0.3         # Gradient-boosted trees; top performer on tabular credit data
-lightgbm==4.3.0        # Microsoft's fast gradient boosting — handles large datasets efficiently
+lightgbm==4.6.0        # Microsoft's fast gradient boosting — handles large datasets efficiently
 imbalanced-learn==0.12.2  # SMOTE and resampling strategies for class-imbalanced credit data
 
 # Explainability
@@ -89,7 +89,7 @@ plotly==5.20.0         # Interactive charts for dynamic EDA dashboards
 
 # Jupyter Environment
 jupyter==1.0.0         # Classic Jupyter Notebook server
-jupyterlab==4.1.6      # Next-generation Jupyter interface
+jupyterlab==4.2.5      # Next-generation Jupyter interface
 ipywidgets==8.1.2      # Interactive widgets (sliders, dropdowns) in notebooks
 
 # Statistical Analysis
