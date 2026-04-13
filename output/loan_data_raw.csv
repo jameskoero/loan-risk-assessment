@@ -1,0 +1,2001 @@
+loan_amount,loan_term,interest_rate,annual_income,debt_to_income_ratio,credit_score,employment_length,num_credit_lines,num_derogatory_marks,home_ownership,loan_purpose,verification_status,default
+40581.31,48,17.75,187666.22,2.87,424,9.6,12,7,MORTGAGE,home_improvement,Verified,0
+95317.86,36,23.41,80881.57,51.01,700,14.4,30,0,MORTGAGE,debt_consolidation,Verified,0
+74539.42,48,17.82,184497.73,59.85,689,24.4,23,1,MORTGAGE,debt_consolidation,Verified,0
+61872.56,24,26.74,196588.08,53.22,384,22.8,1,0,RENT,home_improvement,Source Verified,1
+19821.77,24,15.07,139125.93,48.63,803,8.0,9,0,MORTGAGE,debt_consolidation,Not Verified,0
+19819.48,12,29.26,167040.25,22.46,335,4.5,20,0,RENT,home_improvement,Source Verified,0
+10517.94,60,28.31,154918.2,13.88,330,21.0,22,4,MORTGAGE,debt_consolidation,Source Verified,0
+87286.73,48,23.54,145916.17,44.09,403,7.7,6,3,RENT,car,Source Verified,1
+62105.93,12,11.99,75247.59,18.27,800,27.7,11,0,MORTGAGE,other,Verified,0
+72266.89,60,8.29,30276.98,10.56,586,3.9,3,3,MORTGAGE,other,Not Verified,1
+6955.53,48,26.37,81749.31,47.19,733,9.5,4,0,MORTGAGE,debt_consolidation,Source Verified,0
+97141.44,36,9.13,140048.48,18.75,425,1.6,29,1,MORTGAGE,home_improvement,Verified,0
+84082.05,48,26.36,38455.26,54.87,570,21.1,27,0,RENT,debt_consolidation,Source Verified,1
+25172.22,24,17.27,22145.24,50.44,497,26.7,10,3,MORTGAGE,car,Source Verified,1
+22273.37,24,15.16,45144.63,50.86,755,19.1,19,0,RENT,debt_consolidation,Verified,0
+22423.43,36,27.58,148832.47,46.29,312,28.1,29,1,MORTGAGE,car,Verified,1
+33903.01,12,20.1,195102.87,52.85,434,3.9,6,2,MORTGAGE,debt_consolidation,Source Verified,0
+54851.86,60,19.42,196951.65,48.34,384,2.6,1,0,RENT,other,Verified,1
+46034.78,48,18.97,108916.25,36.15,773,25.2,8,0,MORTGAGE,car,Verified,0
+32666.77,24,14.28,176483.41,17.75,557,25.7,8,0,MORTGAGE,debt_consolidation,Source Verified,0
+63126.02,12,24.64,152628.76,53.29,522,24.9,25,1,MORTGAGE,other,Source Verified,0
+18251.92,36,11.32,110187.24,50.44,547,24.0,6,0,MORTGAGE,debt_consolidation,Source Verified,0
+32753.74,24,28.47,123096.9,28.37,835,10.9,17,1,OWN,other,Not Verified,0
+39804.38,36,27.35,44700.89,2.34,768,6.5,19,4,RENT,car,Source Verified,0
+48326.65,48,13.44,188779.06,38.31,689,27.9,1,0,RENT,other,Source Verified,0
+79591.72,60,23.24,83347.36,3.04,460,9.2,15,0,MORTGAGE,debt_consolidation,Not Verified,0
+23969.01,24,19.33,100306.87,55.58,391,12.0,13,1,MORTGAGE,debt_consolidation,Source Verified,1
+53852.27,24,13.44,140898.84,57.7,807,21.0,21,2,RENT,car,Verified,0
+61279.38,48,29.71,80102.44,11.37,533,8.8,3,5,MORTGAGE,other,Verified,0
+9412.79,12,5.63,65766.65,40.58,453,24.6,30,0,MORTGAGE,debt_consolidation,Not Verified,0
+62716.76,60,11.32,133588.89,5.54,559,2.1,2,0,OWN,debt_consolidation,Not Verified,0
+21199.79,24,18.0,24497.13,43.77,805,23.7,3,3,RENT,debt_consolidation,Not Verified,0
+11179.9,60,18.05,149730.52,20.84,513,18.1,9,2,RENT,other,Source Verified,0
+95144.13,24,19.72,112524.21,40.86,609,17.2,27,1,RENT,car,Not Verified,0
+96735.04,60,23.79,129035.67,22.37,742,13.8,16,0,RENT,debt_consolidation,Verified,0
+81797.75,36,20.59,133738.43,8.73,535,8.3,24,0,OWN,debt_consolidation,Source Verified,0
+33938.31,24,20.01,114869.03,24.37,428,13.9,13,0,MORTGAGE,home_improvement,Not Verified,0
+14278.85,60,6.34,124856.08,6.76,847,13.5,19,4,RENT,debt_consolidation,Verified,0
+70002.14,12,14.41,143081.88,34.61,826,17.5,27,0,RENT,car,Verified,0
+46814.49,36,10.8,155561.39,2.46,764,8.4,18,1,RENT,debt_consolidation,Source Verified,0
+16593.63,36,11.63,150941.43,31.64,679,2.3,21,1,RENT,home_improvement,Not Verified,0
+52041.81,12,18.86,176530.96,53.18,462,4.4,12,0,RENT,other,Verified,1
+8266.91,60,9.99,54099.82,50.27,802,21.0,28,0,RENT,home_improvement,Source Verified,0
+91385.44,48,12.35,92206.63,52.97,452,0.7,29,1,MORTGAGE,debt_consolidation,Verified,1
+29584.1,12,10.93,190603.29,55.32,740,25.7,12,0,MORTGAGE,car,Source Verified,0
+67939.62,60,28.71,91386.3,6.27,805,20.8,1,0,RENT,debt_consolidation,Not Verified,0
+34612.55,12,28.62,42476.61,7.72,632,23.0,20,0,MORTGAGE,other,Verified,0
+54406.46,12,20.25,114580.12,33.42,742,25.1,8,2,RENT,debt_consolidation,Verified,0
+56937.48,24,28.11,39708.38,53.64,735,3.7,17,6,RENT,car,Source Verified,1
+22561.17,60,24.65,56513.58,58.46,406,24.7,21,1,MORTGAGE,debt_consolidation,Source Verified,0
+97110.54,48,19.75,199697.38,2.78,667,15.1,28,2,MORTGAGE,debt_consolidation,Verified,0
+78637.62,24,5.16,117445.27,21.35,351,26.6,20,1,MORTGAGE,debt_consolidation,Source Verified,0
+94252.4,12,24.31,71130.51,12.77,579,26.6,22,1,RENT,other,Not Verified,0
+90008.6,12,22.56,199059.49,45.36,389,0.7,7,7,MORTGAGE,other,Verified,1
+61800.5,12,20.38,193980.61,38.41,529,11.5,9,0,RENT,debt_consolidation,Verified,0
+92578.05,60,24.01,99333.03,7.19,758,15.8,17,0,RENT,debt_consolidation,Source Verified,0
+13406.79,60,17.82,66872.56,29.01,843,20.4,27,5,RENT,debt_consolidation,Source Verified,0
+23618.37,24,22.6,170911.93,41.13,475,8.6,10,2,MORTGAGE,debt_consolidation,Verified,0
+9296.59,48,28.38,148811.73,46.74,593,7.6,4,0,MORTGAGE,car,Source Verified,0
+35906.38,24,14.4,143649.46,1.2,581,11.4,22,7,RENT,debt_consolidation,Not Verified,0
+41924.34,36,22.7,180760.47,53.43,825,15.0,26,0,RENT,car,Verified,0
+30778.16,12,16.89,144095.08,34.16,563,28.5,7,0,MORTGAGE,car,Source Verified,0
+83730.06,12,21.86,71083.63,48.71,685,22.9,7,1,MORTGAGE,home_improvement,Verified,0
+38891.57,12,24.07,144895.37,48.48,807,12.9,8,0,RENT,car,Source Verified,0
+31688.78,24,6.14,75046.43,11.39,505,1.6,30,1,MORTGAGE,debt_consolidation,Source Verified,0
+56556.13,24,21.17,156663.02,6.61,796,5.1,26,0,RENT,debt_consolidation,Source Verified,0
+18387.8,12,10.67,131554.61,43.28,805,13.7,24,0,MORTGAGE,car,Source Verified,0
+81208.71,24,21.75,33934.08,9.39,812,24.4,24,1,RENT,debt_consolidation,Verified,0
+12082.31,60,16.71,112310.37,51.0,449,11.4,8,1,RENT,debt_consolidation,Not Verified,0
+98754.26,60,24.34,81794.17,43.57,520,16.2,16,0,MORTGAGE,other,Source Verified,0
+78363.25,24,8.09,79142.71,50.51,779,26.8,12,6,MORTGAGE,home_improvement,Verified,0
+23877.99,12,20.66,128406.13,17.94,498,27.4,15,1,RENT,debt_consolidation,Not Verified,0
+5524.6,24,11.96,78018.47,19.0,630,6.5,8,0,RENT,car,Verified,0
+82468.84,24,26.32,159840.87,40.27,365,1.3,22,0,RENT,debt_consolidation,Not Verified,0
+72151.45,24,28.21,32742.46,1.89,331,9.2,9,2,RENT,other,Source Verified,1
+74255.68,36,29.91,138869.89,43.59,527,20.9,3,1,MORTGAGE,debt_consolidation,Source Verified,1
+78270.68,60,24.9,165655.06,50.15,618,28.5,22,0,RENT,home_improvement,Verified,0
+12034.24,48,23.84,141109.7,24.91,516,2.3,21,0,MORTGAGE,car,Verified,0
+39054.24,48,10.39,109501.26,45.89,618,0.9,16,0,RENT,home_improvement,Verified,0
+16007.56,36,13.4,191055.26,10.48,583,26.5,15,0,MORTGAGE,car,Not Verified,0
+86994.83,24,16.64,73988.93,19.34,677,22.4,24,1,RENT,other,Not Verified,0
+64213.32,36,24.33,23450.22,58.46,657,29.8,4,4,OWN,car,Source Verified,1
+36435.31,36,27.87,97758.09,59.18,533,11.9,20,0,OWN,debt_consolidation,Not Verified,1
+11038.04,12,9.73,25942.15,30.76,534,12.5,29,3,MORTGAGE,home_improvement,Not Verified,0
+34543.32,60,28.06,191708.62,56.06,377,5.2,16,4,RENT,other,Source Verified,1
+35892.42,48,22.39,57785.25,31.36,582,3.5,10,4,OWN,debt_consolidation,Source Verified,1
+74312.59,24,20.27,162006.86,17.5,623,17.4,11,5,MORTGAGE,home_improvement,Verified,0
+65567.96,48,10.0,159422.97,16.01,562,10.9,26,3,MORTGAGE,home_improvement,Not Verified,0
+89285.21,48,6.39,59191.2,55.77,479,2.4,29,1,MORTGAGE,debt_consolidation,Not Verified,1
+49860.42,60,19.21,131820.78,10.35,697,26.6,5,0,RENT,debt_consolidation,Verified,0
+16361.45,48,21.29,28654.21,34.78,341,6.0,11,1,RENT,other,Source Verified,1
+72758.25,48,10.27,107043.43,33.33,803,22.5,29,3,MORTGAGE,home_improvement,Not Verified,0
+77274.58,36,18.91,22636.48,44.38,311,8.5,13,0,RENT,debt_consolidation,Verified,1
+58321.33,60,26.41,185805.9,29.95,829,24.4,15,0,RENT,other,Source Verified,0
+78241.88,12,25.88,195695.48,16.34,554,3.6,6,0,RENT,home_improvement,Verified,0
+51910.58,24,28.18,60010.9,10.16,527,22.7,16,2,MORTGAGE,car,Source Verified,0
+54659.62,48,14.15,57459.09,37.25,441,2.9,15,2,RENT,debt_consolidation,Verified,0
+45616.4,24,12.95,155669.63,43.14,306,13.4,11,1,MORTGAGE,other,Verified,0
+7414.82,12,23.74,65608.29,34.17,451,22.0,20,0,RENT,home_improvement,Verified,0
+15249.69,24,15.78,181113.78,44.3,360,5.2,2,1,MORTGAGE,car,Not Verified,0
+7985.77,12,7.19,123307.24,8.49,663,8.6,28,0,MORTGAGE,debt_consolidation,Source Verified,0
+65458.99,36,12.07,83139.97,52.95,475,25.9,28,1,RENT,debt_consolidation,Source Verified,1
+34863.82,48,15.46,169884.87,34.94,722,26.6,30,0,RENT,debt_consolidation,Source Verified,0
+53314.22,12,12.31,108813.21,7.61,414,1.3,2,6,MORTGAGE,other,Verified,0
+91218.82,24,13.31,184093.92,27.72,795,5.0,12,1,RENT,debt_consolidation,Not Verified,0
+28682.76,48,12.34,187042.56,50.69,588,3.5,16,1,MORTGAGE,car,Not Verified,0
+43986.38,36,6.04,49775.63,53.85,363,5.4,19,2,MORTGAGE,debt_consolidation,Source Verified,1
+76777.36,48,20.93,20418.21,15.88,520,29.1,2,1,MORTGAGE,debt_consolidation,Source Verified,1
+26735.83,12,19.93,197107.57,42.68,414,16.5,17,0,RENT,debt_consolidation,Source Verified,0
+12313.09,36,21.33,183104.76,6.0,410,14.0,14,1,RENT,car,Verified,0
+32526.39,24,9.81,29980.14,2.01,579,29.5,24,5,MORTGAGE,car,Verified,0
+20316.02,36,12.39,169946.17,33.62,670,16.7,28,0,OWN,other,Source Verified,0
+93321.28,36,20.49,102404.89,41.69,801,19.8,16,1,MORTGAGE,other,Not Verified,0
+81771.44,60,19.99,66613.09,47.75,576,10.0,5,6,MORTGAGE,debt_consolidation,Verified,1
+65173.36,36,17.66,178174.37,20.41,831,11.5,10,2,OWN,car,Source Verified,0
+87788.76,36,13.76,55400.1,0.39,818,17.8,17,1,OWN,home_improvement,Verified,0
+81348.85,48,27.82,190514.0,28.77,776,2.1,13,2,RENT,other,Verified,0
+22724.16,24,13.49,57011.87,0.95,575,7.7,16,4,MORTGAGE,debt_consolidation,Source Verified,0
+89793.1,48,16.39,130462.97,5.52,377,5.9,9,5,RENT,car,Verified,1
+56237.51,48,21.95,60155.54,19.6,420,0.5,24,6,RENT,debt_consolidation,Not Verified,1
+81706.81,12,18.58,118220.36,26.23,656,16.1,4,1,MORTGAGE,debt_consolidation,Source Verified,0
+90128.67,48,13.67,143115.52,16.77,532,16.8,24,0,RENT,debt_consolidation,Verified,0
+35210.33,60,15.89,54241.03,34.91,381,11.5,29,0,RENT,debt_consolidation,Source Verified,0
+15454.93,60,24.86,113759.44,3.32,563,8.1,28,0,RENT,debt_consolidation,Not Verified,0
+26653.84,12,11.95,104430.75,8.67,310,19.6,29,5,MORTGAGE,car,Verified,0
+45575.24,24,8.56,32786.74,41.72,704,4.0,26,3,RENT,car,Source Verified,0
+82711.4,24,12.83,167295.41,8.53,340,15.6,16,1,RENT,debt_consolidation,Not Verified,0
+86769.41,48,26.24,80422.83,38.39,646,23.0,23,1,MORTGAGE,debt_consolidation,Verified,0
+5660.45,48,7.22,123424.8,3.28,736,4.9,27,0,RENT,debt_consolidation,Not Verified,0
+53520.99,48,29.79,112661.16,24.44,373,22.6,11,1,MORTGAGE,other,Verified,0
+44654.05,24,18.53,112386.89,10.64,585,22.8,7,2,OWN,debt_consolidation,Verified,0
+26100.24,36,29.62,39300.03,6.58,728,1.8,17,0,RENT,home_improvement,Source Verified,0
+16387.21,60,28.47,96226.76,34.02,443,0.6,22,0,OWN,debt_consolidation,Verified,0
+37073.44,36,16.32,101426.02,55.7,390,29.2,13,1,MORTGAGE,home_improvement,Source Verified,1
+94576.42,36,9.96,152055.71,3.29,485,5.8,4,0,RENT,debt_consolidation,Source Verified,0
+35704.28,24,9.12,171203.39,25.29,605,24.7,14,6,RENT,debt_consolidation,Verified,0
+54285.11,36,11.0,118096.81,42.45,616,16.9,10,0,OWN,debt_consolidation,Not Verified,0
+71786.8,12,22.75,35620.93,27.76,372,7.9,10,4,RENT,debt_consolidation,Source Verified,1
+39544.81,48,11.82,62632.9,48.39,552,3.9,10,0,RENT,debt_consolidation,Source Verified,0
+97319.3,12,13.54,49688.12,10.78,448,14.9,27,0,MORTGAGE,home_improvement,Source Verified,0
+96432.49,60,16.22,42430.71,57.58,763,12.2,12,1,OWN,debt_consolidation,Verified,1
+28919.32,48,27.83,85861.87,23.11,472,21.0,2,2,MORTGAGE,debt_consolidation,Not Verified,0
+52238.61,36,9.73,61290.83,20.49,761,27.1,26,1,RENT,debt_consolidation,Not Verified,0
+33583.44,60,5.13,59294.56,52.48,536,24.2,23,0,RENT,other,Verified,0
+32059.85,48,6.5,29844.77,33.83,700,8.2,9,0,MORTGAGE,home_improvement,Source Verified,0
+8504.26,36,27.62,23180.61,30.99,581,26.4,29,1,RENT,car,Source Verified,0
+62908.61,12,21.19,38498.28,43.62,642,25.0,5,0,RENT,debt_consolidation,Verified,0
+52754.51,48,11.83,50995.55,34.79,517,27.9,8,0,MORTGAGE,debt_consolidation,Not Verified,0
+9890.48,36,9.43,97577.07,9.75,723,13.8,21,1,MORTGAGE,debt_consolidation,Verified,0
+31471.41,12,12.36,111893.65,40.45,534,23.1,14,0,RENT,home_improvement,Verified,0
+91285.26,60,7.87,45306.55,8.01,552,17.7,7,0,MORTGAGE,home_improvement,Verified,0
+27758.38,60,28.54,96461.0,48.35,585,9.3,7,0,MORTGAGE,other,Source Verified,0
+18765.01,60,24.61,81514.79,59.38,758,29.8,9,9,RENT,other,Verified,1
+51498.01,60,16.56,53016.26,22.64,663,1.1,3,0,MORTGAGE,debt_consolidation,Not Verified,0
+98636.79,24,26.62,21231.33,26.69,492,4.9,14,4,RENT,debt_consolidation,Not Verified,1
+27995.25,48,11.24,104063.22,2.79,669,26.8,17,0,RENT,debt_consolidation,Verified,0
+68852.88,48,22.93,143417.31,0.82,653,1.8,18,2,RENT,debt_consolidation,Not Verified,0
+77353.86,24,26.4,60729.92,55.29,812,26.6,12,0,MORTGAGE,other,Source Verified,0
+27575.57,36,13.92,43725.23,7.72,763,21.5,22,1,RENT,debt_consolidation,Verified,0
+74180.55,36,23.94,179667.69,26.75,656,1.1,14,2,OWN,other,Verified,0
+39939.4,60,12.38,69504.46,48.92,488,12.9,26,2,MORTGAGE,home_improvement,Verified,0
+65069.05,12,12.47,60250.27,53.36,729,22.6,26,2,MORTGAGE,home_improvement,Verified,0
+65185.32,36,7.68,174277.45,31.16,616,17.5,28,2,MORTGAGE,debt_consolidation,Not Verified,0
+55898.59,12,16.0,167079.28,33.9,842,28.1,13,0,RENT,home_improvement,Source Verified,0
+13577.53,48,23.24,100702.36,40.18,436,26.0,14,1,OWN,home_improvement,Not Verified,0
+84353.74,12,28.51,108063.0,57.68,344,10.0,9,1,OWN,debt_consolidation,Not Verified,1
+35474.11,48,20.09,59194.77,36.16,338,2.5,19,3,MORTGAGE,debt_consolidation,Verified,1
+22719.26,24,26.58,34094.3,33.57,652,28.3,26,0,OWN,debt_consolidation,Not Verified,0
+8873.64,24,25.56,123217.73,0.87,817,15.5,2,4,MORTGAGE,home_improvement,Verified,0
+61134.83,60,9.33,37702.09,4.86,301,2.2,11,1,RENT,debt_consolidation,Verified,0
+69368.61,36,17.15,100869.42,34.63,699,24.5,17,1,MORTGAGE,car,Source Verified,0
+6575.84,60,7.92,189289.5,56.17,661,26.1,2,0,MORTGAGE,car,Verified,0
+53648.84,48,22.05,191510.19,52.0,703,19.2,19,0,MORTGAGE,debt_consolidation,Verified,0
+26517.1,60,28.75,63079.81,58.95,495,13.4,7,2,RENT,home_improvement,Source Verified,1
+66291.42,12,8.43,132340.42,31.67,751,19.9,18,1,MORTGAGE,debt_consolidation,Not Verified,0
+21564.81,48,23.35,105333.73,47.28,325,21.2,13,4,OWN,car,Verified,1
+70639.09,24,20.81,177623.32,50.42,715,26.8,5,2,RENT,debt_consolidation,Verified,0
+41739.86,36,19.59,68857.56,38.88,447,28.7,18,1,RENT,debt_consolidation,Source Verified,1
+93989.35,48,14.75,20666.43,20.32,562,15.4,23,3,MORTGAGE,debt_consolidation,Source Verified,1
+18064.49,48,13.88,49261.02,28.2,752,24.0,26,1,OWN,car,Verified,0
+37401.3,12,6.13,82914.1,51.48,449,28.9,24,1,MORTGAGE,debt_consolidation,Not Verified,0
+15779.98,36,10.45,76829.8,17.91,402,4.5,24,0,OWN,debt_consolidation,Source Verified,0
+92845.89,24,5.38,162445.33,55.42,675,0.5,29,0,RENT,debt_consolidation,Source Verified,0
+88347.24,48,19.54,142500.92,13.79,593,26.1,16,1,OWN,debt_consolidation,Not Verified,0
+29504.45,48,7.65,73920.14,44.97,583,5.9,15,3,MORTGAGE,car,Not Verified,0
+67698.48,12,26.83,102393.89,37.83,441,1.3,8,0,OWN,home_improvement,Verified,1
+82636.11,60,18.08,37200.64,44.98,319,4.8,26,0,MORTGAGE,other,Verified,1
+57744.08,24,22.49,181666.36,26.24,526,11.5,15,1,RENT,debt_consolidation,Not Verified,0
+55316.8,36,15.27,188376.47,55.96,359,6.6,25,0,MORTGAGE,debt_consolidation,Not Verified,0
+27975.97,48,19.01,196364.64,37.95,798,9.2,1,2,RENT,car,Source Verified,0
+13844.76,48,28.57,176339.51,17.3,323,29.3,28,2,RENT,home_improvement,Source Verified,0
+90235.5,24,7.07,51312.96,38.31,537,21.1,17,0,MORTGAGE,debt_consolidation,Source Verified,0
+90539.72,60,11.35,28315.37,17.21,329,21.4,30,3,MORTGAGE,home_improvement,Verified,1
+65144.64,48,24.5,124327.41,17.62,353,2.8,15,1,RENT,car,Not Verified,1
+37207.83,24,7.47,184268.9,23.98,662,22.0,14,1,MORTGAGE,debt_consolidation,Source Verified,0
+38174.91,12,6.89,51923.25,51.15,656,22.2,14,0,OWN,car,Not Verified,0
+73965.79,60,14.04,21267.72,30.02,318,19.8,10,0,MORTGAGE,debt_consolidation,Source Verified,1
+90225.47,36,7.3,164989.29,40.73,301,6.9,2,3,RENT,other,Not Verified,1
+89273.21,48,19.63,33823.22,23.52,343,12.7,27,0,OWN,home_improvement,Verified,1
+79088.18,24,10.66,94467.09,15.82,720,25.4,6,0,RENT,debt_consolidation,Not Verified,0
+65993.01,12,27.39,142199.72,57.28,622,20.1,30,0,MORTGAGE,debt_consolidation,Not Verified,0
+12993.3,36,24.59,62623.57,36.21,321,22.0,17,0,MORTGAGE,other,Source Verified,1
+20354.73,24,22.49,35113.26,56.04,568,17.6,5,0,RENT,car,Source Verified,1
+90362.65,24,20.42,158603.82,12.2,692,13.5,5,0,MORTGAGE,debt_consolidation,Verified,0
+62610.76,36,26.59,133431.52,8.81,778,22.8,15,4,RENT,home_improvement,Source Verified,0
+5873.72,12,10.58,197928.29,51.35,814,2.0,15,2,MORTGAGE,home_improvement,Not Verified,0
+14639.8,12,26.83,81975.45,40.86,480,20.2,20,0,OWN,debt_consolidation,Verified,1
+68032.67,60,24.74,31117.23,11.19,375,29.9,11,2,MORTGAGE,debt_consolidation,Not Verified,1
+5480.85,48,23.7,152183.01,16.16,430,23.4,5,0,OWN,home_improvement,Source Verified,0
+20276.76,36,19.03,113912.02,48.04,727,8.7,28,1,RENT,debt_consolidation,Verified,0
+57129.71,36,11.16,58376.71,27.23,834,8.3,1,0,MORTGAGE,debt_consolidation,Verified,0
+70730.04,36,15.59,160711.22,40.23,557,20.0,11,0,MORTGAGE,car,Source Verified,0
+66936.32,12,24.84,56675.99,19.1,468,26.9,11,3,MORTGAGE,home_improvement,Verified,0
+26305.58,48,5.79,66919.1,22.87,536,17.3,6,0,MORTGAGE,debt_consolidation,Not Verified,0
+72657.03,60,24.55,36655.14,59.44,468,15.8,23,2,MORTGAGE,debt_consolidation,Not Verified,1
+27538.66,24,11.0,91897.81,14.86,441,4.8,8,0,RENT,home_improvement,Source Verified,0
+35912.97,24,8.61,95407.26,30.39,627,21.5,2,0,RENT,home_improvement,Verified,0
+75916.68,36,7.89,112621.12,50.66,309,21.1,15,2,MORTGAGE,home_improvement,Source Verified,1
+66715.13,48,5.68,147613.57,14.35,443,29.0,23,1,MORTGAGE,debt_consolidation,Source Verified,0
+85676.22,12,18.09,183098.17,24.91,664,9.0,22,0,MORTGAGE,home_improvement,Verified,0
+67473.22,48,10.46,44792.14,36.91,318,22.7,9,0,MORTGAGE,other,Source Verified,1
+58989.32,48,29.74,29782.66,28.87,346,13.0,15,0,MORTGAGE,debt_consolidation,Not Verified,1
+13899.1,12,19.36,23335.62,27.57,461,16.8,8,5,MORTGAGE,debt_consolidation,Verified,1
+39933.0,36,8.45,45851.85,21.75,783,24.5,30,1,RENT,car,Source Verified,0
+30194.22,48,22.22,138430.91,35.2,721,6.7,16,0,RENT,debt_consolidation,Not Verified,0
+28179.02,24,27.44,150945.87,37.46,312,10.3,27,3,MORTGAGE,debt_consolidation,Verified,1
+97436.0,12,23.63,161571.03,39.2,576,23.2,14,0,MORTGAGE,debt_consolidation,Not Verified,0
+42344.28,60,6.91,63867.48,4.22,451,17.1,15,0,MORTGAGE,debt_consolidation,Source Verified,0
+89744.42,36,27.4,75061.07,37.86,657,2.8,20,0,RENT,debt_consolidation,Verified,1
+64958.17,12,24.85,106964.24,57.19,697,12.9,30,1,MORTGAGE,debt_consolidation,Verified,0
+80507.07,60,8.96,31372.96,32.46,775,17.6,13,0,MORTGAGE,other,Verified,0
+52750.52,60,6.29,130005.47,42.92,561,27.3,9,1,MORTGAGE,home_improvement,Verified,0
+59805.87,48,18.93,197072.31,33.4,847,5.7,1,3,RENT,home_improvement,Verified,0
+51789.18,48,8.9,84945.14,51.28,839,24.2,27,0,MORTGAGE,debt_consolidation,Verified,0
+23548.08,48,25.86,155512.55,55.77,785,3.9,6,0,MORTGAGE,home_improvement,Verified,0
+73632.95,12,13.96,110006.1,11.05,616,7.3,8,0,MORTGAGE,debt_consolidation,Source Verified,0
+31673.37,12,27.82,43006.13,26.21,519,7.3,27,1,MORTGAGE,car,Not Verified,1
+7310.02,36,19.14,124802.74,23.54,500,26.3,27,4,MORTGAGE,car,Not Verified,0
+66319.87,48,9.57,73977.37,24.31,307,6.0,20,0,RENT,home_improvement,Source Verified,1
+21825.51,60,8.49,26192.58,7.53,437,23.6,18,0,RENT,home_improvement,Not Verified,0
+94343.57,24,19.41,134287.35,48.82,695,13.9,27,0,MORTGAGE,car,Verified,0
+95623.21,36,24.05,174607.82,2.15,632,30.0,18,0,RENT,home_improvement,Verified,0
+91912.12,12,24.54,82058.56,31.69,804,25.2,26,1,MORTGAGE,debt_consolidation,Verified,0
+40165.08,36,11.89,90253.2,39.71,328,22.2,17,0,RENT,debt_consolidation,Not Verified,0
+6468.38,36,10.11,180383.9,12.45,385,26.1,21,0,RENT,other,Not Verified,0
+93190.26,36,5.42,166449.59,54.35,734,19.0,16,1,MORTGAGE,debt_consolidation,Source Verified,0
+45677.49,36,21.98,148691.51,50.31,497,25.3,13,0,OWN,car,Source Verified,0
+96832.21,24,6.91,64783.47,28.27,365,7.8,22,1,MORTGAGE,debt_consolidation,Source Verified,0
+96543.9,48,15.52,183839.0,24.67,848,2.9,4,0,MORTGAGE,debt_consolidation,Verified,0
+86035.9,60,20.04,47794.84,14.19,733,18.5,4,5,OWN,home_improvement,Source Verified,0
+32972.64,36,28.43,132818.69,43.8,525,13.0,21,0,MORTGAGE,debt_consolidation,Source Verified,0
+41584.28,36,12.8,25184.21,7.9,753,12.8,14,4,OWN,car,Verified,0
+85857.98,36,11.24,135869.57,40.81,674,15.8,5,0,RENT,home_improvement,Verified,0
+35107.59,48,21.35,69885.98,50.55,734,10.8,16,2,OWN,home_improvement,Not Verified,0
+21101.81,12,20.48,100941.86,13.71,748,18.8,14,0,OWN,home_improvement,Source Verified,0
+57896.12,12,13.3,82147.62,51.99,347,0.9,30,1,MORTGAGE,debt_consolidation,Verified,1
+93934.7,24,28.2,51096.22,2.0,643,29.1,14,0,MORTGAGE,debt_consolidation,Source Verified,0
+71122.83,12,26.12,131956.54,54.77,304,27.7,14,1,RENT,debt_consolidation,Not Verified,1
+59155.81,36,10.6,178755.6,7.1,324,28.1,25,1,MORTGAGE,debt_consolidation,Source Verified,0
+14231.77,36,10.98,192635.16,38.75,797,11.0,24,1,MORTGAGE,other,Verified,0
+63425.69,36,17.81,54622.35,15.0,590,16.0,25,1,MORTGAGE,home_improvement,Source Verified,0
+99055.12,24,24.34,149127.1,50.19,705,28.6,29,0,RENT,car,Source Verified,0
+18307.98,36,6.1,139581.09,30.74,761,27.1,14,0,MORTGAGE,home_improvement,Verified,0
+54241.32,12,22.33,81808.0,8.11,822,23.7,19,1,RENT,debt_consolidation,Verified,0
+88350.44,48,21.21,23437.86,34.26,778,12.2,30,0,MORTGAGE,home_improvement,Source Verified,1
+75373.02,48,10.79,144162.42,24.47,566,16.9,3,0,MORTGAGE,car,Source Verified,0
+71216.5,60,22.03,190189.07,39.69,485,23.8,17,0,RENT,debt_consolidation,Verified,0
+71735.99,12,28.5,133781.62,52.91,385,8.2,14,0,RENT,car,Source Verified,1
+39151.66,36,6.17,98352.69,24.56,520,18.8,10,1,RENT,home_improvement,Not Verified,0
+32891.23,48,12.99,114527.7,17.39,502,24.8,13,1,RENT,debt_consolidation,Not Verified,0
+81889.31,12,15.95,55933.19,0.87,608,21.2,22,4,RENT,home_improvement,Source Verified,0
+81960.77,48,27.48,155097.95,34.49,666,14.4,4,0,MORTGAGE,debt_consolidation,Source Verified,0
+87371.87,36,29.06,154355.57,24.14,838,17.5,11,4,RENT,debt_consolidation,Not Verified,0
+91757.85,48,16.1,46193.11,22.48,701,29.7,15,1,RENT,car,Not Verified,0
+53577.53,60,23.75,178036.11,10.98,654,18.1,15,4,RENT,other,Not Verified,0
+52644.05,60,18.29,68454.15,25.8,484,23.6,30,3,RENT,car,Verified,0
+80838.04,48,18.44,196806.09,59.07,319,21.8,24,1,RENT,car,Verified,1
+66746.57,12,11.95,88922.54,17.87,458,21.0,2,0,MORTGAGE,other,Not Verified,0
+71686.85,12,10.42,52019.13,35.98,723,21.5,11,0,OWN,other,Not Verified,0
+80600.3,12,12.2,83309.62,46.59,413,13.6,2,0,MORTGAGE,debt_consolidation,Source Verified,1
+89550.51,48,18.91,99232.46,44.95,692,14.2,23,5,RENT,home_improvement,Not Verified,1
+37109.54,12,5.73,32475.4,19.73,619,14.0,29,5,MORTGAGE,debt_consolidation,Not Verified,0
+40680.38,36,27.68,124079.31,36.65,395,1.0,5,2,OWN,home_improvement,Source Verified,1
+13928.28,60,8.91,127573.84,52.28,444,7.2,13,3,MORTGAGE,other,Source Verified,1
+59936.61,36,10.5,153007.48,0.93,573,4.6,1,4,MORTGAGE,debt_consolidation,Source Verified,0
+8414.52,12,17.96,25250.58,26.14,530,26.6,7,1,MORTGAGE,home_improvement,Source Verified,0
+49231.81,36,22.75,117422.88,13.46,728,8.2,7,1,MORTGAGE,home_improvement,Not Verified,0
+56551.24,12,7.39,29523.34,23.32,704,4.2,10,0,MORTGAGE,debt_consolidation,Source Verified,0
+32221.42,48,12.94,146205.96,24.96,616,3.6,6,0,MORTGAGE,debt_consolidation,Not Verified,0
+61129.16,36,29.22,30031.04,44.8,752,21.0,20,0,MORTGAGE,home_improvement,Not Verified,0
+7897.52,48,11.56,184111.01,5.63,609,0.2,12,0,MORTGAGE,debt_consolidation,Verified,0
+8548.08,48,12.83,146374.86,30.76,830,14.1,13,1,MORTGAGE,home_improvement,Verified,0
+83147.05,24,25.91,111330.16,33.85,419,3.6,24,0,RENT,home_improvement,Source Verified,1
+39218.11,12,6.26,99470.71,29.65,693,25.5,28,3,RENT,home_improvement,Verified,0
+17070.75,60,16.62,43521.07,43.91,503,28.8,11,0,MORTGAGE,debt_consolidation,Source Verified,0
+54613.11,12,14.49,72379.89,23.03,453,28.8,18,0,RENT,home_improvement,Verified,0
+78149.39,60,12.91,176412.64,56.7,399,13.3,2,2,MORTGAGE,debt_consolidation,Source Verified,0
+25503.0,12,12.14,182801.51,28.91,604,19.3,16,1,OWN,other,Verified,0
+64174.6,48,7.28,20134.59,34.27,419,18.0,2,0,RENT,debt_consolidation,Verified,1
+13108.01,36,12.87,126944.55,49.53,410,10.5,19,1,MORTGAGE,other,Verified,0
+9909.76,36,6.08,149474.11,16.51,845,13.3,6,0,MORTGAGE,car,Not Verified,0
+55478.69,24,24.52,131374.46,4.51,741,1.9,1,4,RENT,car,Source Verified,0
+56360.34,60,14.96,34702.36,42.47,712,23.9,11,1,RENT,debt_consolidation,Not Verified,0
+65555.84,60,16.1,59190.48,28.98,737,7.2,18,0,RENT,debt_consolidation,Not Verified,0
+73978.68,60,27.34,65061.25,53.79,833,13.8,10,1,MORTGAGE,debt_consolidation,Not Verified,0
+97705.95,48,21.45,169710.43,58.96,615,14.4,18,3,RENT,debt_consolidation,Source Verified,0
+54048.53,60,5.2,103375.9,23.95,421,16.8,30,1,MORTGAGE,other,Not Verified,0
+35680.86,36,28.58,107629.08,24.93,774,24.5,28,3,MORTGAGE,debt_consolidation,Verified,0
+80542.69,48,10.93,188280.75,24.48,709,20.8,1,0,MORTGAGE,other,Verified,0
+30729.06,12,7.69,134675.46,19.47,528,19.9,19,3,OWN,car,Not Verified,0
+46702.28,60,24.2,181760.19,46.9,560,15.8,16,2,OWN,debt_consolidation,Verified,0
+12453.36,60,17.51,102171.59,45.54,526,2.9,26,2,RENT,home_improvement,Not Verified,0
+7408.32,12,15.84,46898.53,28.72,811,12.1,7,0,RENT,debt_consolidation,Source Verified,0
+96451.6,60,11.24,187388.41,2.68,489,28.7,15,3,OWN,debt_consolidation,Source Verified,0
+84418.11,12,18.69,102566.92,18.57,830,29.9,29,1,MORTGAGE,debt_consolidation,Verified,0
+71117.55,48,11.86,52693.66,17.54,801,21.9,1,3,RENT,other,Not Verified,0
+43850.53,36,27.54,74431.23,48.67,647,6.8,23,0,RENT,home_improvement,Source Verified,0
+21462.96,12,10.38,29144.47,5.25,619,3.1,21,0,RENT,home_improvement,Not Verified,0
+19861.52,24,27.11,104294.11,48.34,504,12.4,9,0,MORTGAGE,debt_consolidation,Source Verified,0
+28773.08,12,18.99,173563.07,40.15,310,25.7,2,1,RENT,home_improvement,Verified,0
+57176.53,60,25.71,188044.48,43.95,370,21.7,17,1,RENT,debt_consolidation,Verified,1
+72886.61,48,22.82,187868.4,25.93,715,26.5,25,1,RENT,debt_consolidation,Verified,0
+67718.75,48,22.42,42541.4,40.78,559,18.5,24,1,MORTGAGE,debt_consolidation,Verified,1
+31593.72,12,13.11,88769.7,36.54,382,3.9,10,3,MORTGAGE,debt_consolidation,Verified,0
+95712.2,36,10.85,25081.18,46.14,445,3.4,6,0,RENT,home_improvement,Verified,1
+75100.21,24,10.27,173929.76,26.81,821,1.4,5,0,RENT,debt_consolidation,Not Verified,0
+57663.63,48,26.43,84576.04,28.37,502,17.0,8,3,RENT,other,Source Verified,1
+63113.47,60,25.51,133601.07,38.61,799,7.3,8,1,MORTGAGE,debt_consolidation,Verified,0
+44862.01,60,16.01,148681.72,6.48,468,22.0,30,1,RENT,home_improvement,Source Verified,0
+28534.44,36,8.31,97372.04,26.17,599,20.6,5,1,MORTGAGE,debt_consolidation,Source Verified,0
+38817.4,48,14.56,75159.62,58.32,311,9.5,12,1,OWN,debt_consolidation,Source Verified,1
+76995.38,12,20.48,193198.32,2.25,587,5.3,7,0,OWN,other,Source Verified,0
+6367.38,60,16.36,193607.88,18.96,650,3.1,13,1,OWN,car,Source Verified,0
+16026.9,36,24.5,72098.55,18.85,429,22.1,13,9,MORTGAGE,home_improvement,Verified,1
+9370.25,48,29.94,106332.52,38.01,618,13.5,17,1,MORTGAGE,other,Source Verified,0
+8869.24,48,9.78,195111.95,6.35,656,9.7,4,0,MORTGAGE,car,Verified,0
+86268.76,48,16.49,20876.31,37.71,678,25.7,18,2,RENT,home_improvement,Source Verified,1
+71847.5,48,15.77,94282.08,5.7,727,17.8,10,0,RENT,car,Not Verified,0
+50046.51,48,12.61,38082.36,5.7,471,15.5,3,0,MORTGAGE,debt_consolidation,Source Verified,0
+14294.25,60,9.95,111648.43,43.69,612,22.3,12,3,RENT,home_improvement,Not Verified,0
+51703.51,36,6.64,24440.59,19.45,840,24.5,1,0,MORTGAGE,car,Not Verified,0
+49979.82,48,27.18,93241.72,58.65,794,20.6,27,4,RENT,debt_consolidation,Verified,1
+21454.18,24,15.5,59725.83,2.24,824,13.2,11,0,OWN,other,Not Verified,0
+46215.91,24,17.42,115995.51,26.71,512,11.4,18,2,OWN,debt_consolidation,Verified,0
+42857.95,36,27.92,199278.86,6.79,733,23.1,13,1,MORTGAGE,other,Not Verified,0
+63505.76,12,24.41,164096.5,21.08,641,15.5,17,0,RENT,debt_consolidation,Verified,0
+65333.9,12,8.26,172215.58,59.89,346,21.1,8,1,MORTGAGE,debt_consolidation,Verified,0
+9303.88,12,19.14,134347.7,53.33,753,26.7,20,5,RENT,debt_consolidation,Source Verified,0
+40588.2,24,16.06,27480.77,2.9,672,27.5,19,2,MORTGAGE,other,Not Verified,0
+64456.69,12,24.93,57223.58,33.8,409,8.3,17,1,RENT,debt_consolidation,Verified,1
+52797.94,60,23.11,186511.62,38.87,344,5.6,2,8,OWN,home_improvement,Not Verified,1
+86366.53,48,22.26,85900.36,12.57,760,7.8,3,0,MORTGAGE,home_improvement,Not Verified,0
+67575.9,24,13.51,38654.61,8.71,343,22.5,3,0,RENT,debt_consolidation,Verified,1
+20478.77,36,25.12,146432.97,54.26,350,11.1,6,0,MORTGAGE,other,Source Verified,0
+11704.03,36,6.31,73902.39,58.13,535,5.2,10,2,MORTGAGE,debt_consolidation,Source Verified,0
+66029.83,48,8.99,68394.24,59.51,374,3.0,24,3,RENT,home_improvement,Verified,1
+7518.57,24,13.39,199635.94,47.39,803,9.8,22,1,MORTGAGE,home_improvement,Not Verified,0
+60648.68,12,6.92,174465.01,39.81,559,4.1,18,4,MORTGAGE,debt_consolidation,Not Verified,0
+94321.87,12,10.87,93428.81,20.74,613,4.7,18,1,RENT,debt_consolidation,Not Verified,0
+59670.05,60,25.75,196447.02,10.28,810,20.5,14,0,MORTGAGE,car,Not Verified,0
+41876.14,60,28.71,137020.38,4.74,592,0.6,16,0,MORTGAGE,other,Verified,0
+66112.38,12,12.62,153564.04,41.6,494,3.5,7,4,RENT,debt_consolidation,Verified,0
+48534.02,36,11.61,25672.35,47.08,738,25.3,1,0,RENT,debt_consolidation,Not Verified,0
+56833.59,36,12.0,41888.95,49.59,544,25.3,17,1,OWN,other,Not Verified,0
+94439.16,60,11.94,133955.32,54.83,475,9.9,23,0,MORTGAGE,debt_consolidation,Verified,0
+41679.75,48,5.9,181824.32,52.8,698,2.6,25,0,MORTGAGE,home_improvement,Source Verified,0
+96313.1,12,28.17,132273.87,59.98,741,21.1,5,1,MORTGAGE,home_improvement,Not Verified,0
+91008.31,60,10.34,44124.48,14.64,735,10.8,27,0,RENT,debt_consolidation,Verified,0
+23600.16,60,15.5,40836.81,45.8,838,1.4,1,4,RENT,home_improvement,Verified,0
+11589.32,12,5.24,171953.46,35.19,733,4.7,21,0,MORTGAGE,other,Source Verified,0
+14573.91,12,26.45,45074.42,15.67,723,4.1,27,1,RENT,home_improvement,Not Verified,0
+6731.07,36,23.28,113641.75,58.91,772,17.7,17,2,MORTGAGE,car,Not Verified,0
+13972.08,48,28.67,26680.4,53.87,300,26.9,10,1,MORTGAGE,home_improvement,Not Verified,1
+69885.64,48,24.54,34520.56,7.71,499,23.8,12,4,OWN,home_improvement,Verified,1
+11762.92,12,12.84,141022.69,1.57,706,16.4,25,0,RENT,debt_consolidation,Source Verified,0
+35302.68,24,11.2,144052.65,41.3,630,12.7,20,0,RENT,car,Verified,0
+85263.15,60,22.44,81464.49,36.25,398,18.6,25,0,MORTGAGE,debt_consolidation,Not Verified,1
+7210.83,60,14.1,58809.76,56.15,467,13.3,2,3,MORTGAGE,debt_consolidation,Source Verified,0
+82374.51,12,19.16,166467.85,14.04,485,7.4,23,6,MORTGAGE,other,Source Verified,1
+31776.2,24,5.16,59078.58,5.06,612,20.4,16,0,RENT,car,Not Verified,0
+16225.66,36,6.55,117564.87,15.55,757,26.2,15,1,RENT,other,Verified,0
+71190.03,12,18.38,194277.59,1.14,813,11.2,28,0,MORTGAGE,debt_consolidation,Not Verified,0
+64749.57,12,19.15,46613.44,2.15,713,25.2,13,0,RENT,car,Source Verified,0
+88359.84,60,23.79,189357.73,54.89,764,12.9,18,1,MORTGAGE,home_improvement,Verified,0
+74831.75,12,8.3,52920.75,21.12,559,12.0,28,0,RENT,other,Verified,0
+81330.69,12,17.83,122139.78,24.65,514,0.8,20,1,OWN,other,Not Verified,0
+31793.28,12,9.86,87861.39,1.1,516,20.9,22,1,RENT,other,Not Verified,0
+21856.76,60,7.33,193687.15,16.23,639,24.2,14,2,RENT,other,Verified,0
+76308.4,36,15.26,69237.57,48.28,368,19.9,18,1,MORTGAGE,debt_consolidation,Verified,1
+81649.3,36,9.08,91938.44,36.93,619,4.5,2,1,RENT,car,Not Verified,0
+99097.99,12,10.54,196914.82,45.23,666,3.1,2,1,MORTGAGE,debt_consolidation,Verified,0
+44198.68,60,12.94,116564.67,26.83,541,17.2,3,0,MORTGAGE,car,Source Verified,0
+40341.72,36,11.48,110473.42,18.58,824,12.0,5,2,RENT,other,Source Verified,0
+78759.23,36,7.19,66400.13,28.97,635,12.9,25,0,RENT,debt_consolidation,Not Verified,0
+37376.34,36,7.25,146245.44,19.38,421,29.0,16,0,MORTGAGE,home_improvement,Source Verified,0
+93421.95,60,9.83,22587.13,50.34,564,21.7,22,1,OWN,car,Source Verified,1
+86549.21,60,6.26,28912.27,17.86,671,12.4,15,3,MORTGAGE,debt_consolidation,Not Verified,1
+45754.43,12,20.66,127884.55,39.59,478,0.6,12,0,MORTGAGE,debt_consolidation,Verified,0
+76332.75,48,12.18,81501.42,8.22,344,1.0,30,0,OWN,debt_consolidation,Verified,0
+76681.57,36,11.99,191596.95,41.21,621,20.5,9,0,MORTGAGE,debt_consolidation,Verified,0
+14796.77,48,13.3,182574.32,54.8,821,25.1,26,0,RENT,home_improvement,Not Verified,0
+90742.53,60,21.57,148467.13,36.51,567,21.2,14,1,OWN,home_improvement,Not Verified,0
+52998.98,60,26.77,167266.2,33.59,798,12.2,29,0,MORTGAGE,debt_consolidation,Verified,0
+83513.46,60,23.98,140119.73,57.67,759,0.9,21,2,OWN,other,Not Verified,0
+35404.71,48,23.19,42604.78,37.64,381,29.0,16,2,MORTGAGE,home_improvement,Source Verified,1
+90074.71,60,17.11,157797.81,15.57,689,29.6,11,1,MORTGAGE,home_improvement,Not Verified,0
+41974.16,12,22.35,57834.55,17.54,540,16.5,6,1,RENT,debt_consolidation,Verified,0
+6029.58,60,18.82,78219.71,42.32,438,2.1,10,0,RENT,home_improvement,Not Verified,0
+91011.29,24,10.41,167462.16,44.13,678,16.2,28,0,OWN,debt_consolidation,Source Verified,0
+13672.23,48,10.21,116574.61,18.21,708,26.8,8,1,OWN,car,Verified,0
+35334.8,24,12.41,174789.33,20.72,399,20.4,16,0,OWN,home_improvement,Not Verified,0
+95255.89,60,27.77,58346.36,59.46,803,21.6,3,1,MORTGAGE,debt_consolidation,Verified,0
+95307.68,12,18.69,129400.12,6.12,713,2.5,2,0,MORTGAGE,other,Source Verified,0
+59476.6,36,23.35,35082.38,24.28,813,3.2,16,0,MORTGAGE,home_improvement,Not Verified,0
+65024.54,60,13.66,135750.98,3.75,474,3.8,19,0,RENT,debt_consolidation,Source Verified,0
+47602.32,12,15.19,157256.13,49.26,817,27.1,30,0,MORTGAGE,other,Verified,0
+32855.02,48,8.14,125287.56,5.54,503,15.8,9,4,RENT,debt_consolidation,Not Verified,0
+36223.13,24,9.28,67921.67,40.44,330,23.7,16,0,RENT,car,Verified,1
+68889.25,24,25.68,25641.68,3.39,720,3.5,22,3,RENT,home_improvement,Source Verified,1
+76475.58,24,19.62,41500.8,40.37,687,27.8,26,1,OWN,debt_consolidation,Not Verified,0
+80200.01,48,13.44,132014.54,50.58,629,24.6,28,3,MORTGAGE,other,Not Verified,0
+80013.72,12,25.07,188195.64,23.93,569,6.7,4,1,MORTGAGE,home_improvement,Source Verified,0
+13664.58,48,11.16,57176.19,31.33,318,26.2,10,4,MORTGAGE,debt_consolidation,Verified,0
+51969.93,24,29.4,152304.71,24.09,644,7.9,19,0,MORTGAGE,other,Not Verified,0
+10468.08,60,13.62,175961.19,18.03,529,6.2,13,1,MORTGAGE,home_improvement,Verified,0
+57205.24,36,13.43,113758.79,48.2,608,7.9,18,0,OWN,car,Verified,0
+46945.4,48,12.8,140467.84,16.32,536,27.3,15,0,RENT,car,Not Verified,0
+89331.9,48,8.05,166702.76,43.38,831,27.5,30,1,MORTGAGE,debt_consolidation,Source Verified,0
+38336.93,12,7.78,66921.53,12.37,632,9.9,4,1,OWN,debt_consolidation,Verified,0
+16121.37,12,21.2,73441.22,14.99,712,21.2,9,0,MORTGAGE,debt_consolidation,Source Verified,0
+18584.21,48,26.88,20112.95,20.19,815,20.3,4,0,RENT,other,Verified,0
+77343.51,24,24.76,193356.94,35.35,625,24.2,29,1,RENT,debt_consolidation,Verified,0
+63730.72,36,8.53,185158.08,27.27,307,8.9,16,1,RENT,debt_consolidation,Verified,0
+14606.65,12,18.64,157622.29,44.71,319,15.3,28,0,MORTGAGE,debt_consolidation,Not Verified,1
+12990.15,24,7.64,34233.68,12.81,686,20.0,21,4,RENT,debt_consolidation,Not Verified,0
+71592.07,60,6.13,100550.52,0.64,453,0.8,15,5,MORTGAGE,home_improvement,Source Verified,0
+11912.49,12,21.41,38340.52,46.59,619,11.3,24,3,RENT,other,Verified,1
+83076.71,24,18.38,22865.65,49.3,411,20.9,2,3,MORTGAGE,debt_consolidation,Not Verified,1
+72093.01,24,7.05,130912.93,3.57,449,7.6,28,0,OWN,debt_consolidation,Source Verified,0
+12728.13,36,5.87,192949.3,36.65,578,28.7,27,8,OWN,car,Source Verified,0
+13059.58,36,29.74,182516.24,22.69,837,0.9,14,0,OWN,debt_consolidation,Not Verified,0
+98730.76,60,5.75,145415.87,47.63,639,28.7,3,0,RENT,other,Source Verified,0
+40555.73,24,16.11,37395.31,52.46,815,6.5,22,2,RENT,home_improvement,Source Verified,0
+40211.0,24,17.62,69349.53,51.06,828,1.5,28,0,MORTGAGE,debt_consolidation,Not Verified,0
+82215.96,36,7.93,77610.21,46.63,414,8.8,23,1,RENT,other,Source Verified,1
+94988.61,12,9.23,157367.01,16.14,471,23.6,4,0,OWN,debt_consolidation,Source Verified,0
+98670.1,12,13.8,164404.85,48.71,723,22.6,30,1,OWN,debt_consolidation,Source Verified,0
+76570.93,48,24.04,89319.1,32.01,777,6.3,1,1,OWN,debt_consolidation,Verified,0
+40744.66,36,17.68,95219.12,3.17,586,5.9,23,0,RENT,other,Not Verified,0
+12932.57,48,20.95,28011.63,27.42,846,19.3,28,0,OWN,car,Not Verified,0
+78828.96,36,29.63,72044.61,56.53,306,13.7,9,1,RENT,debt_consolidation,Verified,1
+58048.4,60,24.2,101231.33,53.27,465,23.8,17,1,RENT,car,Verified,0
+45301.09,24,15.86,41056.95,6.14,643,0.7,14,0,MORTGAGE,home_improvement,Not Verified,0
+91103.67,60,16.16,101588.14,44.65,558,18.3,17,4,MORTGAGE,debt_consolidation,Source Verified,1
+15563.76,36,20.47,173571.65,48.35,364,21.9,1,0,RENT,car,Verified,0
+51799.38,24,21.63,124637.78,16.28,502,29.8,10,3,RENT,car,Verified,0
+6078.6,12,17.52,34207.37,28.3,314,20.4,23,0,RENT,home_improvement,Source Verified,0
+49522.76,12,21.12,54500.84,42.66,654,7.0,16,0,OWN,debt_consolidation,Verified,0
+10348.81,48,5.59,105417.98,26.34,791,3.2,27,0,OWN,debt_consolidation,Verified,0
+16287.7,36,15.74,85067.69,6.77,787,19.2,25,0,MORTGAGE,car,Not Verified,0
+16164.99,36,11.97,84570.86,42.35,685,15.7,19,0,RENT,car,Not Verified,0
+66674.98,12,8.23,115268.14,54.7,556,27.0,24,0,MORTGAGE,home_improvement,Verified,0
+75874.26,60,7.49,125191.27,39.15,582,21.8,25,0,RENT,car,Verified,0
+60420.03,24,20.08,163435.08,46.43,375,15.3,3,0,MORTGAGE,car,Source Verified,0
+96406.39,60,18.09,81373.98,21.5,488,12.1,28,1,MORTGAGE,other,Verified,1
+40612.71,60,11.34,164983.93,10.99,403,12.1,12,5,RENT,debt_consolidation,Source Verified,0
+32142.65,12,16.77,80950.02,38.57,752,6.8,3,0,RENT,debt_consolidation,Verified,0
+87516.92,12,17.31,29977.94,19.67,803,0.5,15,2,MORTGAGE,home_improvement,Verified,0
+26241.6,12,9.88,119753.78,51.6,595,17.2,17,2,MORTGAGE,debt_consolidation,Source Verified,0
+96506.14,48,21.3,125822.42,7.36,700,6.4,18,1,RENT,car,Not Verified,0
+6154.68,60,24.52,188217.24,26.01,367,6.2,7,3,OWN,other,Verified,0
+97138.49,36,24.79,150691.04,23.8,635,3.8,19,6,RENT,debt_consolidation,Verified,0
+9100.19,24,20.06,185199.08,56.28,687,5.7,7,0,RENT,other,Verified,0
+89658.6,48,17.79,183502.5,9.19,549,1.0,5,1,MORTGAGE,home_improvement,Source Verified,0
+55131.61,36,6.53,128823.34,0.59,434,20.2,26,1,MORTGAGE,home_improvement,Not Verified,0
+99331.66,60,12.2,114997.17,14.29,783,12.0,8,0,OWN,home_improvement,Source Verified,0
+12010.67,12,7.33,120339.37,49.22,709,16.8,21,0,RENT,debt_consolidation,Not Verified,0
+57616.16,60,29.1,196099.55,12.56,795,19.1,16,4,OWN,debt_consolidation,Verified,0
+97083.74,24,8.38,159170.18,14.45,750,29.2,16,2,MORTGAGE,home_improvement,Not Verified,0
+54694.3,48,8.79,39127.86,7.79,845,2.0,19,0,MORTGAGE,other,Verified,0
+64792.87,48,27.24,160117.11,42.93,406,12.5,25,0,OWN,home_improvement,Verified,0
+71096.13,24,28.6,50696.85,4.15,348,7.4,15,4,RENT,debt_consolidation,Verified,1
+48181.4,36,24.15,100523.1,19.87,485,14.3,7,0,MORTGAGE,debt_consolidation,Verified,0
+64618.02,36,5.14,57882.74,16.95,371,27.6,5,1,OWN,other,Source Verified,0
+60509.86,48,5.03,144124.95,33.31,588,21.7,23,0,RENT,home_improvement,Source Verified,0
+90610.01,48,14.45,177915.75,43.82,648,19.9,11,0,RENT,other,Not Verified,0
+9317.41,12,8.58,72265.14,31.97,618,13.2,10,0,OWN,home_improvement,Verified,0
+31691.5,36,5.46,34761.93,55.86,443,20.1,25,0,OWN,home_improvement,Source Verified,0
+95289.09,24,16.6,73728.76,57.09,800,1.0,21,0,MORTGAGE,car,Verified,0
+89575.06,36,28.58,141025.13,21.69,312,17.6,23,1,MORTGAGE,debt_consolidation,Source Verified,0
+48287.39,12,13.1,79176.82,46.66,491,16.6,27,1,RENT,home_improvement,Verified,1
+63912.6,48,21.53,70060.19,44.33,695,10.4,9,0,RENT,home_improvement,Verified,1
+31351.21,48,21.31,53198.33,53.58,722,6.0,1,2,MORTGAGE,home_improvement,Source Verified,0
+22871.51,12,11.28,109552.96,26.88,529,24.2,20,1,RENT,car,Not Verified,0
+49051.35,24,21.26,69670.79,31.83,309,1.6,1,0,RENT,debt_consolidation,Source Verified,1
+38568.46,48,10.31,151581.86,24.95,640,2.1,8,0,OWN,home_improvement,Verified,0
+60447.33,60,8.05,33792.03,51.02,335,13.2,3,0,MORTGAGE,debt_consolidation,Verified,1
+12384.79,48,22.53,139525.95,13.78,359,7.6,2,6,RENT,debt_consolidation,Verified,1
+97567.51,60,7.84,62760.8,14.38,658,22.4,30,1,OWN,home_improvement,Source Verified,0
+98690.02,12,29.92,108070.27,22.36,472,19.0,4,0,RENT,debt_consolidation,Source Verified,0
+71325.36,12,9.59,71496.19,13.82,491,23.2,27,2,OWN,home_improvement,Verified,0
+55929.15,48,19.85,150098.36,33.66,568,9.7,19,0,MORTGAGE,debt_consolidation,Source Verified,0
+34405.12,36,15.28,190155.27,8.07,838,22.2,11,0,MORTGAGE,debt_consolidation,Source Verified,0
+82310.53,60,8.16,185073.82,19.21,831,25.9,5,1,RENT,debt_consolidation,Source Verified,0
+70049.46,24,5.7,125016.72,54.81,529,10.4,29,2,RENT,debt_consolidation,Verified,1
+20448.61,48,20.57,103269.85,24.55,446,10.2,24,0,MORTGAGE,car,Source Verified,0
+91538.08,24,25.17,167294.09,44.89,466,27.0,10,3,RENT,home_improvement,Verified,1
+83141.04,48,26.05,142998.75,6.81,448,1.5,24,0,MORTGAGE,other,Not Verified,0
+95230.99,36,17.07,53041.54,14.85,593,10.5,27,0,RENT,debt_consolidation,Not Verified,0
+73943.35,36,24.44,167765.46,48.44,634,3.6,23,10,RENT,car,Verified,1
+63274.44,36,21.82,97199.19,45.78,569,0.9,8,1,MORTGAGE,home_improvement,Verified,1
+44733.09,36,23.11,54017.42,23.17,524,3.4,13,2,RENT,debt_consolidation,Verified,1
+93609.21,12,17.31,70723.52,57.26,416,12.9,29,2,RENT,car,Source Verified,1
+87276.07,12,20.84,68154.87,54.64,565,20.6,5,4,MORTGAGE,car,Not Verified,0
+9295.77,60,25.14,113457.26,57.74,488,8.7,26,0,MORTGAGE,home_improvement,Verified,1
+7504.86,24,14.95,62186.62,25.67,598,25.5,26,0,MORTGAGE,home_improvement,Not Verified,0
+40764.02,48,25.15,42241.97,11.85,671,13.1,27,2,MORTGAGE,debt_consolidation,Source Verified,0
+82002.57,48,19.8,42264.35,37.6,648,29.0,12,1,RENT,debt_consolidation,Not Verified,1
+98791.23,12,9.15,124989.72,41.09,554,28.6,27,1,RENT,home_improvement,Not Verified,0
+19289.6,48,5.62,152256.67,7.53,606,23.2,13,0,RENT,other,Not Verified,0
+61442.42,12,14.07,77875.94,47.19,457,28.0,22,0,MORTGAGE,debt_consolidation,Source Verified,0
+41184.63,60,18.67,26237.13,1.08,313,21.2,8,1,RENT,debt_consolidation,Not Verified,0
+97141.87,24,26.0,42900.48,28.96,644,26.9,15,0,OWN,home_improvement,Verified,0
+85001.3,60,8.19,184645.02,19.86,439,7.1,13,0,MORTGAGE,car,Not Verified,0
+84641.23,36,25.01,108837.86,44.42,668,10.4,1,0,RENT,car,Source Verified,0
+49525.85,36,26.58,101643.11,18.77,711,22.6,22,0,RENT,debt_consolidation,Source Verified,0
+44407.85,36,8.77,26848.85,49.61,804,12.7,6,2,RENT,home_improvement,Not Verified,0
+30973.67,60,26.29,151154.66,35.7,827,25.1,11,2,RENT,home_improvement,Not Verified,0
+10355.67,48,29.79,115052.25,47.63,306,26.3,13,0,RENT,home_improvement,Not Verified,1
+87148.63,24,23.17,56374.57,59.36,845,9.0,21,0,OWN,home_improvement,Verified,1
+82225.6,36,24.62,39813.28,40.75,676,24.7,20,1,OWN,car,Not Verified,0
+99973.18,36,29.86,89009.82,59.1,654,4.6,1,0,RENT,car,Not Verified,1
+99680.5,36,20.14,170689.15,1.73,308,10.0,11,2,RENT,home_improvement,Source Verified,0
+57766.01,24,12.7,175753.02,20.29,774,15.5,26,2,OWN,home_improvement,Not Verified,0
+78053.8,36,25.94,128512.35,6.47,380,6.8,11,3,RENT,debt_consolidation,Verified,1
+94752.74,24,20.36,150956.56,15.74,761,17.4,8,1,RENT,debt_consolidation,Verified,0
+85716.5,36,19.53,40728.04,50.33,309,17.4,22,0,OWN,other,Source Verified,1
+28498.07,60,11.34,125862.69,1.94,655,6.2,3,1,MORTGAGE,home_improvement,Verified,0
+47801.69,60,23.91,140053.83,31.21,539,23.9,28,0,MORTGAGE,home_improvement,Source Verified,0
+17270.14,24,7.04,56128.31,34.03,410,18.9,19,0,RENT,car,Verified,0
+95634.85,60,28.11,178427.85,33.67,359,9.5,12,0,RENT,debt_consolidation,Verified,0
+62586.59,24,13.15,55099.41,28.52,542,7.0,6,0,RENT,other,Source Verified,0
+26721.07,60,8.19,76425.92,47.44,368,26.4,28,0,MORTGAGE,car,Source Verified,0
+68811.57,60,16.06,131700.23,8.01,568,25.1,23,0,MORTGAGE,car,Verified,0
+63722.18,24,6.06,134903.01,18.63,644,6.9,8,1,RENT,debt_consolidation,Verified,0
+39025.46,48,22.12,145889.25,36.94,755,1.1,5,9,MORTGAGE,home_improvement,Source Verified,0
+15787.97,60,27.57,40162.11,41.46,673,24.1,10,0,MORTGAGE,debt_consolidation,Not Verified,0
+68799.45,36,25.93,172903.6,24.25,336,18.5,22,1,RENT,home_improvement,Not Verified,1
+54429.23,48,8.18,115912.48,52.52,469,3.0,16,0,OWN,car,Verified,0
+78370.25,24,8.16,104837.92,24.93,458,17.6,12,4,RENT,debt_consolidation,Source Verified,1
+54415.53,48,25.34,196597.57,24.17,803,13.6,17,0,OWN,home_improvement,Verified,0
+85957.24,12,28.11,153268.09,2.17,777,23.2,6,3,OWN,debt_consolidation,Source Verified,0
+57431.15,12,16.52,41241.08,33.07,504,6.3,9,0,MORTGAGE,car,Not Verified,0
+58289.11,60,17.47,156177.05,42.52,339,13.6,10,2,RENT,home_improvement,Source Verified,0
+88282.09,60,12.96,37144.81,6.87,792,4.7,20,0,OWN,debt_consolidation,Source Verified,0
+43330.87,36,27.36,24944.7,18.33,789,28.7,14,0,MORTGAGE,debt_consolidation,Verified,0
+17731.45,48,21.12,92652.66,46.88,770,23.4,14,0,RENT,other,Not Verified,0
+7734.35,12,12.21,198844.07,21.96,765,22.1,26,0,RENT,home_improvement,Source Verified,0
+76738.04,60,12.47,51479.11,14.5,564,20.7,29,3,RENT,debt_consolidation,Source Verified,0
+63929.41,48,27.28,141075.98,40.33,398,12.7,17,1,RENT,debt_consolidation,Source Verified,1
+71887.58,60,5.34,51211.29,11.81,563,27.7,30,0,RENT,debt_consolidation,Verified,0
+25231.6,60,13.07,150461.66,53.74,572,2.2,27,6,MORTGAGE,car,Not Verified,0
+17955.29,12,18.86,110963.66,6.34,569,24.1,25,1,RENT,car,Verified,0
+6381.74,12,8.71,142394.91,42.39,596,6.5,16,6,MORTGAGE,debt_consolidation,Source Verified,0
+38305.82,60,7.3,56517.17,29.97,442,9.7,4,0,OWN,debt_consolidation,Source Verified,0
+61042.18,24,25.38,154213.1,52.2,501,15.6,2,4,MORTGAGE,debt_consolidation,Verified,1
+42263.18,60,27.36,199211.43,7.57,539,23.5,16,0,MORTGAGE,other,Verified,0
+46560.12,60,25.59,139817.09,40.67,372,25.2,1,1,MORTGAGE,home_improvement,Source Verified,1
+90895.08,36,27.47,108826.4,34.32,550,17.5,3,0,RENT,car,Verified,0
+38084.27,36,18.83,186171.32,28.81,746,12.1,23,1,MORTGAGE,car,Verified,0
+53829.0,36,25.31,22853.33,29.48,755,28.4,11,1,MORTGAGE,other,Verified,0
+79447.04,24,14.6,151386.23,43.32,526,7.4,16,0,MORTGAGE,other,Not Verified,0
+42671.56,24,21.66,179974.37,56.26,585,24.1,26,10,OWN,debt_consolidation,Not Verified,1
+64098.24,60,29.72,31101.43,5.48,319,18.4,18,6,OWN,other,Not Verified,1
+86924.55,36,10.64,101011.55,1.17,671,11.3,15,6,RENT,other,Source Verified,0
+95204.46,24,14.75,56849.5,48.34,523,0.0,9,6,OWN,debt_consolidation,Source Verified,1
+18971.98,12,17.0,121973.27,6.49,545,13.4,12,2,MORTGAGE,car,Verified,0
+93025.82,60,8.45,136917.73,59.2,781,8.3,29,7,MORTGAGE,car,Verified,0
+51751.05,48,7.03,74472.17,37.16,554,3.1,27,3,RENT,car,Not Verified,0
+29533.22,60,25.74,102796.7,39.05,312,2.3,18,0,RENT,debt_consolidation,Not Verified,1
+48617.9,48,29.42,70281.11,11.93,425,10.4,5,2,RENT,home_improvement,Not Verified,0
+98103.09,36,15.12,86490.41,14.42,562,18.4,24,4,RENT,debt_consolidation,Source Verified,0
+51798.72,48,7.19,48717.19,39.56,533,25.1,29,2,RENT,car,Not Verified,0
+36231.4,36,6.65,179400.7,54.58,773,5.5,29,0,MORTGAGE,other,Not Verified,0
+65173.08,12,27.28,21801.87,58.94,598,12.7,28,0,RENT,home_improvement,Verified,1
+27813.83,48,16.6,178833.65,11.88,679,11.8,26,2,MORTGAGE,home_improvement,Verified,0
+12207.02,60,13.0,122902.2,8.05,558,15.4,8,5,RENT,car,Source Verified,0
+17243.57,36,16.91,79698.41,3.38,542,24.3,3,0,MORTGAGE,debt_consolidation,Verified,0
+17164.35,60,12.96,150150.28,52.1,545,16.6,2,0,RENT,home_improvement,Not Verified,0
+19430.76,24,17.23,111395.39,17.68,526,25.4,25,0,RENT,car,Verified,0
+18188.58,36,26.49,109839.56,0.11,596,15.6,19,1,OWN,debt_consolidation,Source Verified,0
+65883.1,48,19.81,39825.61,13.43,438,18.1,8,0,RENT,debt_consolidation,Source Verified,1
+22278.61,36,22.37,90112.88,20.43,790,13.1,2,1,RENT,car,Source Verified,0
+37838.39,60,14.12,63391.58,59.46,483,24.7,19,6,MORTGAGE,debt_consolidation,Verified,0
+90194.9,12,23.46,22825.26,31.41,381,27.7,1,1,RENT,other,Not Verified,1
+50026.36,36,21.67,84817.93,12.28,353,19.2,30,0,RENT,debt_consolidation,Verified,1
+68417.99,48,7.99,36167.98,20.09,307,24.6,27,4,MORTGAGE,debt_consolidation,Not Verified,1
+21370.39,24,19.32,66229.41,19.82,533,1.8,22,1,RENT,home_improvement,Not Verified,0
+23267.46,12,11.42,36652.99,1.18,403,27.2,13,0,RENT,home_improvement,Verified,0
+8882.52,24,25.1,38169.49,8.11,312,5.7,23,1,MORTGAGE,home_improvement,Not Verified,0
+21048.83,36,15.65,55822.03,41.71,586,7.7,20,1,RENT,home_improvement,Source Verified,0
+31466.08,60,29.87,199972.86,7.22,674,1.6,17,3,MORTGAGE,home_improvement,Source Verified,0
+21816.0,60,7.31,20393.15,13.84,347,29.0,3,4,MORTGAGE,home_improvement,Source Verified,0
+13426.74,48,24.51,134961.07,21.04,554,25.6,9,0,MORTGAGE,debt_consolidation,Source Verified,0
+16460.41,60,21.84,45423.87,45.46,709,27.4,5,0,MORTGAGE,debt_consolidation,Verified,0
+48773.98,12,24.19,185713.06,34.94,842,25.4,6,0,OWN,debt_consolidation,Not Verified,0
+24601.7,60,12.69,36853.92,41.34,667,14.4,4,2,RENT,debt_consolidation,Source Verified,1
+39605.64,48,17.3,191911.37,34.02,435,27.7,17,2,MORTGAGE,debt_consolidation,Verified,0
+52824.64,36,24.91,129966.75,41.02,694,29.1,30,0,RENT,debt_consolidation,Not Verified,0
+70587.51,36,10.81,20228.25,0.17,629,15.1,21,0,MORTGAGE,other,Not Verified,0
+8734.65,60,10.65,180921.3,55.85,416,5.3,21,5,MORTGAGE,debt_consolidation,Source Verified,1
+80943.99,24,18.78,113908.12,6.66,768,19.8,21,4,MORTGAGE,debt_consolidation,Verified,0
+64650.54,36,18.09,67280.55,24.37,535,29.3,16,0,RENT,car,Source Verified,0
+12767.11,60,12.06,158110.25,46.26,829,26.2,16,2,OWN,debt_consolidation,Verified,0
+87989.97,48,12.45,186799.8,26.11,698,25.9,22,1,RENT,debt_consolidation,Source Verified,0
+92482.88,60,11.95,107064.35,56.81,655,28.0,11,0,RENT,debt_consolidation,Not Verified,0
+10802.41,36,24.29,76799.63,28.06,701,26.8,2,0,MORTGAGE,debt_consolidation,Verified,0
+31303.38,48,21.3,162010.12,52.5,563,23.3,17,0,MORTGAGE,debt_consolidation,Verified,0
+81589.12,60,25.81,142721.39,48.65,578,21.5,15,0,MORTGAGE,debt_consolidation,Not Verified,0
+76084.67,12,29.39,179975.45,58.86,768,7.9,18,1,RENT,other,Verified,0
+22529.5,48,16.85,144652.52,55.59,675,18.6,29,0,OWN,debt_consolidation,Verified,0
+24888.19,12,6.67,63835.1,53.89,793,15.6,10,0,RENT,debt_consolidation,Source Verified,0
+40194.85,24,6.2,187698.66,43.9,790,25.9,6,1,RENT,home_improvement,Not Verified,0
+51029.68,48,12.39,38870.43,22.02,837,14.8,21,0,RENT,debt_consolidation,Not Verified,0
+63734.2,12,28.31,68229.7,6.37,685,3.8,16,2,RENT,debt_consolidation,Not Verified,0
+40046.8,36,18.08,113635.03,41.32,576,0.1,5,0,RENT,car,Source Verified,0
+48940.8,36,11.79,121833.56,58.72,391,20.3,12,1,RENT,other,Not Verified,0
+76009.74,24,14.98,22755.91,43.6,688,16.5,28,6,MORTGAGE,car,Verified,1
+8484.9,48,19.96,160503.09,55.72,460,9.9,6,0,RENT,debt_consolidation,Verified,1
+28981.51,48,21.32,85089.32,48.26,456,5.1,14,1,MORTGAGE,other,Verified,1
+72768.21,48,8.85,93155.34,9.79,431,14.0,26,0,RENT,debt_consolidation,Verified,0
+90044.65,24,29.43,165686.52,14.95,781,3.0,23,3,RENT,debt_consolidation,Verified,0
+53609.36,48,18.62,88271.01,20.51,777,10.1,16,3,RENT,home_improvement,Source Verified,0
+55550.78,36,8.39,28500.48,10.1,647,11.4,25,0,MORTGAGE,car,Source Verified,0
+15181.34,12,27.34,51759.16,34.9,560,14.0,7,1,RENT,debt_consolidation,Verified,0
+47504.17,36,6.87,192062.57,58.53,670,14.0,2,0,OWN,home_improvement,Not Verified,0
+55598.64,36,27.69,32672.97,45.69,634,7.7,6,6,MORTGAGE,other,Not Verified,1
+28034.7,12,29.91,83887.62,25.4,529,25.5,9,0,OWN,debt_consolidation,Verified,0
+30578.11,36,22.51,110572.25,0.27,509,10.7,7,3,RENT,home_improvement,Verified,0
+40842.0,24,24.26,108790.55,18.8,511,6.9,2,0,RENT,debt_consolidation,Verified,0
+6906.76,12,13.43,20712.79,31.61,624,5.3,19,1,RENT,debt_consolidation,Verified,0
+35597.52,36,28.54,110209.29,19.46,656,9.7,8,7,MORTGAGE,debt_consolidation,Not Verified,0
+25087.56,60,18.24,89079.04,6.66,548,2.0,11,3,MORTGAGE,home_improvement,Verified,0
+36112.25,36,23.31,194974.28,26.57,833,1.0,25,0,RENT,debt_consolidation,Verified,0
+16377.4,24,28.1,48648.64,15.2,346,18.2,4,1,OWN,car,Verified,0
+89600.09,48,29.38,83747.76,54.55,491,18.6,16,0,MORTGAGE,other,Not Verified,1
+61391.28,36,25.83,95506.67,6.11,530,15.9,25,0,RENT,other,Verified,0
+69514.72,48,12.58,90324.84,2.95,309,22.9,18,0,MORTGAGE,debt_consolidation,Source Verified,0
+79971.27,60,29.16,139849.55,0.32,501,1.2,13,0,RENT,debt_consolidation,Verified,0
+52352.01,36,20.7,58792.31,19.68,451,28.1,27,1,MORTGAGE,debt_consolidation,Not Verified,0
+13257.43,12,28.27,59792.88,39.62,578,2.9,5,0,MORTGAGE,car,Not Verified,0
+56025.12,48,21.9,151257.97,43.82,485,20.2,27,1,MORTGAGE,other,Source Verified,0
+60749.91,60,12.68,110052.29,27.2,699,4.0,2,0,RENT,car,Not Verified,0
+75816.75,12,14.25,94728.02,41.06,580,26.4,11,0,MORTGAGE,home_improvement,Not Verified,0
+46007.66,12,18.76,50456.55,21.59,371,15.3,1,2,RENT,debt_consolidation,Not Verified,1
+17120.13,12,24.75,53754.9,40.07,713,2.5,13,0,MORTGAGE,car,Not Verified,0
+31958.71,12,12.95,21899.29,2.44,355,18.5,30,0,OWN,debt_consolidation,Verified,0
+39492.82,36,19.49,36456.73,23.45,761,0.3,5,0,MORTGAGE,debt_consolidation,Source Verified,0
+66362.14,36,13.64,120230.97,47.45,812,23.3,18,1,OWN,other,Not Verified,0
+59223.94,36,25.39,180537.16,48.18,477,19.5,14,1,OWN,home_improvement,Verified,0
+38829.19,60,16.67,71689.66,42.97,809,6.4,13,0,MORTGAGE,debt_consolidation,Not Verified,0
+98718.95,60,6.92,78994.5,12.25,736,11.2,7,0,OWN,debt_consolidation,Source Verified,0
+62548.61,60,9.15,40809.01,14.83,807,0.2,8,3,MORTGAGE,debt_consolidation,Source Verified,0
+27536.55,24,6.53,89953.57,59.77,666,20.8,18,7,MORTGAGE,home_improvement,Source Verified,1
+14669.33,60,17.48,26699.91,6.2,430,9.7,7,0,MORTGAGE,debt_consolidation,Not Verified,0
+19521.62,36,7.66,185168.13,10.84,792,17.1,20,1,MORTGAGE,other,Source Verified,0
+28365.98,36,7.85,141160.04,7.8,401,28.7,17,0,RENT,debt_consolidation,Verified,0
+20264.73,24,28.53,198334.79,19.66,417,9.0,16,0,RENT,home_improvement,Not Verified,0
+22723.87,24,26.82,178908.17,12.61,449,29.7,11,0,RENT,debt_consolidation,Not Verified,0
+32084.04,60,16.3,105138.31,29.86,467,19.0,19,1,RENT,debt_consolidation,Source Verified,0
+21470.49,48,29.65,113543.31,28.56,583,7.3,27,0,RENT,home_improvement,Verified,0
+90192.72,24,5.0,54303.69,54.09,692,13.1,28,4,MORTGAGE,car,Verified,0
+12622.21,12,20.35,103167.08,2.08,809,22.2,1,1,RENT,debt_consolidation,Not Verified,0
+54828.58,36,20.41,182545.02,19.19,349,13.4,21,0,RENT,home_improvement,Verified,0
+43987.7,12,16.44,29153.62,35.8,825,2.1,29,2,MORTGAGE,car,Source Verified,0
+98325.97,36,14.92,175440.22,36.29,807,5.1,8,0,RENT,debt_consolidation,Verified,0
+15643.7,36,16.38,81370.6,28.81,330,23.7,1,0,RENT,debt_consolidation,Verified,0
+42796.28,24,15.37,181912.3,48.94,498,19.5,30,0,OWN,debt_consolidation,Verified,0
+97099.69,24,23.26,189358.38,3.76,747,17.1,9,0,MORTGAGE,home_improvement,Verified,0
+87223.18,12,8.38,140755.68,48.93,636,5.0,19,0,MORTGAGE,debt_consolidation,Not Verified,0
+82621.85,36,9.94,139596.28,29.69,729,25.1,21,0,MORTGAGE,debt_consolidation,Verified,0
+29500.77,12,9.51,101495.78,8.03,695,28.8,9,0,RENT,home_improvement,Verified,0
+21234.32,48,11.56,170397.24,53.14,573,1.2,21,0,MORTGAGE,other,Source Verified,0
+68521.11,12,18.13,193090.3,38.95,323,2.3,25,7,MORTGAGE,debt_consolidation,Not Verified,1
+93290.72,60,7.78,159514.72,9.81,621,26.5,10,0,RENT,debt_consolidation,Source Verified,0
+57892.47,12,26.7,131948.61,2.02,327,24.5,24,0,RENT,home_improvement,Verified,0
+59303.21,60,12.43,129222.72,8.47,632,18.5,23,6,MORTGAGE,debt_consolidation,Verified,0
+31598.01,60,9.06,172904.58,36.53,740,28.3,11,1,RENT,debt_consolidation,Source Verified,0
+78101.83,60,21.89,117416.68,10.76,622,19.4,1,1,MORTGAGE,home_improvement,Not Verified,0
+22769.16,48,5.95,164694.78,13.55,848,6.5,20,0,RENT,other,Verified,0
+35749.53,12,20.5,111599.35,1.51,551,21.9,25,1,RENT,car,Verified,0
+45416.46,12,22.45,31239.97,43.38,712,19.4,26,0,RENT,debt_consolidation,Not Verified,1
+53222.99,48,10.37,89110.46,48.62,667,29.6,8,1,RENT,car,Source Verified,0
+28028.92,36,6.05,99999.37,47.81,845,6.4,20,6,RENT,debt_consolidation,Source Verified,0
+15909.5,24,14.09,45491.1,7.65,692,17.9,12,1,MORTGAGE,debt_consolidation,Verified,0
+63008.9,12,7.46,38449.34,54.2,390,23.4,1,0,MORTGAGE,other,Verified,1
+32419.9,24,7.91,116383.69,40.34,826,10.2,10,1,MORTGAGE,other,Verified,0
+60217.63,48,11.36,35325.85,53.85,667,11.4,4,1,MORTGAGE,debt_consolidation,Verified,0
+19664.46,36,12.39,74530.13,26.83,333,26.6,15,1,OWN,debt_consolidation,Not Verified,0
+50708.31,36,18.25,154027.46,26.22,662,12.1,19,1,MORTGAGE,debt_consolidation,Verified,0
+55596.0,36,21.96,193597.79,47.07,786,18.7,6,1,RENT,home_improvement,Source Verified,0
+9923.24,48,19.82,149216.7,5.6,617,26.7,27,1,RENT,other,Source Verified,0
+36977.41,60,8.71,198672.6,31.25,495,6.3,5,7,OWN,debt_consolidation,Verified,0
+17769.39,60,9.3,145700.83,50.18,752,29.5,5,2,OWN,debt_consolidation,Not Verified,0
+11020.62,24,26.97,72883.0,49.81,730,21.1,18,0,OWN,debt_consolidation,Source Verified,0
+99046.22,60,18.96,140969.46,57.37,599,14.9,28,2,RENT,debt_consolidation,Not Verified,0
+35623.62,60,26.75,146388.22,41.9,385,12.9,3,0,OWN,car,Verified,1
+81938.07,36,14.29,86910.86,12.47,438,28.6,27,2,MORTGAGE,car,Verified,0
+29190.86,36,20.36,23188.49,1.22,706,6.2,22,0,RENT,debt_consolidation,Verified,0
+69742.76,24,18.09,146575.96,28.76,743,9.4,2,1,RENT,debt_consolidation,Verified,0
+77221.65,12,12.98,23906.02,30.82,454,9.2,4,2,MORTGAGE,debt_consolidation,Source Verified,1
+61585.68,24,16.75,133613.85,14.42,502,8.7,18,0,OWN,home_improvement,Not Verified,0
+49799.74,24,17.56,49450.97,7.48,343,14.1,9,3,MORTGAGE,debt_consolidation,Verified,1
+44124.89,48,10.02,121808.63,35.17,692,29.7,19,1,MORTGAGE,home_improvement,Not Verified,0
+38142.49,48,12.88,110704.34,45.86,302,26.7,26,0,RENT,debt_consolidation,Source Verified,0
+93305.27,24,24.79,22432.46,59.59,326,9.8,10,0,OWN,debt_consolidation,Source Verified,1
+83908.84,24,27.89,85315.85,45.5,302,12.7,22,4,OWN,car,Verified,1
+96677.56,24,13.99,128196.41,47.62,655,20.1,15,0,RENT,debt_consolidation,Verified,0
+16808.24,60,12.67,172749.18,36.99,530,0.5,1,1,OWN,car,Not Verified,0
+74432.41,48,9.88,179955.58,59.16,464,24.6,29,2,RENT,home_improvement,Verified,0
+94142.34,24,21.96,107092.99,38.4,802,26.4,11,4,OWN,car,Not Verified,0
+22217.14,36,13.08,151116.05,51.62,406,25.7,14,2,MORTGAGE,debt_consolidation,Source Verified,0
+11317.15,36,29.69,76961.82,56.75,514,11.3,10,1,OWN,car,Not Verified,1
+75406.46,60,13.14,81593.55,55.79,817,13.9,19,4,MORTGAGE,debt_consolidation,Not Verified,0
+59574.95,60,14.85,55003.43,22.88,535,0.4,24,2,RENT,other,Verified,0
+84973.73,12,20.08,121150.66,4.72,605,12.0,21,2,MORTGAGE,car,Source Verified,0
+18278.38,12,25.04,76621.55,10.31,344,13.8,16,0,RENT,debt_consolidation,Verified,0
+80550.39,12,16.74,35186.76,3.55,735,27.2,8,0,MORTGAGE,debt_consolidation,Source Verified,0
+24154.6,60,15.57,143301.1,6.32,533,26.8,2,1,RENT,other,Verified,0
+20547.31,60,29.89,147395.58,11.08,740,29.0,23,1,MORTGAGE,other,Source Verified,0
+20605.25,60,5.26,84798.64,20.47,440,26.6,25,0,OWN,other,Verified,0
+82384.6,36,27.38,33810.21,32.61,532,0.2,7,0,RENT,car,Not Verified,1
+68193.74,60,8.73,96733.59,42.7,733,19.2,19,1,OWN,car,Source Verified,0
+54691.22,36,24.65,99620.38,12.66,836,2.0,7,0,RENT,home_improvement,Not Verified,0
+39088.9,12,20.45,140360.76,40.35,333,8.2,15,0,OWN,debt_consolidation,Verified,0
+88334.05,12,13.55,76774.95,42.26,747,17.3,8,0,RENT,debt_consolidation,Source Verified,0
+42282.29,12,26.85,142867.87,33.52,465,21.0,14,2,OWN,home_improvement,Verified,0
+82576.95,24,5.32,176867.94,54.22,603,19.6,1,1,RENT,debt_consolidation,Source Verified,0
+46717.82,24,10.67,62747.49,6.66,460,1.5,29,0,MORTGAGE,home_improvement,Not Verified,0
+40809.72,48,19.17,196205.52,10.63,637,3.1,13,0,MORTGAGE,debt_consolidation,Not Verified,0
+48954.58,48,13.79,89546.26,25.72,495,3.9,3,1,RENT,home_improvement,Verified,1
+33630.9,48,20.26,68106.56,7.6,483,2.7,21,2,MORTGAGE,debt_consolidation,Not Verified,0
+76022.89,24,5.6,95872.01,33.98,321,5.3,28,1,RENT,home_improvement,Source Verified,1
+52758.44,24,7.91,36991.55,23.9,381,20.7,6,0,RENT,home_improvement,Not Verified,1
+27060.21,48,8.18,42627.06,17.08,804,24.9,19,0,OWN,debt_consolidation,Source Verified,0
+90459.58,48,9.73,94598.13,10.2,849,12.3,15,3,OWN,other,Not Verified,0
+41469.67,60,16.48,157240.01,20.12,729,20.8,4,0,MORTGAGE,home_improvement,Not Verified,0
+56637.52,48,23.8,182056.2,36.48,458,6.0,21,1,RENT,other,Verified,0
+91114.85,60,27.64,139667.24,34.55,521,29.2,3,0,MORTGAGE,debt_consolidation,Verified,0
+64302.61,36,25.88,38939.52,9.82,707,10.5,4,0,RENT,debt_consolidation,Verified,0
+16105.31,24,9.92,140963.56,7.5,833,25.4,5,0,RENT,debt_consolidation,Source Verified,0
+94284.05,48,16.03,134377.03,1.6,551,28.4,18,1,RENT,debt_consolidation,Not Verified,0
+64632.27,24,9.99,165037.51,0.75,756,25.9,26,0,MORTGAGE,debt_consolidation,Not Verified,0
+36816.03,24,11.61,168544.76,52.79,836,2.0,25,0,OWN,debt_consolidation,Not Verified,0
+18230.85,24,17.59,176276.55,2.71,780,19.5,10,0,RENT,other,Source Verified,0
+80432.39,36,6.7,94543.67,43.87,425,3.6,8,0,RENT,other,Verified,0
+63906.91,12,10.45,145615.59,52.32,304,0.2,12,0,MORTGAGE,other,Verified,1
+55678.8,48,28.38,68285.06,5.88,571,1.6,22,0,RENT,other,Not Verified,0
+89919.8,12,16.65,199880.53,26.18,592,27.5,26,0,MORTGAGE,home_improvement,Verified,0
+79916.74,12,16.13,51560.16,57.74,411,27.3,27,2,OWN,home_improvement,Verified,1
+19409.11,12,5.36,21820.6,50.05,457,6.8,3,1,OWN,debt_consolidation,Source Verified,0
+34613.6,24,11.18,46785.57,29.38,721,16.4,27,0,MORTGAGE,debt_consolidation,Verified,0
+28606.47,60,26.66,159657.01,45.75,559,28.7,18,0,MORTGAGE,car,Verified,0
+75674.9,24,9.12,100421.06,50.0,475,14.9,23,1,RENT,other,Verified,0
+8185.58,24,15.38,100550.04,20.88,642,11.8,8,0,RENT,car,Not Verified,0
+59139.52,12,5.36,191904.13,53.53,659,14.5,26,0,OWN,car,Verified,0
+77433.58,24,16.96,185534.28,28.23,723,23.7,1,1,MORTGAGE,debt_consolidation,Not Verified,0
+88292.74,12,5.53,76015.05,31.67,386,14.3,14,4,OWN,home_improvement,Verified,0
+37497.77,60,25.49,57630.46,59.98,708,23.5,22,1,MORTGAGE,home_improvement,Not Verified,0
+83019.44,48,25.62,172726.8,50.6,630,13.0,23,0,RENT,other,Source Verified,0
+15510.02,12,24.69,183083.43,21.71,332,7.6,13,3,RENT,other,Not Verified,1
+85412.97,60,12.08,117487.45,0.62,728,9.8,25,0,MORTGAGE,home_improvement,Not Verified,0
+17111.42,48,25.93,133296.27,37.57,511,2.3,12,3,MORTGAGE,debt_consolidation,Source Verified,0
+42742.29,36,18.57,66244.57,42.23,482,14.9,3,0,RENT,debt_consolidation,Not Verified,0
+80743.06,12,14.35,164144.48,39.05,546,4.4,18,0,MORTGAGE,debt_consolidation,Source Verified,0
+19242.16,12,20.63,133782.04,58.07,490,24.3,21,1,MORTGAGE,other,Not Verified,0
+26778.88,36,5.31,110632.43,51.78,486,12.6,13,5,MORTGAGE,debt_consolidation,Source Verified,1
+73613.99,36,8.57,30819.54,26.93,744,23.0,15,3,MORTGAGE,debt_consolidation,Not Verified,1
+73403.47,12,23.56,184868.29,3.77,368,28.6,10,1,RENT,debt_consolidation,Not Verified,0
+65909.03,36,11.1,130781.26,28.56,834,25.5,1,1,MORTGAGE,other,Verified,0
+70925.1,24,19.95,54684.4,41.35,605,28.5,29,1,MORTGAGE,home_improvement,Source Verified,0
+56558.82,48,14.63,129149.5,36.46,401,17.0,6,1,RENT,home_improvement,Not Verified,0
+28920.91,48,26.37,141943.4,32.29,372,5.0,9,2,RENT,debt_consolidation,Not Verified,1
+37841.12,48,28.81,114638.66,28.13,625,28.1,10,0,RENT,debt_consolidation,Not Verified,0
+22251.78,24,27.09,149258.31,17.63,648,26.1,15,0,MORTGAGE,debt_consolidation,Verified,0
+91302.8,36,11.77,124661.71,16.64,329,25.9,9,5,MORTGAGE,car,Source Verified,0
+60422.22,60,9.85,190598.52,30.01,434,20.8,23,5,RENT,other,Source Verified,0
+43080.88,36,16.86,29665.47,9.64,738,18.7,14,0,RENT,home_improvement,Verified,0
+48890.55,12,5.18,39124.23,20.44,327,0.4,11,0,OWN,debt_consolidation,Source Verified,0
+94991.92,48,5.65,51260.89,19.44,770,22.4,7,8,OWN,car,Source Verified,0
+19568.38,36,18.83,144230.79,35.23,662,2.7,24,1,RENT,home_improvement,Verified,0
+60691.83,60,18.01,136207.26,4.0,539,7.8,26,1,RENT,debt_consolidation,Verified,0
+53059.42,12,29.86,180570.59,49.78,491,16.5,30,0,MORTGAGE,debt_consolidation,Verified,0
+63088.15,24,10.05,151917.94,33.74,311,13.6,2,3,RENT,home_improvement,Not Verified,0
+6720.47,24,11.45,111503.99,40.25,754,0.5,14,0,MORTGAGE,home_improvement,Source Verified,0
+87851.77,60,7.84,198529.72,42.19,378,24.7,6,0,RENT,other,Verified,0
+93551.24,12,27.94,67899.43,17.49,470,26.4,5,0,MORTGAGE,other,Source Verified,0
+58687.65,48,24.45,169974.5,28.22,613,20.5,5,4,RENT,debt_consolidation,Verified,0
+71181.83,36,25.56,96822.27,57.37,435,16.2,29,2,MORTGAGE,car,Not Verified,1
+92637.44,12,27.57,136772.32,46.0,573,28.8,19,2,RENT,debt_consolidation,Verified,1
+72187.67,24,18.12,150908.32,58.17,745,3.6,19,0,RENT,home_improvement,Not Verified,0
+19491.21,60,16.28,134075.74,44.78,559,22.1,6,4,OWN,home_improvement,Source Verified,0
+59747.39,60,13.26,45291.31,10.54,822,3.9,28,2,OWN,home_improvement,Not Verified,0
+62637.93,36,19.73,99731.18,3.87,766,11.5,26,2,MORTGAGE,other,Verified,0
+45292.41,60,16.36,121058.91,34.66,483,17.6,29,6,RENT,car,Verified,0
+74962.2,60,16.29,172827.88,21.47,520,22.1,10,0,MORTGAGE,other,Not Verified,0
+93764.87,12,28.42,99856.23,16.53,533,0.1,23,1,RENT,debt_consolidation,Verified,1
+92929.01,48,29.6,185374.51,48.43,644,7.8,14,4,MORTGAGE,debt_consolidation,Not Verified,0
+47829.74,36,24.91,99267.36,22.02,458,16.1,17,2,RENT,home_improvement,Verified,0
+15757.61,12,23.92,118780.37,19.02,833,16.0,30,1,OWN,other,Not Verified,0
+98559.91,48,22.01,163331.42,51.0,635,19.1,3,0,RENT,debt_consolidation,Not Verified,0
+84695.32,12,9.15,124952.18,50.78,520,9.1,28,1,MORTGAGE,debt_consolidation,Not Verified,0
+16842.95,12,6.48,192839.25,21.38,655,16.2,1,1,RENT,debt_consolidation,Source Verified,0
+92479.98,60,22.27,138860.45,49.95,517,5.7,10,0,OWN,home_improvement,Source Verified,0
+87640.15,48,23.22,114087.7,51.05,750,5.6,3,3,RENT,car,Not Verified,1
+54289.62,36,6.17,24246.55,25.44,612,17.3,5,0,RENT,car,Not Verified,1
+61171.17,36,28.2,94471.92,3.99,323,20.6,25,0,MORTGAGE,other,Verified,0
+42905.26,48,7.28,73864.72,0.1,397,3.6,19,1,RENT,car,Source Verified,0
+10202.36,60,12.15,154659.02,31.4,776,3.7,10,1,MORTGAGE,debt_consolidation,Verified,0
+36843.74,24,21.81,57489.98,20.64,610,17.0,30,0,MORTGAGE,home_improvement,Not Verified,0
+81271.08,12,9.25,56939.62,59.83,823,8.1,26,0,MORTGAGE,home_improvement,Verified,0
+5440.04,60,6.39,54113.43,46.34,340,11.8,25,0,RENT,other,Source Verified,1
+36682.42,48,13.28,42610.81,45.68,462,12.0,16,0,RENT,debt_consolidation,Source Verified,1
+42826.03,12,24.15,75981.26,57.31,406,5.4,1,0,MORTGAGE,debt_consolidation,Not Verified,1
+56052.58,36,15.34,179465.98,53.26,605,0.0,6,0,RENT,debt_consolidation,Not Verified,0
+92386.28,24,21.32,159487.13,19.09,511,25.6,9,0,RENT,home_improvement,Verified,0
+37902.87,36,19.49,152345.22,9.96,387,21.5,28,1,MORTGAGE,debt_consolidation,Source Verified,0
+37960.55,48,5.56,163520.63,44.75,654,20.7,5,4,OWN,home_improvement,Not Verified,0
+75062.62,12,29.71,68495.22,22.7,595,16.4,27,1,RENT,car,Not Verified,0
+47960.7,48,6.04,179739.5,28.39,451,21.0,14,2,OWN,debt_consolidation,Source Verified,0
+26337.46,12,29.2,44714.61,37.82,564,28.1,10,0,OWN,home_improvement,Not Verified,0
+47981.75,60,18.75,80542.23,54.47,710,20.0,2,2,OWN,other,Verified,0
+18381.42,24,29.08,125614.66,25.15,413,8.0,5,1,OWN,home_improvement,Not Verified,1
+21756.76,60,7.87,38522.92,47.0,461,17.1,1,1,RENT,debt_consolidation,Verified,1
+52344.94,60,17.26,151423.43,16.1,490,13.3,25,0,MORTGAGE,debt_consolidation,Source Verified,0
+44797.92,48,9.24,89704.29,41.88,711,16.7,10,0,MORTGAGE,home_improvement,Not Verified,0
+91910.36,24,6.27,161193.02,0.09,766,15.5,29,1,MORTGAGE,debt_consolidation,Verified,0
+39427.42,12,20.44,108721.33,52.29,507,25.8,26,0,RENT,home_improvement,Source Verified,1
+60155.89,12,10.19,52557.41,1.82,463,19.6,25,3,MORTGAGE,other,Verified,0
+65065.11,36,19.69,152257.13,42.77,789,5.7,22,0,MORTGAGE,home_improvement,Verified,0
+6243.97,12,7.81,65385.91,2.78,850,1.9,27,0,MORTGAGE,debt_consolidation,Not Verified,0
+68036.05,48,13.3,108345.85,15.97,669,12.7,9,1,MORTGAGE,debt_consolidation,Source Verified,0
+21913.42,60,24.54,33595.99,29.83,844,0.5,30,3,RENT,other,Verified,0
+96301.68,60,15.93,131216.0,25.2,663,9.5,3,0,MORTGAGE,other,Source Verified,0
+19122.96,60,20.69,139854.4,11.51,703,11.0,15,1,MORTGAGE,home_improvement,Source Verified,0
+44389.29,24,21.19,88161.36,20.03,514,11.3,4,0,RENT,debt_consolidation,Verified,0
+13108.22,12,26.09,191796.1,43.66,538,29.4,13,1,RENT,car,Not Verified,0
+99703.05,48,13.12,177350.41,40.16,379,9.1,6,2,OWN,debt_consolidation,Source Verified,0
+52708.53,24,22.18,147429.36,4.31,753,8.0,20,3,OWN,debt_consolidation,Not Verified,0
+61561.58,36,29.04,148457.37,44.84,812,3.9,17,0,MORTGAGE,debt_consolidation,Verified,0
+11372.27,48,23.26,65432.31,3.18,643,15.3,23,0,MORTGAGE,debt_consolidation,Verified,0
+76246.24,48,17.25,138226.74,32.58,489,4.6,5,1,RENT,debt_consolidation,Verified,0
+24941.03,48,20.77,55677.13,15.6,385,18.5,30,0,RENT,debt_consolidation,Verified,0
+90315.16,60,23.49,45920.58,35.26,446,4.7,15,1,MORTGAGE,debt_consolidation,Not Verified,1
+24488.27,48,20.31,199904.22,15.68,440,17.3,8,1,RENT,home_improvement,Verified,0
+23115.33,12,5.42,132027.67,59.1,637,24.8,25,0,RENT,home_improvement,Verified,0
+8472.22,48,9.87,97577.82,18.58,820,1.3,5,2,OWN,debt_consolidation,Not Verified,0
+49846.36,60,25.26,71869.61,14.52,327,12.6,24,0,OWN,other,Source Verified,1
+58659.91,48,11.82,128705.68,16.71,301,13.8,13,8,RENT,debt_consolidation,Verified,0
+11242.32,36,23.29,28926.83,53.79,630,23.7,1,2,MORTGAGE,debt_consolidation,Not Verified,1
+78675.12,36,14.3,37042.58,38.17,456,14.0,1,2,OWN,debt_consolidation,Verified,1
+48062.44,60,18.05,25914.21,43.84,784,17.0,7,0,RENT,home_improvement,Not Verified,0
+54817.08,12,6.7,109850.57,55.08,480,23.7,22,4,MORTGAGE,debt_consolidation,Verified,0
+46872.46,12,9.53,128109.19,54.71,459,16.8,5,2,MORTGAGE,debt_consolidation,Source Verified,1
+43072.49,24,28.93,31246.36,44.34,448,10.7,14,0,RENT,home_improvement,Source Verified,1
+58165.83,60,27.25,149820.4,11.87,380,2.6,15,0,MORTGAGE,home_improvement,Verified,0
+19747.82,48,21.31,61471.11,50.6,620,21.9,21,0,MORTGAGE,car,Source Verified,0
+22283.17,60,16.49,143336.26,12.23,393,26.1,30,7,MORTGAGE,car,Source Verified,0
+86869.63,24,21.89,196741.49,44.57,534,29.1,25,3,MORTGAGE,other,Not Verified,0
+94880.97,60,20.47,144399.06,41.14,554,27.8,17,4,MORTGAGE,debt_consolidation,Not Verified,0
+40464.39,60,19.21,178974.75,45.53,311,23.9,24,2,RENT,debt_consolidation,Source Verified,1
+30720.74,24,6.48,190675.73,31.96,309,19.3,18,1,MORTGAGE,other,Source Verified,0
+66179.96,12,20.82,107615.19,38.32,586,23.4,7,0,MORTGAGE,home_improvement,Source Verified,0
+43829.75,48,24.22,146418.5,57.2,683,13.0,22,0,RENT,car,Not Verified,0
+7411.7,24,29.85,173354.47,6.07,818,17.8,26,0,RENT,debt_consolidation,Source Verified,0
+19834.5,36,5.28,84189.6,18.53,399,10.5,18,1,MORTGAGE,debt_consolidation,Source Verified,0
+73017.36,12,23.25,67051.52,36.68,357,9.8,28,4,MORTGAGE,debt_consolidation,Source Verified,1
+67597.77,36,19.29,190387.74,57.84,329,22.7,29,8,RENT,debt_consolidation,Not Verified,1
+7574.12,12,15.85,150734.63,5.73,540,13.6,19,0,RENT,debt_consolidation,Source Verified,0
+26087.36,48,8.19,59542.78,1.35,643,6.4,20,1,MORTGAGE,debt_consolidation,Verified,0
+26952.11,48,15.23,100835.01,3.34,762,6.1,7,1,OWN,home_improvement,Source Verified,0
+68829.81,60,13.86,163361.32,3.14,675,25.8,8,1,MORTGAGE,debt_consolidation,Not Verified,0
+6872.5,36,12.57,118471.34,54.47,415,20.3,13,1,OWN,debt_consolidation,Not Verified,0
+14890.32,12,23.27,136991.38,43.28,554,16.4,27,0,RENT,debt_consolidation,Not Verified,0
+80992.03,48,22.52,155678.28,40.63,801,12.0,18,5,MORTGAGE,debt_consolidation,Not Verified,0
+21961.74,24,19.73,131961.65,31.35,480,12.9,24,2,OWN,debt_consolidation,Verified,0
+67010.88,48,28.47,117214.28,46.92,574,1.7,11,2,RENT,debt_consolidation,Source Verified,1
+27627.36,24,13.75,154930.57,9.34,827,13.6,9,0,RENT,debt_consolidation,Not Verified,0
+14446.93,12,11.1,150961.35,23.52,704,23.9,23,0,RENT,car,Verified,0
+28101.36,48,21.4,133377.03,29.4,711,11.6,1,0,MORTGAGE,debt_consolidation,Source Verified,0
+73615.36,48,9.97,84762.09,6.62,439,11.5,22,2,RENT,car,Not Verified,0
+86291.16,12,12.88,93046.18,25.17,528,0.5,8,4,RENT,other,Not Verified,0
+83870.89,48,10.62,194678.94,18.99,345,13.7,21,0,RENT,home_improvement,Not Verified,0
+42732.44,24,6.73,40229.47,2.13,634,0.8,12,2,OWN,debt_consolidation,Not Verified,0
+68468.09,48,25.69,68330.89,8.2,357,17.1,2,1,MORTGAGE,debt_consolidation,Verified,1
+24473.51,36,11.36,108632.32,45.84,760,15.2,15,0,OWN,home_improvement,Not Verified,0
+32849.03,60,16.83,170611.34,1.08,748,25.2,21,2,MORTGAGE,other,Verified,0
+90151.9,24,6.08,49461.62,56.06,593,17.5,24,2,RENT,other,Not Verified,1
+6235.18,36,22.48,69851.83,5.19,378,9.7,18,0,RENT,debt_consolidation,Verified,0
+13123.31,12,13.26,31843.68,47.95,314,15.5,17,0,MORTGAGE,home_improvement,Verified,1
+24749.19,24,23.62,147077.35,53.92,738,21.0,15,1,MORTGAGE,other,Not Verified,0
+7520.56,60,15.31,62877.7,56.47,630,2.8,20,0,MORTGAGE,car,Verified,0
+22236.37,60,9.89,89961.46,52.05,691,18.6,20,4,RENT,home_improvement,Source Verified,0
+60388.95,12,17.83,99866.26,17.25,467,27.5,9,1,RENT,debt_consolidation,Verified,0
+45035.33,12,8.26,180436.51,19.99,580,9.0,3,0,MORTGAGE,debt_consolidation,Verified,0
+89803.81,24,16.01,94039.45,25.59,711,18.8,20,0,OWN,home_improvement,Verified,0
+82657.14,48,12.93,46140.5,8.36,554,24.6,19,5,MORTGAGE,car,Source Verified,0
+37472.65,12,27.8,114376.69,1.34,631,15.4,18,2,MORTGAGE,other,Verified,0
+29645.23,48,6.52,193332.44,52.15,734,21.5,20,2,MORTGAGE,other,Verified,0
+41070.78,36,22.35,129383.42,33.25,418,9.3,30,0,MORTGAGE,debt_consolidation,Not Verified,0
+61078.02,60,9.57,197009.7,36.52,336,9.2,8,3,OWN,car,Verified,0
+30466.05,48,12.98,171399.32,55.62,593,20.0,1,0,MORTGAGE,debt_consolidation,Source Verified,0
+64294.15,60,15.39,26473.84,39.91,334,21.2,24,1,OWN,home_improvement,Not Verified,1
+43894.11,48,27.7,138511.93,41.45,722,28.1,24,5,OWN,home_improvement,Source Verified,0
+57444.48,36,11.06,71618.04,47.22,696,6.7,15,0,RENT,debt_consolidation,Source Verified,0
+46432.02,12,7.28,120731.03,6.98,785,14.0,19,1,OWN,debt_consolidation,Not Verified,0
+32974.25,36,12.97,70282.13,21.61,652,7.5,30,0,MORTGAGE,debt_consolidation,Not Verified,0
+95103.06,12,7.62,82796.67,58.09,337,2.4,26,1,MORTGAGE,debt_consolidation,Not Verified,1
+77542.55,12,8.21,186170.37,55.38,439,12.1,10,0,MORTGAGE,other,Not Verified,0
+18310.75,60,19.35,57195.77,53.04,744,11.2,12,4,RENT,debt_consolidation,Verified,0
+87504.46,36,6.52,177339.64,27.13,392,8.1,28,0,MORTGAGE,debt_consolidation,Not Verified,0
+51305.96,48,5.77,25482.41,51.43,684,8.9,6,1,MORTGAGE,debt_consolidation,Not Verified,0
+89982.46,36,22.86,36357.78,2.9,729,10.8,29,3,MORTGAGE,other,Not Verified,1
+80986.25,60,14.04,173841.51,8.91,482,29.7,13,7,MORTGAGE,debt_consolidation,Source Verified,0
+45395.28,12,8.13,133500.09,24.84,477,23.5,4,1,MORTGAGE,debt_consolidation,Not Verified,0
+7134.58,60,11.34,154502.5,29.0,607,2.1,13,1,RENT,car,Verified,0
+30524.35,24,21.05,57695.18,15.81,774,26.2,17,0,MORTGAGE,debt_consolidation,Not Verified,0
+56455.25,24,11.89,116675.02,21.39,423,19.0,30,0,MORTGAGE,debt_consolidation,Verified,0
+65180.43,48,17.36,152699.46,9.77,818,26.7,1,1,MORTGAGE,car,Not Verified,0
+29499.33,60,8.04,132916.54,29.35,630,10.3,5,0,RENT,debt_consolidation,Source Verified,0
+18238.83,48,19.7,104905.78,47.63,846,13.9,28,0,MORTGAGE,other,Verified,0
+84318.37,48,12.9,192761.08,39.68,349,26.9,24,0,RENT,home_improvement,Not Verified,1
+98518.21,24,20.67,141708.32,6.47,370,8.2,17,1,MORTGAGE,home_improvement,Source Verified,0
+54940.57,48,25.21,183395.14,29.25,755,27.5,18,0,MORTGAGE,debt_consolidation,Source Verified,0
+21309.53,24,20.29,151358.69,41.86,776,24.9,7,0,OWN,car,Verified,0
+30869.2,12,12.39,152383.44,31.79,545,29.4,16,0,RENT,home_improvement,Not Verified,0
+6747.11,60,11.39,34403.29,23.5,693,9.7,8,1,MORTGAGE,debt_consolidation,Source Verified,0
+91858.39,48,13.19,84703.63,37.31,777,7.1,12,1,MORTGAGE,debt_consolidation,Source Verified,0
+16186.35,24,9.12,174506.49,58.12,324,9.9,14,1,MORTGAGE,home_improvement,Source Verified,0
+59769.07,36,9.53,61868.7,5.69,616,28.6,19,2,RENT,car,Not Verified,0
+31035.25,48,24.77,40791.06,23.4,769,10.0,11,0,MORTGAGE,other,Source Verified,0
+57646.91,12,14.62,78699.09,24.4,519,17.0,12,0,OWN,home_improvement,Source Verified,0
+66884.94,12,15.9,59678.82,34.62,466,12.1,13,0,MORTGAGE,home_improvement,Source Verified,0
+83825.47,36,19.85,186551.88,9.13,738,11.9,8,1,RENT,debt_consolidation,Source Verified,0
+24610.02,24,19.74,176234.0,10.6,485,5.8,1,2,MORTGAGE,home_improvement,Not Verified,0
+6044.6,48,6.68,109942.98,17.12,302,16.1,9,0,RENT,other,Not Verified,0
+18004.13,24,25.79,31041.9,57.35,828,25.5,28,1,MORTGAGE,home_improvement,Source Verified,0
+90501.77,12,9.43,148621.22,44.05,626,1.5,2,1,MORTGAGE,debt_consolidation,Verified,0
+88019.56,24,23.08,132214.11,39.7,751,26.7,14,7,MORTGAGE,debt_consolidation,Source Verified,0
+61754.24,12,24.32,194699.84,49.02,754,20.0,13,2,RENT,debt_consolidation,Not Verified,0
+62049.1,24,22.87,120611.58,7.65,337,18.5,16,1,MORTGAGE,home_improvement,Verified,0
+68178.48,36,19.47,80550.87,51.56,394,18.8,2,1,RENT,other,Not Verified,1
+21660.27,60,5.37,113423.9,35.69,471,8.9,4,9,OWN,debt_consolidation,Verified,0
+91869.13,36,14.01,196267.39,20.12,476,12.5,12,7,MORTGAGE,debt_consolidation,Verified,0
+44783.2,36,20.12,145345.24,48.95,662,24.0,16,1,MORTGAGE,home_improvement,Verified,0
+41398.16,60,14.69,140955.7,48.15,643,9.2,10,1,RENT,other,Not Verified,0
+54297.18,60,26.59,63322.69,50.74,572,14.1,3,1,RENT,debt_consolidation,Not Verified,1
+9461.77,48,12.72,153848.45,6.93,416,0.6,4,0,MORTGAGE,debt_consolidation,Verified,0
+20796.92,48,12.34,155048.93,58.16,510,22.0,6,1,MORTGAGE,debt_consolidation,Source Verified,0
+75113.19,36,11.65,77112.02,57.58,599,12.5,23,0,RENT,home_improvement,Verified,0
+12865.87,36,13.32,107068.49,21.45,557,15.8,5,4,MORTGAGE,car,Not Verified,0
+62299.45,12,18.94,73028.6,3.95,370,3.4,18,1,MORTGAGE,debt_consolidation,Source Verified,0
+28308.17,12,22.68,66566.91,10.02,657,29.8,3,3,RENT,home_improvement,Verified,0
+41983.08,48,21.56,24661.29,59.57,340,9.1,10,1,RENT,home_improvement,Verified,1
+32425.9,48,25.19,71338.11,33.78,508,19.0,11,2,MORTGAGE,home_improvement,Not Verified,0
+38788.91,12,27.15,119714.59,21.4,691,17.4,19,0,MORTGAGE,debt_consolidation,Source Verified,0
+73309.36,12,25.4,20288.21,17.29,311,23.6,14,1,MORTGAGE,other,Verified,1
+33226.56,24,5.47,70979.44,15.42,613,8.8,21,1,RENT,home_improvement,Source Verified,0
+58808.44,24,23.4,178653.86,39.85,484,22.7,28,0,RENT,car,Not Verified,0
+50224.79,12,10.21,126856.75,25.16,305,11.5,11,3,RENT,home_improvement,Source Verified,1
+68048.76,24,8.32,129415.31,57.92,405,12.3,28,0,MORTGAGE,other,Source Verified,1
+93998.83,60,20.96,92605.57,41.03,818,20.2,21,1,RENT,home_improvement,Source Verified,0
+74594.35,48,12.99,141764.99,47.52,587,23.5,4,0,RENT,debt_consolidation,Source Verified,0
+25419.34,48,6.43,54187.9,17.56,848,20.0,24,3,OWN,debt_consolidation,Source Verified,0
+7962.4,12,8.44,167374.43,4.75,589,27.0,22,0,RENT,debt_consolidation,Not Verified,0
+29915.08,36,5.02,41004.04,29.27,599,8.6,6,1,OWN,debt_consolidation,Verified,0
+61532.4,12,27.58,138080.24,18.87,516,27.0,17,0,OWN,other,Source Verified,0
+9885.45,24,5.62,81406.88,12.12,471,3.9,22,0,MORTGAGE,other,Verified,0
+52154.79,36,10.24,154552.33,57.16,438,19.8,19,3,RENT,debt_consolidation,Verified,1
+61700.07,24,15.41,118957.62,26.64,489,16.4,13,0,MORTGAGE,debt_consolidation,Source Verified,0
+36753.17,60,13.91,101423.55,10.48,553,14.8,22,1,OWN,debt_consolidation,Not Verified,0
+78236.66,24,27.79,50496.03,11.92,406,9.3,10,0,RENT,other,Verified,0
+15126.83,60,6.01,134627.86,16.84,424,15.1,29,0,RENT,debt_consolidation,Not Verified,0
+12138.09,60,17.81,195458.57,59.96,449,4.9,11,1,OWN,home_improvement,Verified,0
+74177.93,24,22.01,168608.62,16.08,547,11.1,29,1,OWN,other,Source Verified,0
+52071.68,24,28.29,30801.47,19.73,659,3.0,6,1,MORTGAGE,debt_consolidation,Verified,0
+70398.23,60,20.51,87721.29,39.56,771,17.2,2,1,OWN,car,Source Verified,0
+46308.6,36,25.09,186604.94,17.64,458,2.9,1,0,OWN,debt_consolidation,Source Verified,0
+28408.19,60,7.09,110547.87,12.95,401,4.8,11,0,MORTGAGE,car,Source Verified,0
+82814.72,48,14.65,139180.13,9.52,508,2.6,16,0,RENT,debt_consolidation,Source Verified,0
+80944.51,60,14.35,184267.88,18.76,792,11.4,3,2,MORTGAGE,debt_consolidation,Source Verified,0
+70996.16,36,27.16,177283.04,6.35,305,25.3,5,3,OWN,other,Source Verified,0
+30853.79,48,8.78,110327.67,1.12,673,27.2,15,0,RENT,home_improvement,Source Verified,0
+61071.91,12,8.8,98776.33,48.28,562,2.2,15,0,MORTGAGE,debt_consolidation,Not Verified,0
+39292.52,12,13.21,81144.67,8.27,389,19.0,4,0,MORTGAGE,debt_consolidation,Source Verified,0
+13700.3,36,6.36,149423.5,46.56,477,20.5,23,6,OWN,debt_consolidation,Verified,0
+92144.79,60,9.56,71657.62,47.85,424,16.0,4,2,RENT,car,Verified,1
+17997.77,24,29.13,64979.77,32.28,783,20.0,8,0,OWN,debt_consolidation,Not Verified,0
+95272.55,36,15.7,84124.98,18.58,565,7.0,7,1,RENT,car,Verified,0
+47370.55,48,20.8,51898.71,8.7,610,14.7,26,0,MORTGAGE,debt_consolidation,Not Verified,0
+22587.63,48,23.15,145121.57,44.21,627,11.7,25,1,OWN,debt_consolidation,Source Verified,0
+56480.59,12,14.17,130923.32,36.08,652,2.7,17,2,MORTGAGE,car,Source Verified,0
+87929.85,48,8.68,106918.14,39.33,573,18.8,15,0,RENT,home_improvement,Verified,0
+74561.36,36,10.16,90258.64,0.52,310,14.9,5,3,MORTGAGE,other,Not Verified,0
+81623.31,48,12.83,183631.26,55.65,484,8.3,13,1,RENT,home_improvement,Not Verified,0
+67584.42,36,20.9,25242.28,3.98,401,14.2,4,0,MORTGAGE,debt_consolidation,Not Verified,1
+70766.27,24,14.96,158439.39,22.01,674,23.3,22,1,RENT,home_improvement,Verified,0
+85673.59,12,5.17,182343.72,24.16,331,24.0,17,1,MORTGAGE,debt_consolidation,Not Verified,0
+28718.46,48,18.09,100343.82,0.08,610,19.5,22,4,MORTGAGE,debt_consolidation,Source Verified,0
+51495.37,36,28.04,119124.29,29.83,416,14.0,17,0,RENT,debt_consolidation,Not Verified,0
+26014.9,60,25.3,190003.46,45.17,822,17.3,14,0,MORTGAGE,home_improvement,Verified,0
+98828.46,12,25.63,58209.95,49.4,485,11.6,14,1,MORTGAGE,debt_consolidation,Not Verified,1
+94685.64,24,24.88,113624.27,52.76,479,3.8,17,1,MORTGAGE,debt_consolidation,Not Verified,1
+8745.55,36,13.09,105449.8,29.26,808,11.6,8,0,RENT,debt_consolidation,Verified,0
+72029.64,24,24.13,66510.68,37.84,530,15.9,2,7,MORTGAGE,debt_consolidation,Verified,1
+92898.59,24,8.58,167346.78,4.77,830,18.0,26,0,MORTGAGE,debt_consolidation,Verified,0
+22154.66,48,21.44,181928.11,29.28,313,28.1,13,0,RENT,debt_consolidation,Verified,0
+58954.8,48,21.04,160747.86,9.29,468,23.3,30,3,RENT,debt_consolidation,Source Verified,0
+91971.39,36,5.64,55164.61,22.18,666,4.6,22,0,MORTGAGE,debt_consolidation,Not Verified,0
+8224.87,60,24.7,35614.75,19.76,790,5.2,16,0,RENT,debt_consolidation,Verified,0
+71254.93,36,27.58,128980.01,25.41,441,3.0,30,1,RENT,car,Source Verified,1
+33248.16,60,11.69,30277.06,34.3,812,22.1,16,0,RENT,home_improvement,Source Verified,0
+92817.64,24,25.31,141108.66,54.17,627,21.2,6,7,MORTGAGE,home_improvement,Verified,1
+97250.53,12,7.06,115476.36,23.67,741,29.6,22,1,MORTGAGE,other,Source Verified,0
+94705.32,36,20.0,139301.43,58.87,518,15.7,24,1,MORTGAGE,debt_consolidation,Verified,1
+50050.35,36,17.14,126230.74,45.54,417,24.8,4,0,MORTGAGE,debt_consolidation,Source Verified,0
+86894.05,60,18.65,96086.46,30.69,801,17.3,3,0,RENT,car,Verified,0
+85232.19,24,28.16,56157.89,38.64,813,26.2,6,1,RENT,home_improvement,Not Verified,0
+35314.54,24,26.78,75026.38,6.13,574,21.6,4,1,OWN,other,Verified,0
+83746.97,60,24.63,114410.1,50.67,304,19.3,18,2,OWN,other,Not Verified,1
+8515.73,24,11.84,137336.26,34.94,360,17.0,6,0,OWN,debt_consolidation,Not Verified,0
+61645.64,48,27.8,160306.94,59.16,615,21.7,26,1,MORTGAGE,other,Verified,0
+26850.84,12,7.44,158090.73,38.19,313,12.6,5,0,MORTGAGE,other,Source Verified,0
+16453.85,36,26.33,195083.97,50.05,518,2.9,27,1,MORTGAGE,debt_consolidation,Verified,0
+12310.55,12,13.2,71451.46,47.99,467,1.2,9,1,MORTGAGE,other,Not Verified,0
+71147.43,36,6.34,32799.93,20.73,693,14.4,11,0,MORTGAGE,debt_consolidation,Source Verified,0
+37288.12,48,21.73,82218.25,15.58,331,18.0,6,1,MORTGAGE,home_improvement,Not Verified,0
+73852.84,24,10.78,153793.01,25.83,569,2.4,30,0,RENT,debt_consolidation,Verified,0
+11208.85,60,11.09,98860.1,28.03,619,8.6,16,1,RENT,debt_consolidation,Verified,0
+34952.58,48,12.65,167201.92,14.41,640,9.7,19,1,RENT,home_improvement,Source Verified,0
+56251.67,12,6.59,118878.75,53.68,523,16.9,11,0,RENT,debt_consolidation,Verified,0
+80118.7,60,9.43,187362.51,32.55,467,8.4,21,4,RENT,home_improvement,Source Verified,0
+35281.49,24,5.13,190615.42,58.71,675,2.9,15,1,MORTGAGE,home_improvement,Verified,0
+64459.68,48,16.14,32474.81,48.6,766,4.9,26,4,RENT,debt_consolidation,Not Verified,0
+89167.89,60,7.11,102154.42,33.34,681,5.2,24,0,RENT,debt_consolidation,Not Verified,0
+63507.0,48,22.07,129744.03,56.82,813,25.3,9,5,MORTGAGE,home_improvement,Verified,0
+27131.15,48,10.89,66057.06,30.29,694,8.5,24,0,MORTGAGE,car,Source Verified,0
+7318.07,24,28.59,93273.82,53.23,721,21.4,19,1,RENT,home_improvement,Source Verified,0
+87659.39,36,26.78,141982.68,21.49,392,17.0,25,4,RENT,home_improvement,Not Verified,0
+7020.59,60,12.24,60812.16,22.72,531,29.3,19,0,MORTGAGE,home_improvement,Source Verified,0
+88096.66,24,24.58,128356.64,25.09,567,8.2,24,0,RENT,debt_consolidation,Verified,0
+55249.03,48,25.08,145540.61,32.8,441,4.8,26,2,MORTGAGE,home_improvement,Verified,0
+94211.43,24,29.66,36289.34,33.21,591,1.6,9,1,RENT,other,Source Verified,1
+80884.41,36,19.95,109555.28,29.78,460,7.2,23,1,RENT,car,Not Verified,0
+99803.74,60,7.05,67354.41,18.36,678,20.5,4,0,RENT,debt_consolidation,Not Verified,0
+38317.62,36,21.17,150389.54,55.63,559,2.6,10,1,MORTGAGE,home_improvement,Verified,1
+77882.89,12,20.62,54119.99,35.32,552,7.3,9,0,MORTGAGE,home_improvement,Not Verified,0
+43183.44,60,20.96,180602.82,24.46,841,25.7,19,4,RENT,home_improvement,Not Verified,0
+50588.18,36,12.68,97569.44,39.07,516,17.5,15,1,OWN,home_improvement,Verified,0
+64613.02,48,26.49,55640.55,46.08,499,2.1,19,2,OWN,home_improvement,Not Verified,1
+87999.33,60,28.99,98843.92,57.64,475,1.4,2,0,MORTGAGE,debt_consolidation,Source Verified,1
+98487.93,60,10.44,93573.88,29.97,792,1.8,10,3,RENT,debt_consolidation,Source Verified,0
+77985.97,24,7.2,97205.41,6.73,573,28.3,19,1,OWN,other,Source Verified,0
+44687.84,48,9.86,125401.03,26.45,630,25.5,17,3,RENT,debt_consolidation,Not Verified,0
+45028.92,12,25.51,113811.27,28.74,399,25.3,20,0,RENT,other,Verified,0
+75070.32,36,21.92,46959.88,53.82,598,27.7,24,2,MORTGAGE,debt_consolidation,Not Verified,1
+27683.83,24,20.9,31804.23,23.69,451,15.2,21,1,MORTGAGE,debt_consolidation,Verified,0
+15495.04,36,15.04,151294.78,57.2,702,7.4,2,0,RENT,home_improvement,Source Verified,0
+38689.1,12,19.45,120749.14,29.11,758,12.0,19,0,RENT,car,Not Verified,0
+32287.7,12,12.7,84620.14,58.43,693,21.6,17,0,RENT,car,Not Verified,0
+33149.27,60,16.93,165504.41,0.49,702,26.3,18,0,OWN,debt_consolidation,Verified,0
+27192.74,12,24.83,89850.53,53.93,582,13.1,17,0,MORTGAGE,debt_consolidation,Source Verified,0
+8998.85,36,29.53,163273.72,55.87,692,16.1,2,1,RENT,home_improvement,Verified,0
+6698.02,48,28.31,75036.1,57.66,532,28.0,19,1,RENT,debt_consolidation,Verified,1
+98833.63,48,28.35,33112.15,0.78,658,3.2,1,1,RENT,debt_consolidation,Not Verified,1
+45638.45,60,15.06,187875.14,10.3,442,25.9,11,0,MORTGAGE,home_improvement,Source Verified,0
+41511.03,36,16.72,91019.2,39.23,338,4.8,25,2,MORTGAGE,home_improvement,Source Verified,1
+69566.49,36,22.64,162684.66,1.53,527,14.5,10,5,MORTGAGE,debt_consolidation,Source Verified,0
+25734.12,12,28.05,70245.94,3.82,554,6.6,5,0,MORTGAGE,debt_consolidation,Source Verified,0
+95246.31,36,8.55,136345.72,13.26,441,18.1,16,0,MORTGAGE,debt_consolidation,Verified,0
+79702.78,24,12.61,177195.96,30.75,700,16.8,24,1,MORTGAGE,debt_consolidation,Source Verified,0
+13494.05,12,8.48,27495.92,32.75,340,11.4,5,2,RENT,home_improvement,Not Verified,1
+44670.17,24,20.3,169514.44,2.06,423,25.9,24,1,OWN,car,Not Verified,0
+88516.24,60,12.66,122839.94,10.22,712,19.8,23,1,MORTGAGE,debt_consolidation,Source Verified,0
+94749.54,48,13.15,129344.92,29.98,540,21.6,12,0,MORTGAGE,debt_consolidation,Verified,0
+49403.14,60,6.77,114168.44,35.64,688,4.5,4,3,MORTGAGE,debt_consolidation,Source Verified,0
+63274.08,48,13.74,177405.52,8.9,612,26.5,23,0,MORTGAGE,car,Not Verified,0
+20868.22,60,26.56,27818.0,23.93,823,5.0,6,0,RENT,debt_consolidation,Verified,0
+99161.02,36,10.83,66985.11,54.26,629,6.7,19,0,RENT,other,Source Verified,1
+27008.81,24,22.38,177637.26,59.93,308,3.8,9,0,MORTGAGE,debt_consolidation,Not Verified,1
+94559.52,48,20.74,155422.23,59.23,494,13.2,12,1,MORTGAGE,debt_consolidation,Source Verified,0
+66716.43,12,26.59,23176.13,52.9,379,26.6,26,1,RENT,debt_consolidation,Source Verified,1
+62735.0,24,8.31,113061.13,23.68,809,7.6,15,6,RENT,home_improvement,Source Verified,0
+53705.41,12,29.44,115323.08,41.19,357,11.2,16,0,RENT,home_improvement,Verified,1
+26913.63,24,19.57,92158.78,25.0,513,25.4,13,7,RENT,home_improvement,Verified,0
+21770.16,24,29.89,73530.8,38.91,424,18.5,25,1,RENT,debt_consolidation,Not Verified,1
+25946.19,60,27.79,142710.47,18.57,766,22.5,30,1,MORTGAGE,debt_consolidation,Verified,0
+22711.63,48,10.54,57402.28,36.37,470,6.4,21,3,OWN,debt_consolidation,Verified,0
+79060.52,48,6.4,163810.74,31.43,846,21.5,24,1,MORTGAGE,debt_consolidation,Source Verified,0
+38261.9,24,11.39,164546.69,1.47,321,6.8,7,0,MORTGAGE,debt_consolidation,Not Verified,0
+10495.05,36,18.19,94747.06,47.44,371,29.6,25,3,MORTGAGE,home_improvement,Not Verified,0
+97064.75,36,9.29,71038.64,0.71,424,16.8,23,1,MORTGAGE,debt_consolidation,Verified,0
+88959.66,12,9.19,71098.07,17.59,746,20.9,20,1,MORTGAGE,debt_consolidation,Source Verified,0
+93136.47,12,16.56,106812.44,0.36,783,3.6,4,3,MORTGAGE,debt_consolidation,Source Verified,0
+99516.24,60,5.83,149524.26,22.57,339,7.5,11,0,RENT,debt_consolidation,Source Verified,0
+21520.05,24,8.05,84596.36,3.79,318,4.2,8,1,MORTGAGE,home_improvement,Source Verified,0
+42642.99,12,15.4,129807.8,54.81,710,11.7,6,2,RENT,debt_consolidation,Verified,0
+77032.66,12,6.58,88847.2,24.94,373,8.5,25,1,MORTGAGE,debt_consolidation,Not Verified,0
+71121.96,24,14.92,74814.17,27.57,373,22.0,30,0,RENT,other,Source Verified,0
+19620.11,60,16.85,24474.71,20.99,312,3.3,10,2,OWN,debt_consolidation,Source Verified,1
+82504.15,12,16.28,20704.54,37.65,327,22.6,30,0,RENT,debt_consolidation,Source Verified,1
+26321.85,60,26.73,60897.38,47.06,445,1.4,7,2,MORTGAGE,car,Verified,1
+26262.67,48,18.25,93153.13,38.89,336,6.1,7,4,RENT,debt_consolidation,Source Verified,1
+56012.57,60,16.7,173227.01,44.89,503,23.8,4,0,MORTGAGE,other,Verified,0
+61329.29,36,15.27,163727.16,54.36,758,22.3,3,0,MORTGAGE,debt_consolidation,Verified,0
+60108.19,36,25.44,68089.75,51.81,479,14.3,24,0,RENT,home_improvement,Not Verified,1
+13691.25,60,27.38,64017.28,40.44,700,1.5,7,1,MORTGAGE,home_improvement,Not Verified,0
+88358.78,36,26.33,60917.97,12.88,352,18.3,4,5,RENT,other,Verified,1
+30232.0,48,21.84,81062.72,38.26,663,12.2,13,1,RENT,home_improvement,Source Verified,0
+17303.92,24,8.43,109675.77,30.36,474,9.5,20,0,MORTGAGE,home_improvement,Source Verified,0
+89431.07,36,11.92,98960.2,43.03,712,19.2,17,1,RENT,home_improvement,Source Verified,0
+95786.89,36,6.15,59289.18,49.98,375,13.1,27,2,MORTGAGE,debt_consolidation,Verified,1
+86902.12,60,28.27,43481.25,44.56,794,2.8,7,0,MORTGAGE,home_improvement,Not Verified,1
+81904.03,48,21.52,22264.01,50.79,433,27.5,17,2,MORTGAGE,debt_consolidation,Verified,1
+67247.99,24,23.66,47713.38,3.83,494,23.4,26,0,MORTGAGE,home_improvement,Not Verified,0
+57331.45,60,12.79,146964.15,1.9,823,1.7,26,2,MORTGAGE,home_improvement,Source Verified,0
+13263.74,60,26.14,63854.94,15.51,618,15.8,4,0,RENT,other,Not Verified,0
+43803.06,48,11.49,104348.33,54.04,501,2.5,11,0,RENT,home_improvement,Verified,0
+40405.41,24,5.04,126434.21,49.42,822,25.1,30,3,RENT,car,Not Verified,0
+29676.61,48,14.41,179631.36,40.96,481,18.4,3,1,MORTGAGE,debt_consolidation,Verified,0
+73724.91,24,19.27,179993.92,42.05,352,5.2,11,0,RENT,debt_consolidation,Not Verified,1
+52108.19,48,16.97,154232.07,43.6,848,0.6,3,4,MORTGAGE,home_improvement,Source Verified,0
+12699.39,60,26.55,26328.26,56.56,447,0.9,12,1,OWN,home_improvement,Source Verified,1
+25917.4,60,7.64,123512.68,49.93,768,15.2,1,0,RENT,home_improvement,Verified,0
+69909.58,12,18.85,161585.02,37.4,391,22.0,4,1,RENT,car,Verified,0
+12232.43,36,17.82,23111.85,39.94,702,3.6,14,3,MORTGAGE,debt_consolidation,Source Verified,0
+85864.66,48,12.03,118943.23,12.82,588,6.6,1,1,MORTGAGE,home_improvement,Source Verified,0
+52038.92,12,25.56,174397.55,39.44,839,9.8,14,0,RENT,debt_consolidation,Source Verified,0
+50655.72,36,23.82,105338.37,25.48,604,6.5,13,1,MORTGAGE,debt_consolidation,Verified,0
+61278.74,48,23.32,20739.12,9.18,314,11.7,13,1,RENT,debt_consolidation,Verified,1
+83344.69,24,26.9,21982.4,48.38,632,16.8,24,2,MORTGAGE,car,Not Verified,1
+38041.87,36,23.07,94994.49,30.61,380,20.5,15,0,OWN,home_improvement,Not Verified,0
+69411.53,60,10.8,47901.56,58.65,739,28.9,17,1,RENT,debt_consolidation,Verified,0
+58744.54,12,22.64,139601.12,16.9,771,27.9,12,0,MORTGAGE,home_improvement,Source Verified,0
+30367.69,36,12.69,147583.87,28.84,565,17.1,30,1,MORTGAGE,debt_consolidation,Not Verified,0
+88469.85,36,11.05,52018.36,26.88,731,22.0,22,6,OWN,car,Not Verified,0
+80755.47,60,6.83,179935.99,7.25,380,28.5,23,0,RENT,home_improvement,Verified,0
+67552.92,48,23.6,99543.41,25.57,571,2.5,26,0,MORTGAGE,debt_consolidation,Not Verified,0
+85805.26,24,22.78,45712.26,17.25,517,0.2,14,1,MORTGAGE,other,Source Verified,0
+87392.95,60,10.86,157565.29,9.62,636,0.9,12,2,MORTGAGE,debt_consolidation,Not Verified,0
+72294.48,24,23.73,162195.41,16.93,324,16.9,18,0,MORTGAGE,home_improvement,Source Verified,0
+84516.27,48,27.95,135073.19,14.0,714,22.9,4,1,MORTGAGE,debt_consolidation,Source Verified,0
+71259.79,36,7.7,173623.8,44.04,344,11.0,27,3,RENT,debt_consolidation,Source Verified,1
+69613.37,24,10.82,152727.13,1.85,661,16.4,14,2,RENT,home_improvement,Source Verified,0
+63768.08,12,23.76,178797.03,37.05,310,15.5,19,2,OWN,debt_consolidation,Source Verified,1
+76508.08,12,11.86,98099.85,45.64,758,2.8,29,0,RENT,other,Not Verified,0
+20067.49,60,20.62,154567.48,28.84,396,9.6,13,4,MORTGAGE,debt_consolidation,Source Verified,1
+88682.72,48,7.03,199955.28,55.89,584,0.6,25,0,MORTGAGE,debt_consolidation,Verified,0
+87825.14,60,16.31,150487.62,42.47,444,3.3,30,0,RENT,home_improvement,Verified,1
+7778.49,60,23.48,40553.08,44.88,697,24.4,23,0,RENT,debt_consolidation,Source Verified,0
+83452.59,60,22.16,113297.37,11.82,477,24.9,18,1,MORTGAGE,home_improvement,Not Verified,0
+17242.64,12,25.38,125722.6,46.64,699,24.1,11,3,MORTGAGE,other,Not Verified,0
+36836.29,12,26.94,51357.92,49.93,457,21.8,28,0,RENT,home_improvement,Verified,1
+75633.28,60,24.33,193320.49,21.68,714,23.8,6,2,MORTGAGE,debt_consolidation,Source Verified,0
+20272.19,12,21.79,51604.36,12.8,317,20.1,9,2,RENT,home_improvement,Verified,0
+82706.87,48,5.79,51960.43,23.1,456,20.1,12,1,MORTGAGE,other,Not Verified,0
+84052.75,60,18.37,184730.08,44.38,574,20.0,19,2,MORTGAGE,debt_consolidation,Verified,0
+53209.43,12,5.94,103736.98,25.06,325,15.4,14,0,RENT,home_improvement,Source Verified,0
+5606.66,24,25.2,31373.89,44.2,402,10.9,15,0,RENT,debt_consolidation,Source Verified,1
+32268.62,60,13.02,127673.75,6.81,814,21.9,11,3,MORTGAGE,other,Not Verified,0
+63608.06,60,19.06,128328.74,48.36,837,9.0,6,1,RENT,car,Verified,0
+98212.69,48,11.99,31610.14,15.19,707,16.3,14,0,OWN,car,Verified,0
+65022.29,36,24.56,195054.05,14.94,439,13.0,3,1,MORTGAGE,other,Source Verified,0
+29681.34,36,27.16,117925.39,35.42,443,8.3,19,3,RENT,debt_consolidation,Source Verified,0
+65230.54,48,14.97,120763.23,4.21,655,29.2,20,1,RENT,debt_consolidation,Verified,0
+56298.61,48,26.57,113620.77,1.58,365,7.8,25,0,MORTGAGE,debt_consolidation,Source Verified,0
+79085.31,48,11.68,129931.72,15.66,822,9.3,11,1,RENT,debt_consolidation,Source Verified,0
+15163.16,36,18.37,67573.96,32.28,424,4.8,29,2,RENT,home_improvement,Not Verified,0
+77297.65,48,26.47,71703.44,54.46,850,24.7,24,0,RENT,car,Verified,0
+56420.32,12,13.15,112041.04,50.79,573,17.6,17,0,RENT,debt_consolidation,Verified,1
+96484.24,60,28.85,165203.45,29.43,724,18.4,29,1,MORTGAGE,home_improvement,Not Verified,0
+37477.86,60,8.05,28975.62,2.22,301,24.6,28,1,MORTGAGE,car,Not Verified,0
+65099.08,24,5.46,128612.76,32.12,789,10.3,27,0,MORTGAGE,debt_consolidation,Not Verified,0
+93542.67,24,27.6,165220.07,42.29,449,5.8,17,0,OWN,debt_consolidation,Not Verified,0
+14738.42,60,6.72,48245.11,20.35,667,6.0,23,0,OWN,home_improvement,Verified,0
+94036.71,12,29.8,22704.06,6.66,743,22.0,3,0,MORTGAGE,debt_consolidation,Verified,1
+70349.14,36,28.78,76288.39,16.71,390,18.4,14,0,MORTGAGE,other,Verified,0
+11444.52,36,8.43,125865.87,46.3,543,6.2,27,1,MORTGAGE,debt_consolidation,Not Verified,0
+33591.54,12,18.44,44890.97,21.07,572,4.4,7,1,MORTGAGE,car,Source Verified,0
+72276.35,36,9.62,96702.03,48.72,472,3.6,25,1,RENT,home_improvement,Verified,1
+11398.31,48,15.7,119417.87,19.17,565,18.8,19,0,RENT,debt_consolidation,Verified,0
+60306.19,60,6.54,127798.96,9.81,475,0.0,3,0,MORTGAGE,debt_consolidation,Not Verified,0
+37858.89,60,10.6,69394.11,26.15,498,0.5,2,0,MORTGAGE,debt_consolidation,Not Verified,0
+63986.97,12,14.08,92005.33,27.14,668,11.7,26,0,RENT,debt_consolidation,Not Verified,0
+9345.49,36,15.97,160101.06,0.97,648,20.7,17,0,RENT,debt_consolidation,Source Verified,0
+87796.0,24,29.44,189418.64,7.02,428,20.9,9,0,RENT,home_improvement,Source Verified,0
+97481.45,24,25.2,175138.46,11.1,794,12.9,22,9,RENT,home_improvement,Verified,0
+97043.4,36,23.44,121571.03,6.82,775,20.7,6,0,OWN,home_improvement,Verified,0
+76216.92,24,18.43,93852.7,20.49,580,15.6,24,4,MORTGAGE,debt_consolidation,Verified,0
+17358.19,12,26.0,79932.19,57.88,538,29.3,27,0,MORTGAGE,home_improvement,Verified,0
+77035.0,12,13.48,42492.18,30.55,507,4.9,21,0,MORTGAGE,debt_consolidation,Source Verified,0
+7335.76,36,22.72,39179.22,37.65,689,18.0,9,2,MORTGAGE,other,Not Verified,0
+7101.74,24,29.84,143904.37,21.38,669,14.7,27,0,RENT,other,Verified,0
+35742.97,12,12.87,66762.99,19.41,408,5.8,5,0,MORTGAGE,car,Not Verified,0
+51421.1,12,21.85,65839.1,1.39,669,22.5,2,6,MORTGAGE,car,Verified,0
+78188.7,48,26.11,199675.11,30.02,439,8.3,22,1,MORTGAGE,debt_consolidation,Source Verified,0
+69913.06,48,27.9,53826.67,29.02,310,11.5,15,0,MORTGAGE,debt_consolidation,Source Verified,1
+47360.76,12,22.95,46650.76,9.47,685,11.2,9,0,RENT,car,Source Verified,0
+30994.53,36,12.09,37763.34,45.86,655,7.3,19,4,MORTGAGE,debt_consolidation,Verified,0
+99726.83,60,13.16,124364.96,29.56,526,12.9,10,3,RENT,home_improvement,Source Verified,0
+45487.22,60,5.52,133015.49,20.34,589,14.2,4,1,RENT,car,Not Verified,0
+47881.77,12,24.02,85741.03,8.81,821,22.3,10,0,OWN,home_improvement,Not Verified,0
+20544.26,12,6.07,116374.4,33.13,627,23.0,27,3,OWN,debt_consolidation,Verified,0
+80506.91,12,26.62,161911.92,45.17,662,4.8,8,0,OWN,debt_consolidation,Not Verified,0
+70899.81,36,7.97,167258.75,16.92,335,17.8,22,0,RENT,debt_consolidation,Source Verified,0
+25973.11,48,9.3,192424.17,13.13,391,26.9,13,1,RENT,car,Not Verified,0
+12826.2,12,16.91,168368.24,31.32,466,3.3,7,0,OWN,home_improvement,Source Verified,0
+69647.43,12,23.45,121671.46,9.32,597,14.2,7,1,RENT,other,Not Verified,0
+67178.57,24,8.48,52338.25,40.0,727,22.5,4,3,MORTGAGE,car,Not Verified,0
+30959.66,36,16.0,37957.44,36.32,477,18.3,15,2,MORTGAGE,debt_consolidation,Not Verified,0
+95332.04,12,17.07,29812.14,5.22,496,3.0,12,0,MORTGAGE,debt_consolidation,Verified,1
+19350.5,24,10.31,139974.65,2.19,441,11.9,16,0,MORTGAGE,home_improvement,Source Verified,0
+46071.81,60,7.89,165356.53,37.22,440,15.2,6,0,OWN,other,Source Verified,0
+94643.51,12,25.91,111563.11,17.66,822,29.9,28,0,RENT,debt_consolidation,Verified,0
+44874.1,12,17.56,29848.55,5.19,650,5.4,9,1,RENT,car,Verified,0
+65659.97,24,5.36,116384.7,45.57,386,29.5,3,0,MORTGAGE,debt_consolidation,Not Verified,0
+42771.47,36,25.07,188434.87,18.84,697,11.3,8,0,MORTGAGE,debt_consolidation,Source Verified,0
+31050.44,12,29.52,127570.37,27.58,697,6.0,7,0,RENT,other,Verified,0
+98477.88,60,20.15,165696.95,14.21,667,12.4,4,0,OWN,debt_consolidation,Source Verified,0
+43886.73,12,17.59,164027.48,37.64,374,18.4,26,1,MORTGAGE,home_improvement,Verified,0
+89939.42,60,26.96,187783.24,18.09,524,6.4,13,1,RENT,debt_consolidation,Source Verified,0
+26845.69,48,28.81,158641.18,58.08,359,8.7,19,1,RENT,car,Source Verified,1
+25244.95,48,23.86,154586.09,42.18,749,25.6,30,2,MORTGAGE,car,Source Verified,0
+7957.74,60,16.14,62138.48,8.2,660,30.0,7,2,MORTGAGE,other,Not Verified,0
+66908.35,36,19.81,30786.53,25.0,579,9.5,10,0,MORTGAGE,debt_consolidation,Verified,1
+40010.0,12,22.52,113167.9,23.13,489,4.5,25,0,RENT,debt_consolidation,Not Verified,0
+87114.03,12,9.86,42398.16,32.05,401,23.8,12,1,MORTGAGE,home_improvement,Not Verified,1
+49954.94,48,16.18,193195.26,50.52,359,18.0,26,0,MORTGAGE,debt_consolidation,Verified,0
+96978.38,60,25.75,72186.46,35.01,833,3.0,3,0,MORTGAGE,home_improvement,Not Verified,0
+22624.92,12,21.37,173529.96,3.69,410,28.4,26,7,MORTGAGE,home_improvement,Source Verified,0
+87519.2,12,15.28,89772.43,39.32,333,2.3,25,0,MORTGAGE,debt_consolidation,Source Verified,0
+78776.7,36,21.58,78174.96,0.5,829,18.8,29,1,MORTGAGE,car,Verified,0
+78237.58,24,7.96,188328.54,46.8,602,12.7,24,1,OWN,car,Source Verified,0
+85254.41,48,15.04,85398.06,40.0,738,16.7,12,0,RENT,other,Not Verified,0
+77297.28,48,24.83,90251.82,18.53,324,6.4,19,0,RENT,debt_consolidation,Verified,1
+64490.93,24,10.51,39096.52,17.55,612,20.6,15,1,MORTGAGE,debt_consolidation,Verified,0
+17468.26,12,9.65,140680.4,47.9,519,28.8,8,0,MORTGAGE,debt_consolidation,Verified,0
+8089.99,36,28.77,71991.09,47.0,725,13.8,12,0,OWN,debt_consolidation,Source Verified,0
+92480.55,36,10.25,125408.75,21.14,321,15.7,20,5,OWN,debt_consolidation,Not Verified,0
+63581.78,48,11.52,126443.31,17.94,521,7.2,6,1,MORTGAGE,other,Source Verified,0
+80671.04,36,29.24,149455.95,33.59,739,26.8,28,0,RENT,debt_consolidation,Verified,0
+50744.62,24,23.37,154143.47,0.5,587,29.1,10,0,RENT,debt_consolidation,Source Verified,0
+16144.28,12,22.49,112601.44,4.96,603,23.6,2,1,OWN,debt_consolidation,Source Verified,0
+16892.65,24,26.32,79578.55,7.57,353,16.3,24,0,RENT,debt_consolidation,Verified,0
+70128.7,60,7.9,170741.16,11.12,373,28.7,13,0,MORTGAGE,debt_consolidation,Source Verified,0
+45879.06,48,22.65,75775.82,30.72,672,4.6,25,0,RENT,home_improvement,Verified,0
+24049.85,36,17.59,111351.64,59.53,671,14.4,7,0,RENT,debt_consolidation,Not Verified,0
+51701.48,60,25.73,92225.46,39.16,839,16.1,8,1,MORTGAGE,debt_consolidation,Source Verified,0
+11099.85,36,17.7,173914.11,3.68,692,14.8,23,1,OWN,debt_consolidation,Not Verified,0
+60287.28,12,20.51,97745.34,31.53,571,24.1,16,0,OWN,home_improvement,Not Verified,1
+30554.37,12,16.94,89497.85,29.8,772,20.1,11,0,MORTGAGE,debt_consolidation,Not Verified,0
+80768.11,12,16.95,144168.26,8.65,357,3.8,26,0,MORTGAGE,debt_consolidation,Verified,0
+34484.39,36,24.2,128439.4,55.22,547,10.4,4,1,RENT,other,Not Verified,0
+48245.91,60,20.71,39304.43,26.45,458,10.2,17,0,RENT,debt_consolidation,Not Verified,1
+6103.95,12,20.83,111470.39,59.67,358,17.0,16,0,RENT,home_improvement,Not Verified,1
+11882.45,60,16.26,152386.11,25.2,720,8.7,19,7,MORTGAGE,other,Verified,0
+42286.89,36,18.28,198573.46,36.48,581,3.5,23,0,OWN,debt_consolidation,Verified,0
+50594.19,60,23.64,133246.43,6.29,606,19.6,27,7,RENT,car,Not Verified,0
+62001.95,36,25.65,86652.75,27.25,526,25.5,11,0,OWN,other,Verified,0
+32707.94,36,22.41,60707.29,14.33,553,27.9,7,0,MORTGAGE,debt_consolidation,Verified,0
+71023.28,48,28.1,177109.44,50.13,364,29.2,27,1,RENT,other,Source Verified,1
+86711.63,36,25.51,166621.74,47.04,670,23.4,13,0,RENT,debt_consolidation,Not Verified,0
+79085.84,36,19.05,62106.11,49.45,538,4.2,19,0,OWN,debt_consolidation,Source Verified,1
+8763.79,24,21.79,56113.78,43.42,749,25.6,17,0,OWN,car,Not Verified,0
+50648.16,12,28.16,148724.62,49.96,408,12.0,26,6,MORTGAGE,other,Verified,1
+14968.37,48,20.48,76691.37,12.05,413,21.9,25,0,MORTGAGE,home_improvement,Verified,0
+27994.28,48,25.62,75151.78,27.12,655,15.9,28,1,MORTGAGE,debt_consolidation,Source Verified,0
+98732.95,48,22.22,47412.24,41.51,765,24.9,22,2,MORTGAGE,home_improvement,Source Verified,0
+18537.08,24,18.8,67515.59,38.24,560,12.8,13,2,OWN,home_improvement,Source Verified,0
+52394.37,36,11.05,96951.36,42.98,700,1.9,29,1,MORTGAGE,debt_consolidation,Verified,0
+63724.79,12,15.65,151910.9,13.46,850,16.7,12,0,RENT,other,Verified,0
+71734.17,60,29.19,80535.46,5.91,845,5.1,7,0,OWN,debt_consolidation,Verified,0
+58166.62,36,21.44,79148.78,55.01,709,29.0,1,0,MORTGAGE,debt_consolidation,Source Verified,0
+5928.23,24,19.11,71284.39,33.61,707,15.8,1,0,MORTGAGE,debt_consolidation,Source Verified,0
+36013.82,36,28.32,106091.06,9.23,436,16.6,20,0,MORTGAGE,debt_consolidation,Verified,0
+54182.61,36,19.66,52514.61,47.61,758,27.2,23,0,MORTGAGE,home_improvement,Verified,0
+13347.32,24,18.15,107413.53,54.9,523,18.7,14,4,MORTGAGE,debt_consolidation,Source Verified,0
+38309.56,48,23.98,146751.6,10.17,829,9.1,27,4,OWN,car,Not Verified,0
+8154.3,48,22.82,25362.29,49.04,345,8.9,15,0,MORTGAGE,debt_consolidation,Source Verified,1
+12464.96,12,9.83,21760.29,55.99,540,15.0,11,0,MORTGAGE,debt_consolidation,Verified,0
+42707.71,12,16.78,33522.12,56.3,606,26.0,24,0,MORTGAGE,car,Source Verified,1
+17608.0,48,16.81,116418.81,54.85,523,23.8,26,0,MORTGAGE,debt_consolidation,Source Verified,0
+58916.38,60,14.46,173801.91,32.79,416,28.9,9,0,MORTGAGE,home_improvement,Source Verified,0
+70499.17,36,17.93,20879.2,21.37,626,2.2,17,5,MORTGAGE,car,Verified,1
+81055.74,60,15.33,188599.03,0.44,716,8.0,4,0,RENT,home_improvement,Source Verified,0
+24014.27,36,9.98,39130.13,3.65,655,2.4,20,0,MORTGAGE,home_improvement,Source Verified,0
+20910.85,48,15.31,171557.04,25.73,429,22.5,19,0,OWN,car,Verified,0
+14933.94,12,6.81,106913.86,23.96,702,4.2,7,7,RENT,other,Verified,0
+65460.87,12,19.39,138684.33,11.08,441,3.0,1,4,OWN,debt_consolidation,Source Verified,0
+72115.19,60,26.34,111922.94,23.73,396,16.9,9,2,RENT,home_improvement,Source Verified,0
+8000.68,12,23.13,105868.68,10.48,680,12.3,13,0,RENT,debt_consolidation,Not Verified,0
+93940.16,48,14.01,170281.9,50.93,764,21.5,24,0,OWN,debt_consolidation,Source Verified,0
+9937.27,60,7.18,156059.55,17.89,565,14.6,2,0,RENT,debt_consolidation,Not Verified,0
+56423.15,36,10.05,107012.4,35.91,592,12.8,2,0,RENT,other,Verified,0
+72360.75,12,18.64,40094.47,30.17,467,12.8,24,2,OWN,home_improvement,Not Verified,1
+87742.07,24,10.18,40772.53,3.11,572,26.2,27,0,RENT,debt_consolidation,Source Verified,1
+72838.26,12,18.6,164277.1,56.53,373,11.9,30,0,MORTGAGE,debt_consolidation,Source Verified,0
+81164.17,36,10.79,115290.31,31.63,826,10.0,15,1,OWN,other,Verified,0
+37247.77,60,26.22,106686.05,19.5,740,10.2,17,0,RENT,debt_consolidation,Verified,0
+82408.39,36,14.93,142502.03,9.49,667,5.9,13,1,OWN,debt_consolidation,Not Verified,0
+12610.91,24,11.14,174591.49,20.31,596,25.8,7,0,OWN,other,Verified,0
+90007.58,48,25.31,133197.17,1.23,736,4.4,9,0,MORTGAGE,home_improvement,Verified,0
+57021.28,12,13.57,157312.62,21.81,572,27.3,12,0,RENT,debt_consolidation,Verified,0
+82643.29,60,7.79,157748.69,31.89,465,8.5,3,4,RENT,debt_consolidation,Verified,0
+47970.24,48,19.26,84127.06,52.31,388,27.0,23,0,RENT,other,Source Verified,1
+66139.88,36,19.54,69334.98,41.24,656,23.7,22,0,MORTGAGE,other,Source Verified,0
+55008.25,60,22.87,164209.53,6.69,811,17.5,15,0,MORTGAGE,debt_consolidation,Verified,0
+74501.0,48,11.01,87892.18,8.86,384,20.1,7,1,RENT,debt_consolidation,Source Verified,0
+12754.85,60,16.09,182600.48,25.69,399,9.8,23,3,OWN,debt_consolidation,Not Verified,0
+10733.45,24,12.06,32544.33,11.74,538,17.2,26,0,OWN,home_improvement,Not Verified,0
+28474.81,24,7.02,30479.15,1.67,744,8.8,1,0,MORTGAGE,car,Source Verified,0
+20156.74,12,26.92,186860.75,48.3,462,12.1,14,5,OWN,debt_consolidation,Source Verified,1
+87819.44,12,23.22,136721.88,1.17,440,22.9,19,2,RENT,car,Verified,0
+25825.33,24,12.54,88327.88,49.84,641,7.3,16,1,RENT,home_improvement,Source Verified,0
+97707.2,60,19.98,155910.87,8.65,595,25.2,10,0,RENT,car,Not Verified,0
+37005.1,24,10.03,141018.83,58.48,333,11.3,1,0,OWN,other,Source Verified,1
+22301.2,12,27.26,115616.19,36.23,345,16.0,5,2,RENT,debt_consolidation,Verified,1
+80021.36,24,7.87,37797.2,44.1,654,28.3,3,1,OWN,debt_consolidation,Source Verified,0
+67577.24,24,5.1,166192.33,6.63,556,20.4,17,1,RENT,home_improvement,Not Verified,0
+52328.59,60,17.55,175884.17,51.73,834,19.4,18,0,MORTGAGE,car,Not Verified,0
+57759.54,48,19.58,50990.36,50.35,673,21.3,26,1,RENT,debt_consolidation,Not Verified,0
+73324.17,12,19.47,173092.1,39.18,306,27.5,21,2,MORTGAGE,car,Verified,0
+26703.2,60,6.36,178012.52,30.14,565,7.5,27,5,MORTGAGE,debt_consolidation,Verified,0
+99651.72,24,12.85,118897.15,43.29,528,18.4,19,0,MORTGAGE,debt_consolidation,Not Verified,0
+97605.35,24,17.48,138112.23,0.36,359,12.0,22,1,MORTGAGE,debt_consolidation,Verified,0
+66780.94,48,10.41,88802.72,35.55,808,0.4,25,1,RENT,other,Source Verified,0
+23956.53,12,26.82,70722.5,50.84,743,3.8,22,3,RENT,home_improvement,Source Verified,0
+69621.68,12,7.18,149956.97,21.41,427,9.7,18,2,MORTGAGE,debt_consolidation,Source Verified,0
+11858.85,36,17.18,175137.53,6.5,441,16.9,16,6,MORTGAGE,other,Source Verified,0
+7911.99,12,22.29,137733.96,25.25,318,26.4,2,6,RENT,car,Not Verified,0
+29479.87,48,11.54,112086.31,43.63,463,23.7,15,0,OWN,car,Verified,0
+48949.18,36,20.61,48606.46,6.44,622,16.6,13,2,MORTGAGE,debt_consolidation,Not Verified,0
+87485.89,36,25.73,29622.57,12.36,531,2.2,13,1,MORTGAGE,debt_consolidation,Not Verified,1
+74081.06,24,9.76,100224.52,8.85,833,8.6,16,0,RENT,home_improvement,Not Verified,0
+75557.12,24,27.93,28882.92,47.82,331,11.0,8,0,MORTGAGE,car,Source Verified,1
+45421.87,12,18.84,122480.23,3.77,625,18.7,11,0,RENT,home_improvement,Source Verified,0
+37863.82,36,12.48,88891.25,41.2,772,1.9,8,2,OWN,home_improvement,Not Verified,0
+40248.68,24,15.77,156294.04,21.99,564,15.9,22,0,RENT,car,Source Verified,0
+98826.71,48,12.8,75016.73,45.35,302,27.0,10,3,RENT,debt_consolidation,Source Verified,1
+8810.37,24,23.13,126736.89,57.86,434,21.2,23,1,MORTGAGE,home_improvement,Verified,1
+87367.99,24,24.91,116783.03,6.87,478,23.9,1,1,RENT,debt_consolidation,Verified,0
+59974.16,36,25.82,20848.24,18.86,831,20.5,12,0,RENT,debt_consolidation,Source Verified,0
+46668.46,36,29.64,33030.09,48.61,801,6.2,9,1,OWN,debt_consolidation,Source Verified,1
+73899.48,60,24.78,72266.28,15.97,822,3.3,5,0,RENT,car,Source Verified,0
+51233.55,48,20.03,178802.31,12.91,754,24.9,9,0,RENT,other,Verified,0
+87975.21,36,13.48,46462.69,49.52,493,20.9,16,3,MORTGAGE,debt_consolidation,Not Verified,1
+90566.68,12,18.61,147960.98,59.22,798,17.3,18,1,RENT,debt_consolidation,Source Verified,0
+45063.49,48,6.03,195205.98,33.41,840,5.7,30,0,MORTGAGE,debt_consolidation,Source Verified,0
+31298.64,48,23.62,162302.16,16.68,493,18.1,8,2,RENT,other,Not Verified,0
+61273.28,36,16.15,63730.17,23.91,443,0.9,23,0,OWN,home_improvement,Verified,0
+91674.52,48,5.5,183505.75,10.21,601,3.6,11,0,RENT,other,Not Verified,0
+25012.91,36,6.56,36759.29,45.71,403,9.4,30,1,RENT,other,Source Verified,1
+64181.83,24,14.69,104265.55,46.41,318,13.3,20,0,MORTGAGE,debt_consolidation,Not Verified,1
+64998.22,60,19.59,179757.54,52.51,820,3.6,19,1,MORTGAGE,debt_consolidation,Source Verified,0
+74645.74,24,16.61,135427.83,1.6,809,3.6,4,1,MORTGAGE,home_improvement,Verified,0
+17498.93,36,20.48,94456.02,33.72,389,21.8,20,1,MORTGAGE,debt_consolidation,Source Verified,1
+73003.37,36,17.01,72706.32,12.86,524,17.1,26,0,MORTGAGE,debt_consolidation,Source Verified,0
+91358.09,24,21.54,87517.89,20.45,757,16.0,10,0,MORTGAGE,debt_consolidation,Verified,0
+22069.9,12,10.48,111609.52,47.1,664,13.6,24,0,MORTGAGE,home_improvement,Not Verified,0
+27566.62,12,7.82,77427.91,11.52,517,29.3,13,6,MORTGAGE,home_improvement,Source Verified,0
+97282.53,12,19.91,194414.22,38.3,709,1.5,29,0,RENT,debt_consolidation,Not Verified,0
+22192.81,36,17.12,187953.98,39.27,793,5.4,20,0,RENT,home_improvement,Source Verified,0
+86166.58,48,5.67,176720.86,57.25,809,19.4,14,3,MORTGAGE,debt_consolidation,Source Verified,0
+51766.4,36,14.51,95929.37,46.51,508,4.1,21,2,OWN,car,Not Verified,0
+28486.95,48,7.65,144434.32,48.22,395,17.7,2,2,RENT,car,Not Verified,1
+87721.24,24,18.28,182509.28,31.9,802,17.0,29,6,MORTGAGE,debt_consolidation,Verified,0
+47304.0,60,14.89,173077.31,11.21,351,29.1,4,0,RENT,home_improvement,Not Verified,0
+53907.65,48,20.33,94578.86,25.53,697,26.5,7,0,MORTGAGE,home_improvement,Source Verified,0
+39127.17,12,25.14,40229.49,32.97,377,28.4,19,0,RENT,debt_consolidation,Verified,1
+61330.33,36,12.49,33613.47,40.71,514,3.4,30,0,MORTGAGE,debt_consolidation,Source Verified,0
+20534.77,24,29.05,123871.53,36.46,526,26.0,30,1,RENT,other,Not Verified,0
+42152.75,12,18.39,135673.03,23.64,387,3.9,17,0,MORTGAGE,debt_consolidation,Not Verified,0
+97094.17,24,20.46,172971.67,15.92,807,19.0,16,2,MORTGAGE,home_improvement,Verified,0
+29522.68,60,22.02,72652.7,10.09,301,21.6,13,0,MORTGAGE,car,Not Verified,0
+67389.98,36,21.67,50144.69,41.63,792,4.8,24,0,OWN,debt_consolidation,Not Verified,0
+35893.06,36,17.77,88221.05,38.72,786,19.0,24,1,RENT,debt_consolidation,Source Verified,0
+78479.95,60,15.72,83643.52,41.24,474,1.6,22,0,MORTGAGE,other,Source Verified,0
+17433.0,36,6.34,43844.41,22.35,687,8.8,23,2,MORTGAGE,debt_consolidation,Source Verified,0
+97133.0,48,5.55,141010.88,15.74,439,27.6,26,9,MORTGAGE,home_improvement,Verified,0
+48110.01,24,13.95,111564.55,45.58,717,5.2,27,2,MORTGAGE,car,Not Verified,0
+27424.79,12,13.34,149802.1,46.42,609,2.0,18,0,RENT,car,Verified,0
+11982.19,60,14.69,83484.4,27.34,465,13.3,21,4,OWN,other,Verified,0
+21127.0,48,8.46,78626.4,36.71,520,25.5,12,0,MORTGAGE,car,Verified,0
+54378.53,12,23.45,105063.65,22.41,679,2.3,23,2,MORTGAGE,home_improvement,Not Verified,0
+37015.3,12,26.42,177933.32,42.12,798,10.7,25,0,OWN,other,Source Verified,0
+83743.92,60,28.47,27250.64,50.14,372,27.0,1,0,RENT,other,Source Verified,1
+45934.31,48,17.31,164869.91,41.29,614,3.5,15,7,MORTGAGE,other,Source Verified,0
+28627.86,12,22.52,86417.77,30.75,440,9.3,3,0,MORTGAGE,car,Verified,0
+63628.77,12,26.39,173831.42,27.52,741,23.4,6,2,OWN,debt_consolidation,Not Verified,0
+72143.84,48,15.46,164396.54,38.54,339,16.3,14,0,RENT,car,Source Verified,1
+20868.98,36,12.74,82777.02,40.79,679,25.0,23,3,RENT,debt_consolidation,Source Verified,0
+20923.83,12,28.42,144897.78,33.52,396,3.3,6,6,RENT,debt_consolidation,Verified,1
+8483.79,24,17.89,48733.9,37.5,628,27.6,1,0,MORTGAGE,debt_consolidation,Verified,0
+74958.19,48,17.43,181330.68,5.8,760,28.0,20,1,MORTGAGE,other,Not Verified,0
+68061.43,12,9.46,92808.39,57.11,715,4.7,6,1,MORTGAGE,debt_consolidation,Source Verified,0
+50089.93,60,7.7,102012.61,47.45,714,1.0,8,4,MORTGAGE,car,Not Verified,0
+85196.19,24,26.05,147036.63,22.44,585,29.7,26,0,RENT,home_improvement,Verified,0
+81538.66,12,20.35,167751.24,33.77,790,14.5,15,1,MORTGAGE,debt_consolidation,Source Verified,0
+60608.66,24,13.15,62541.69,2.84,623,17.2,14,0,MORTGAGE,home_improvement,Not Verified,0
+87485.77,24,9.79,139043.03,2.47,805,18.5,16,0,MORTGAGE,home_improvement,Verified,0
+24554.91,36,18.89,90559.65,15.05,601,23.7,20,0,RENT,other,Source Verified,0
+15632.36,24,19.6,86366.53,41.38,578,24.4,23,1,MORTGAGE,debt_consolidation,Not Verified,0
+30626.21,36,10.17,144204.65,51.13,422,5.8,16,3,MORTGAGE,debt_consolidation,Not Verified,0
+10423.25,48,26.29,89692.99,33.55,600,7.1,27,0,OWN,home_improvement,Verified,0
+55461.11,36,7.11,82299.53,31.93,377,26.3,19,1,RENT,debt_consolidation,Source Verified,0
+93977.54,60,13.9,170459.91,24.14,778,24.6,24,1,MORTGAGE,debt_consolidation,Verified,0
+8737.64,12,22.01,38229.7,9.7,672,18.5,1,0,MORTGAGE,debt_consolidation,Not Verified,0
+16600.44,48,11.85,141660.67,7.1,846,29.8,4,4,RENT,home_improvement,Source Verified,0
+47958.91,48,25.69,64770.57,45.64,351,22.1,24,0,RENT,debt_consolidation,Not Verified,1
+93718.13,60,23.5,22789.68,55.65,432,6.5,10,0,RENT,home_improvement,Verified,1
+35034.83,36,24.73,50017.57,27.5,782,25.4,20,0,RENT,other,Source Verified,0
+53187.31,12,7.98,129199.08,39.57,517,12.4,18,3,MORTGAGE,car,Verified,0
+8949.42,36,8.51,147642.89,54.87,556,1.1,2,7,OWN,debt_consolidation,Source Verified,1
+19092.6,24,12.16,23790.4,5.41,773,9.6,4,0,RENT,home_improvement,Verified,0
+98729.86,36,17.95,26556.58,46.23,587,22.9,15,0,MORTGAGE,debt_consolidation,Verified,1
+96686.28,48,23.7,182457.58,37.01,406,28.8,29,1,RENT,debt_consolidation,Not Verified,1
+5469.3,12,25.91,33195.05,35.92,791,8.3,4,2,MORTGAGE,debt_consolidation,Verified,0
+95422.12,36,22.61,180952.79,17.55,317,7.4,16,1,RENT,debt_consolidation,Source Verified,0
+65716.39,12,28.21,61069.86,41.03,792,16.9,15,5,MORTGAGE,home_improvement,Not Verified,0
+87452.24,12,23.47,153203.2,47.69,328,24.4,18,2,MORTGAGE,other,Not Verified,1
+48200.29,24,12.66,75751.98,6.77,666,22.4,7,3,RENT,other,Verified,0
+53981.62,24,11.63,174575.36,32.01,339,16.8,15,1,MORTGAGE,debt_consolidation,Not Verified,0
+51440.43,48,22.4,146081.88,6.08,688,18.9,22,0,MORTGAGE,home_improvement,Verified,0
+68352.1,60,9.82,92326.42,52.35,319,7.3,11,2,MORTGAGE,debt_consolidation,Source Verified,1
+18266.87,12,7.32,33734.44,30.46,763,13.0,19,0,RENT,home_improvement,Not Verified,0
+7847.49,60,18.31,151886.03,48.48,556,7.7,8,0,RENT,debt_consolidation,Not Verified,1
+34253.34,48,25.54,131039.26,22.09,351,26.5,24,0,RENT,other,Not Verified,1
+71944.67,12,7.53,20524.11,7.5,689,3.4,1,1,RENT,other,Not Verified,1
+24176.08,12,24.8,21695.57,2.49,569,20.4,3,1,RENT,debt_consolidation,Verified,0
+68976.08,60,25.29,165582.74,16.89,405,7.8,5,1,RENT,car,Source Verified,0
+97141.64,36,17.06,66691.95,14.65,309,14.3,18,0,MORTGAGE,home_improvement,Source Verified,1
+13920.57,24,6.43,134504.06,33.62,530,9.0,12,1,RENT,home_improvement,Source Verified,0
+68897.2,36,9.36,101758.6,1.3,347,9.7,12,0,MORTGAGE,home_improvement,Verified,0
+47156.27,60,22.69,175417.4,31.23,352,7.8,21,1,MORTGAGE,home_improvement,Verified,0
+87473.51,24,22.79,185053.0,23.51,447,22.6,27,0,RENT,other,Not Verified,0
+21829.23,36,27.46,199425.39,34.63,647,11.0,26,3,RENT,car,Not Verified,0
+70799.47,24,19.57,47663.14,42.15,591,21.8,19,2,MORTGAGE,home_improvement,Source Verified,1
+84620.95,12,8.1,175333.53,38.05,338,13.7,9,2,RENT,car,Source Verified,1
+94738.35,36,8.04,67883.85,59.08,833,16.4,11,2,OWN,other,Not Verified,0
+69908.56,24,23.03,126346.86,8.3,788,16.3,17,1,MORTGAGE,debt_consolidation,Source Verified,0
+52231.6,24,9.59,111039.11,25.78,443,29.3,16,0,OWN,debt_consolidation,Not Verified,0
+63695.49,24,13.21,23237.86,25.49,367,11.0,4,1,MORTGAGE,car,Verified,1
+87545.97,36,17.18,187898.83,25.02,818,6.2,10,1,MORTGAGE,other,Source Verified,0
+59207.93,48,5.62,34098.87,39.83,554,27.4,22,1,RENT,debt_consolidation,Not Verified,0
+7886.77,36,11.22,143879.41,29.39,471,5.2,15,0,MORTGAGE,debt_consolidation,Not Verified,0
+93440.13,60,15.2,161301.23,31.05,570,25.0,25,4,RENT,debt_consolidation,Source Verified,0
+70505.04,36,11.99,163151.81,25.94,725,4.5,19,0,MORTGAGE,car,Verified,0
+69268.77,24,8.41,44389.01,59.5,393,19.8,3,0,MORTGAGE,other,Not Verified,1
+25489.14,12,23.2,100562.59,55.65,722,4.5,28,6,OWN,home_improvement,Source Verified,1
+67594.12,36,25.33,169297.2,18.46,712,27.7,21,2,MORTGAGE,debt_consolidation,Not Verified,0
+42417.12,36,11.44,74482.26,6.7,597,17.0,23,0,MORTGAGE,other,Source Verified,0
+66867.13,24,24.36,104194.76,50.39,776,9.9,30,4,OWN,debt_consolidation,Verified,0
+15126.34,12,14.64,69102.9,59.83,373,4.2,5,0,MORTGAGE,other,Verified,0
+67495.3,12,17.67,103439.26,17.56,628,11.1,11,2,RENT,debt_consolidation,Source Verified,0
+99944.3,60,26.4,179810.83,21.47,547,21.2,24,1,RENT,home_improvement,Verified,0
+9580.14,36,23.75,101922.36,56.5,532,11.5,5,1,RENT,home_improvement,Verified,1
+97831.55,12,25.13,120064.16,42.67,439,7.4,7,2,MORTGAGE,home_improvement,Source Verified,1
+43656.26,12,8.42,92715.73,17.74,505,17.3,6,0,MORTGAGE,other,Source Verified,0
+87721.58,48,6.74,102821.09,34.86,359,12.5,30,0,MORTGAGE,other,Verified,0
+79326.62,48,27.34,22731.36,56.65,438,5.0,26,1,MORTGAGE,car,Verified,1
+58866.54,12,14.7,71074.19,48.71,450,4.6,13,0,MORTGAGE,debt_consolidation,Not Verified,1
+75152.67,60,12.2,98584.71,44.51,696,21.2,2,6,RENT,debt_consolidation,Verified,0
+88458.98,12,23.12,134083.46,44.22,327,29.2,19,1,RENT,home_improvement,Source Verified,1
+43393.33,24,25.91,101009.35,10.68,658,7.0,11,0,OWN,other,Verified,0
+36068.15,36,26.56,80807.07,49.48,422,23.2,27,1,OWN,home_improvement,Not Verified,1
+68421.37,60,12.9,89857.77,16.57,345,2.6,20,0,OWN,other,Source Verified,0
+81745.36,24,26.31,63612.8,55.82,465,11.4,5,0,MORTGAGE,other,Verified,1
+77417.09,60,6.02,186408.97,21.88,423,15.2,9,0,MORTGAGE,home_improvement,Verified,0
+80792.3,24,6.24,113913.78,51.46,604,8.1,6,6,OWN,other,Not Verified,0
+46380.41,36,20.59,22413.7,15.97,497,15.9,17,0,RENT,other,Not Verified,1
+82694.25,36,6.58,23500.33,30.87,831,26.5,19,0,OWN,car,Source Verified,0
+16419.86,48,13.12,195133.09,6.41,830,28.3,23,0,MORTGAGE,home_improvement,Verified,0
+56726.46,24,21.82,59861.16,39.61,544,3.0,8,0,RENT,car,Source Verified,0
+5547.07,48,13.43,165009.49,50.16,737,8.2,7,0,MORTGAGE,debt_consolidation,Source Verified,0
+35835.65,24,9.49,30489.55,43.11,307,29.4,5,3,RENT,home_improvement,Not Verified,1
+39813.85,48,12.03,185809.29,31.4,601,8.1,15,6,MORTGAGE,debt_consolidation,Verified,0
+42636.41,36,16.44,177395.06,2.71,709,20.8,10,0,RENT,debt_consolidation,Source Verified,0
+71069.38,60,16.88,122796.77,56.01,419,7.6,24,1,OWN,other,Verified,1
+41913.02,48,24.58,21619.76,42.33,334,10.7,16,6,OWN,home_improvement,Source Verified,1
+47625.89,24,23.75,66405.96,44.75,386,5.7,9,0,RENT,debt_consolidation,Source Verified,1
+27566.69,24,16.42,93228.08,47.68,543,25.7,7,0,MORTGAGE,debt_consolidation,Not Verified,0
+40458.92,36,26.14,102811.54,44.86,579,26.5,11,4,RENT,other,Source Verified,1
+26590.61,24,7.86,73582.18,26.47,509,8.9,9,2,RENT,other,Source Verified,0
+11953.61,12,11.38,25930.62,44.02,542,24.7,17,0,MORTGAGE,debt_consolidation,Verified,0
+62327.62,60,25.7,126222.93,37.5,559,10.7,30,0,OWN,other,Verified,0
+68480.22,48,14.45,114347.84,51.24,723,3.0,9,0,OWN,debt_consolidation,Verified,0
+63851.58,60,29.53,70940.11,48.15,358,22.7,3,0,MORTGAGE,home_improvement,Verified,1
+49031.93,36,16.66,26835.67,2.48,723,17.9,22,2,MORTGAGE,car,Verified,0
+41079.65,48,24.8,199026.95,22.73,679,8.2,8,1,RENT,other,Not Verified,0
+87016.7,48,15.06,106757.51,2.08,708,7.6,19,1,MORTGAGE,other,Source Verified,0
+54312.77,12,15.62,156080.76,6.12,704,29.3,20,0,MORTGAGE,debt_consolidation,Verified,0
+50522.28,36,14.57,101416.53,36.08,559,25.9,16,0,OWN,home_improvement,Verified,0
+7436.0,24,22.98,27770.65,52.43,416,24.3,7,0,MORTGAGE,debt_consolidation,Source Verified,1
+37418.54,12,18.69,75728.13,7.19,595,3.8,28,2,MORTGAGE,home_improvement,Verified,0
+41118.58,12,28.59,77619.83,27.07,827,22.7,7,1,MORTGAGE,home_improvement,Verified,0
+42888.16,60,11.27,170903.52,54.65,624,6.4,20,0,MORTGAGE,debt_consolidation,Source Verified,0
+60116.38,60,7.51,137761.4,48.86,306,29.3,25,0,RENT,home_improvement,Not Verified,1
+55692.24,60,14.83,69577.38,31.18,333,1.6,13,2,MORTGAGE,debt_consolidation,Source Verified,1
+62750.98,12,20.42,194193.19,46.29,846,10.6,3,1,OWN,home_improvement,Source Verified,0
+77663.91,24,26.52,77877.53,31.36,340,12.9,12,0,OWN,car,Not Verified,1
+82233.65,48,13.65,199682.12,9.49,325,24.7,24,0,RENT,debt_consolidation,Verified,0
+73221.69,60,21.34,199309.46,7.48,494,23.0,8,0,MORTGAGE,other,Verified,0
+95774.75,24,13.75,54417.89,11.3,833,11.2,13,2,MORTGAGE,debt_consolidation,Source Verified,0
+6732.1,36,20.43,76293.4,21.06,475,17.0,20,1,RENT,home_improvement,Not Verified,0
+23598.91,60,27.12,107487.96,55.83,525,25.1,16,2,MORTGAGE,home_improvement,Source Verified,1
+5718.47,48,10.78,139538.12,47.98,649,0.5,7,3,MORTGAGE,debt_consolidation,Verified,0
+66510.1,36,15.11,115048.54,25.97,313,24.1,4,7,MORTGAGE,debt_consolidation,Not Verified,1
+90312.9,36,29.83,194499.46,29.58,794,28.4,29,0,OWN,other,Verified,0
+28130.82,48,26.71,150318.05,15.94,586,1.0,12,0,MORTGAGE,home_improvement,Not Verified,0
+93068.28,60,19.12,58168.07,42.26,557,1.4,17,1,MORTGAGE,debt_consolidation,Not Verified,0
+10725.4,12,17.92,38917.56,48.17,773,10.3,1,0,OWN,debt_consolidation,Verified,0
+93771.42,48,12.12,143912.23,14.33,824,2.6,30,2,RENT,other,Not Verified,0
+38404.16,48,17.93,48521.44,2.51,533,14.4,17,3,MORTGAGE,debt_consolidation,Not Verified,0
+14634.98,48,26.2,161781.83,37.43,395,21.9,2,1,MORTGAGE,other,Not Verified,0
+51157.82,36,22.13,75986.6,33.75,749,17.0,6,0,RENT,debt_consolidation,Verified,0
+29393.77,24,12.25,78840.79,24.13,522,5.9,12,0,RENT,home_improvement,Not Verified,0
+32062.93,12,10.04,21943.71,38.63,815,19.6,26,0,MORTGAGE,debt_consolidation,Verified,0
+34192.55,60,11.63,146182.03,33.04,822,20.5,11,3,RENT,car,Not Verified,0
+81287.46,60,9.24,40388.56,15.03,363,28.0,21,0,OWN,car,Source Verified,0
+56220.32,24,7.39,159118.5,23.86,826,4.4,11,0,RENT,home_improvement,Verified,0
+34574.23,48,15.48,108536.21,25.69,503,20.8,18,0,RENT,debt_consolidation,Verified,0
+62981.71,12,7.83,161170.37,52.81,655,27.3,8,7,MORTGAGE,home_improvement,Source Verified,0
+73034.31,60,9.3,125106.78,57.65,319,15.0,25,1,MORTGAGE,debt_consolidation,Source Verified,1
+30899.28,60,18.68,34837.99,53.58,789,10.9,7,4,RENT,debt_consolidation,Verified,1
+44287.16,48,9.11,157817.42,43.15,653,5.1,28,2,MORTGAGE,other,Verified,0
+16579.18,24,6.6,32563.91,35.1,654,26.0,14,1,RENT,car,Source Verified,0
+22209.19,12,12.93,106166.31,41.36,796,11.8,16,0,OWN,debt_consolidation,Source Verified,0
+69706.2,24,10.51,51022.86,56.35,580,27.7,12,0,MORTGAGE,other,Source Verified,0
+22236.64,24,17.88,155420.33,15.0,526,25.4,9,1,OWN,other,Not Verified,0
+54890.52,12,7.56,184086.42,32.11,776,11.3,20,3,OWN,home_improvement,Source Verified,0
+72359.39,12,23.79,119742.71,41.38,708,17.2,29,0,RENT,home_improvement,Verified,0
+15153.31,60,27.66,114886.51,40.75,822,0.8,23,0,MORTGAGE,other,Source Verified,0
+58894.66,60,23.59,157513.38,15.14,817,7.9,21,1,RENT,home_improvement,Not Verified,0
+29373.46,12,18.32,20914.19,35.2,510,21.3,16,0,RENT,home_improvement,Verified,0
+96478.05,36,26.52,185196.56,47.75,546,20.3,21,1,MORTGAGE,car,Source Verified,0
+50936.84,60,22.37,55540.79,28.5,441,10.6,19,0,RENT,debt_consolidation,Source Verified,1
+81569.29,36,5.26,197141.4,47.6,663,24.3,16,0,RENT,other,Not Verified,0
+57271.52,12,14.85,152525.71,21.59,500,7.1,9,0,RENT,home_improvement,Source Verified,0
+9124.19,60,26.27,159365.21,56.33,732,13.8,13,1,RENT,home_improvement,Not Verified,0
+65149.38,24,13.65,138116.54,32.04,367,14.2,26,1,RENT,debt_consolidation,Verified,0
+95383.32,12,5.88,104899.37,35.76,364,10.2,5,0,MORTGAGE,debt_consolidation,Not Verified,1
+62153.12,48,23.65,122892.98,1.88,412,28.6,22,3,MORTGAGE,debt_consolidation,Verified,0
+82822.94,36,25.05,28352.52,10.22,346,20.9,19,0,RENT,debt_consolidation,Source Verified,1
+88999.61,12,9.01,132312.71,37.98,641,16.2,10,0,RENT,car,Source Verified,0
+26667.58,12,18.43,132697.66,25.19,381,15.3,7,1,OWN,debt_consolidation,Not Verified,0
+25144.26,60,9.8,180416.14,30.49,388,4.8,9,0,RENT,debt_consolidation,Verified,0
+63043.19,60,22.98,111018.14,3.78,308,11.2,25,1,OWN,home_improvement,Verified,0
+44047.7,60,11.79,33885.99,50.05,730,20.2,14,5,RENT,home_improvement,Not Verified,0
+84786.82,48,12.91,75115.27,47.07,747,27.7,15,1,OWN,debt_consolidation,Source Verified,0
+90502.2,60,26.12,138013.29,11.12,389,24.5,13,1,MORTGAGE,debt_consolidation,Verified,0
+38575.03,12,16.91,63066.6,38.06,707,9.0,10,1,RENT,other,Verified,0
+27502.7,60,21.74,70495.01,49.1,538,13.0,14,0,OWN,debt_consolidation,Source Verified,1
+79149.92,24,15.06,167684.42,38.45,432,2.5,26,0,RENT,other,Source Verified,0
+31106.57,60,12.45,125177.55,18.62,642,3.1,21,0,RENT,debt_consolidation,Not Verified,0
+83148.36,48,20.64,111534.94,39.37,398,14.1,23,5,MORTGAGE,home_improvement,Verified,1
+45255.13,24,8.87,77321.35,12.63,716,15.9,29,0,RENT,debt_consolidation,Not Verified,0
+68417.24,12,14.32,151567.05,19.1,326,7.9,12,1,OWN,car,Source Verified,0
+14075.85,12,10.23,71789.32,14.4,828,19.3,28,4,RENT,debt_consolidation,Verified,0
+64266.64,36,22.39,152671.43,33.42,340,21.1,29,2,RENT,debt_consolidation,Source Verified,1
+47917.93,24,28.61,32618.27,6.49,619,9.0,19,6,MORTGAGE,debt_consolidation,Source Verified,0
+60727.8,36,29.89,175617.44,56.0,796,22.8,6,1,MORTGAGE,car,Verified,0
+20961.35,24,16.26,109921.96,20.01,307,6.2,12,0,OWN,other,Not Verified,0
+75003.01,24,11.31,98931.44,13.14,574,16.3,24,2,MORTGAGE,debt_consolidation,Not Verified,0
+86965.72,48,16.07,129984.21,29.79,493,24.1,13,0,RENT,debt_consolidation,Verified,0
+25590.28,36,26.18,132354.57,16.62,619,16.1,8,0,OWN,car,Verified,0
+14092.88,48,10.15,43766.33,32.09,424,27.2,16,2,OWN,other,Verified,0
+7245.67,24,28.8,156122.05,20.91,336,1.8,2,1,MORTGAGE,home_improvement,Not Verified,0
+65987.29,12,13.55,69667.09,7.92,644,17.6,22,3,RENT,other,Verified,0
+62673.93,24,29.65,182893.14,15.95,529,16.9,7,6,MORTGAGE,debt_consolidation,Not Verified,0
+56936.25,48,25.97,167213.12,26.31,642,19.8,12,3,RENT,debt_consolidation,Source Verified,0
+27034.97,36,25.21,82327.89,1.82,416,25.0,7,0,RENT,debt_consolidation,Not Verified,0
+42136.07,36,12.95,165393.07,46.24,486,21.8,19,1,MORTGAGE,home_improvement,Source Verified,0
+61475.25,48,5.22,84150.29,37.31,609,23.7,14,2,MORTGAGE,debt_consolidation,Verified,0
+52192.85,36,14.55,38170.58,36.08,626,8.7,30,7,MORTGAGE,debt_consolidation,Not Verified,1
+98839.62,60,12.55,193139.88,32.76,505,11.6,9,0,MORTGAGE,debt_consolidation,Not Verified,0
+17961.78,12,5.93,137468.36,35.42,454,18.8,18,0,RENT,home_improvement,Source Verified,0
+71038.73,12,17.63,102097.91,56.08,451,16.6,11,3,OWN,debt_consolidation,Source Verified,1
+43410.28,12,15.08,91599.2,0.51,396,28.8,16,0,RENT,debt_consolidation,Source Verified,0
+45678.96,36,20.86,78446.96,2.87,479,5.6,19,1,RENT,other,Source Verified,0
+73171.79,36,20.53,196660.57,11.49,410,10.5,11,0,MORTGAGE,debt_consolidation,Source Verified,0
+70781.43,24,8.02,44254.51,10.04,649,17.2,18,0,MORTGAGE,debt_consolidation,Verified,0
+99169.32,24,29.42,76664.91,10.87,613,26.0,11,2,MORTGAGE,home_improvement,Not Verified,0
+17197.46,12,9.67,107389.58,40.32,510,27.9,25,0,RENT,other,Source Verified,0
+14890.42,60,16.13,106039.92,27.57,479,10.1,4,1,MORTGAGE,home_improvement,Verified,0
+73812.19,24,17.2,104845.97,59.51,431,2.0,18,0,MORTGAGE,debt_consolidation,Source Verified,1
+59946.76,24,25.33,51641.09,13.61,595,12.6,19,0,RENT,other,Verified,0
+31045.26,36,7.48,46087.85,18.65,805,11.8,13,0,RENT,home_improvement,Verified,0
+12544.84,60,15.72,65858.17,59.05,677,29.6,4,2,MORTGAGE,debt_consolidation,Source Verified,0
+13137.53,12,20.71,184614.71,49.91,709,12.9,30,0,MORTGAGE,home_improvement,Source Verified,0
+89948.13,24,10.38,40349.53,28.19,759,9.2,10,1,MORTGAGE,car,Not Verified,0
+23227.4,60,20.69,156336.52,33.28,493,11.0,29,1,RENT,home_improvement,Not Verified,0
+35720.3,60,28.09,156358.71,50.59,335,11.9,22,1,RENT,other,Verified,1
+26532.36,12,29.94,165758.67,28.86,642,24.6,5,1,RENT,home_improvement,Source Verified,0
+38724.65,60,5.81,179590.79,12.36,404,2.4,3,0,RENT,other,Not Verified,0
+11595.27,60,10.89,67346.51,49.71,613,9.5,16,0,MORTGAGE,home_improvement,Verified,0
+54310.68,60,12.76,60420.7,32.27,707,29.0,26,1,OWN,debt_consolidation,Not Verified,0
+11423.19,24,14.98,103791.02,9.18,731,4.6,8,0,MORTGAGE,home_improvement,Not Verified,0
+81033.87,12,11.06,67716.05,30.34,466,22.3,24,3,MORTGAGE,debt_consolidation,Source Verified,0
+27202.65,60,10.09,152175.8,24.79,582,10.7,7,2,RENT,debt_consolidation,Verified,0
+56301.13,60,28.86,134469.12,52.61,642,17.5,19,0,RENT,car,Not Verified,1
+88607.51,24,27.96,177497.78,7.56,751,3.0,14,1,RENT,home_improvement,Not Verified,0
+66833.35,12,6.17,34892.89,52.51,719,9.2,15,4,MORTGAGE,debt_consolidation,Not Verified,1
+55630.99,36,13.47,184715.0,30.73,843,15.0,17,0,RENT,debt_consolidation,Source Verified,0
+35811.71,24,15.13,72802.75,24.26,304,7.0,21,2,OWN,debt_consolidation,Not Verified,1
+36635.18,12,10.98,108324.98,9.72,541,16.3,1,0,RENT,other,Verified,0
+68601.26,60,20.72,98950.06,42.05,441,6.6,6,1,MORTGAGE,debt_consolidation,Verified,1
+99443.24,12,21.01,156856.1,55.61,366,19.5,27,3,RENT,home_improvement,Source Verified,1
+67874.72,12,26.26,95660.0,22.52,801,27.1,23,1,MORTGAGE,home_improvement,Not Verified,0
+57989.42,12,23.52,189839.57,14.5,849,2.6,15,1,MORTGAGE,home_improvement,Not Verified,0
+74411.8,36,18.56,182456.1,33.29,399,6.5,12,4,OWN,debt_consolidation,Not Verified,0
+49194.53,12,21.34,176989.01,47.77,321,25.3,21,2,RENT,debt_consolidation,Source Verified,1
+10713.52,36,11.85,32826.5,0.23,451,18.9,20,1,OWN,car,Verified,0
+58418.2,60,19.83,173766.45,37.88,759,2.4,2,1,RENT,car,Not Verified,0
+95974.4,36,17.23,160694.38,35.79,462,14.6,5,1,OWN,car,Source Verified,0
+21653.78,60,8.33,38632.33,19.09,331,6.3,9,2,RENT,car,Not Verified,0
+70550.46,60,11.06,39334.58,27.09,329,6.0,20,6,MORTGAGE,debt_consolidation,Source Verified,1
+24088.7,36,12.29,38209.49,14.82,535,28.2,14,2,MORTGAGE,debt_consolidation,Not Verified,0
+55903.63,24,28.11,22039.87,47.39,813,22.8,18,2,RENT,other,Not Verified,1
+14184.26,48,10.76,118754.17,38.07,457,20.9,29,0,OWN,car,Source Verified,0
+47785.24,12,12.23,195210.97,31.96,535,7.2,22,2,MORTGAGE,home_improvement,Verified,0
+76835.52,48,14.23,98963.25,23.55,356,3.6,8,2,OWN,home_improvement,Verified,0
+38019.29,12,21.59,117336.35,17.48,571,26.1,2,2,RENT,debt_consolidation,Not Verified,0
+68166.61,12,7.96,194234.56,49.36,683,0.2,9,0,RENT,debt_consolidation,Source Verified,0
+80567.75,60,28.85,65932.8,27.08,449,11.6,7,4,MORTGAGE,home_improvement,Not Verified,1
+93081.89,12,26.64,174524.65,30.09,463,8.3,30,0,OWN,other,Verified,0
+27291.0,12,19.43,118350.28,31.25,763,17.1,29,0,MORTGAGE,debt_consolidation,Not Verified,0
+42935.01,36,21.85,122505.77,26.9,306,7.5,18,1,OWN,debt_consolidation,Source Verified,0
+19479.52,48,5.42,81771.29,15.37,650,9.3,27,1,MORTGAGE,debt_consolidation,Verified,0
+99285.93,36,13.47,121085.18,7.22,517,25.5,16,0,MORTGAGE,debt_consolidation,Not Verified,0
+93065.09,12,24.89,33165.65,5.91,464,18.1,21,2,MORTGAGE,home_improvement,Source Verified,1
+56295.93,60,6.94,157635.84,45.45,662,4.4,5,0,RENT,other,Verified,0
+84993.16,36,12.06,71243.8,13.41,759,21.8,23,0,RENT,car,Source Verified,0
+54491.01,36,19.63,179769.5,3.34,607,6.2,29,0,RENT,other,Verified,0
+64240.64,24,11.41,86213.13,47.85,317,13.0,15,3,OWN,home_improvement,Source Verified,1
+13466.82,12,28.35,45708.34,9.24,554,19.4,5,0,RENT,home_improvement,Verified,0
+76750.69,60,8.28,145258.68,37.51,555,8.2,11,0,MORTGAGE,other,Not Verified,0
+17132.78,36,24.93,49624.07,20.32,599,11.5,30,1,RENT,debt_consolidation,Source Verified,0
+83476.42,36,17.7,155662.49,7.59,669,22.0,22,0,MORTGAGE,other,Source Verified,0
+79292.67,60,23.76,194260.2,24.87,311,28.1,14,2,RENT,car,Source Verified,0
+72330.75,12,12.77,160319.52,0.89,576,15.9,25,3,RENT,debt_consolidation,Not Verified,0
+8435.24,24,17.86,24040.86,50.46,624,0.3,19,3,RENT,home_improvement,Verified,0
+33797.19,36,26.42,127979.44,30.81,489,10.2,3,0,OWN,debt_consolidation,Not Verified,0
+29995.69,24,16.67,145173.92,8.35,668,12.0,24,1,RENT,debt_consolidation,Source Verified,0
+39212.96,48,13.99,168582.5,14.22,425,10.2,10,1,MORTGAGE,debt_consolidation,Verified,0
+13326.06,12,18.4,30080.42,26.88,475,13.1,28,0,RENT,other,Source Verified,0
+94010.99,48,22.93,106419.41,11.33,830,19.0,6,0,MORTGAGE,car,Source Verified,0
+57611.21,48,16.09,116366.76,16.12,491,3.6,28,1,MORTGAGE,debt_consolidation,Not Verified,0
+34024.81,48,28.47,50442.48,32.06,491,8.2,26,0,RENT,debt_consolidation,Verified,1
+42713.24,12,12.37,78040.97,49.96,628,15.2,3,5,MORTGAGE,home_improvement,Verified,0
+47484.24,12,16.89,99239.91,24.11,834,9.5,2,2,RENT,debt_consolidation,Verified,0
+62056.46,60,23.92,169977.74,43.02,841,29.7,13,0,RENT,home_improvement,Verified,0
+53989.55,24,22.23,187293.36,52.6,619,12.9,18,0,RENT,home_improvement,Not Verified,0
+92342.24,24,26.59,133116.11,12.98,301,26.1,2,7,RENT,home_improvement,Source Verified,1
+52211.53,60,29.92,91090.13,48.43,795,26.9,15,0,MORTGAGE,debt_consolidation,Verified,0
+99255.01,60,15.67,65725.58,45.44,614,25.1,5,2,MORTGAGE,home_improvement,Verified,1
+85885.37,48,7.78,196784.33,21.42,501,1.4,15,0,RENT,debt_consolidation,Source Verified,0
+24808.5,60,5.76,196943.6,59.37,756,28.4,28,3,OWN,debt_consolidation,Not Verified,0
+93406.55,36,23.17,186495.85,15.75,520,3.9,21,2,RENT,debt_consolidation,Not Verified,0
+16054.81,24,26.85,161420.45,15.29,319,1.0,17,0,MORTGAGE,debt_consolidation,Verified,0
+82657.72,60,10.52,78640.32,46.34,752,12.4,2,0,RENT,other,Verified,0
+41159.21,36,8.96,167060.09,26.08,600,5.8,18,1,RENT,car,Source Verified,0
+88407.56,36,6.56,93582.74,19.85,486,5.5,15,4,MORTGAGE,home_improvement,Not Verified,0
+87465.39,36,25.57,78819.16,10.72,438,8.6,20,0,RENT,home_improvement,Source Verified,1
+81562.91,36,12.78,154075.76,45.92,627,7.5,23,1,MORTGAGE,debt_consolidation,Verified,0
+80052.89,48,15.04,34337.71,47.18,414,20.5,3,0,RENT,debt_consolidation,Source Verified,1
+33944.52,36,17.57,28741.29,33.99,478,5.6,5,3,MORTGAGE,car,Source Verified,0
+12687.33,48,25.99,100631.67,57.44,650,16.3,11,2,RENT,debt_consolidation,Source Verified,1
+43283.12,48,21.27,100214.98,19.09,785,29.6,9,0,OWN,home_improvement,Verified,0
+21484.83,36,20.38,181215.95,13.18,593,13.0,5,0,MORTGAGE,debt_consolidation,Source Verified,0
+71020.35,24,9.39,42707.56,40.65,718,19.3,25,0,MORTGAGE,other,Source Verified,0
+37879.47,36,17.83,42191.11,45.5,720,29.1,1,1,MORTGAGE,other,Verified,0
+97682.97,36,22.88,46541.47,13.49,665,4.1,25,0,RENT,debt_consolidation,Source Verified,0
+65892.35,36,29.33,25352.53,4.6,435,12.6,14,0,MORTGAGE,car,Source Verified,1
+83135.65,24,10.04,32911.71,48.63,777,25.5,5,7,OWN,debt_consolidation,Not Verified,1
+17589.84,12,5.24,138776.58,58.59,540,28.0,8,1,OWN,home_improvement,Verified,0
+86891.38,12,6.88,97685.18,38.68,324,18.0,21,2,RENT,debt_consolidation,Not Verified,1
+92661.93,48,14.4,157448.55,16.67,435,4.3,14,0,MORTGAGE,debt_consolidation,Verified,0
+51270.88,48,25.51,198667.59,59.8,721,27.0,28,0,MORTGAGE,debt_consolidation,Verified,0
+62594.03,24,5.18,138626.24,53.6,338,5.2,16,0,RENT,other,Not Verified,1
+77656.93,60,16.42,29082.0,30.8,381,10.6,6,1,RENT,car,Not Verified,1
+21609.67,12,13.23,38821.32,49.52,682,11.3,8,1,OWN,debt_consolidation,Verified,0
+52743.78,48,6.31,178580.74,48.95,791,13.4,2,3,RENT,home_improvement,Not Verified,0
+42872.99,12,16.26,114949.27,56.09,649,23.7,19,0,RENT,debt_consolidation,Verified,0
+18905.53,24,11.37,168470.69,50.46,422,24.1,27,0,MORTGAGE,debt_consolidation,Source Verified,0
+39915.77,24,13.8,174190.22,38.62,329,21.6,9,4,MORTGAGE,other,Verified,0
+11476.37,60,22.64,186981.42,36.56,638,0.7,5,0,MORTGAGE,debt_consolidation,Source Verified,0
+7452.13,60,18.04,190969.26,28.04,326,16.9,5,0,OWN,home_improvement,Source Verified,0
+17840.8,24,8.12,119868.64,37.59,637,22.4,25,0,RENT,debt_consolidation,Source Verified,0
+96495.94,48,29.04,81383.63,47.71,424,13.3,26,2,RENT,debt_consolidation,Source Verified,1
+57205.31,12,20.9,193135.68,58.14,798,28.3,19,2,MORTGAGE,home_improvement,Source Verified,0
+96753.11,36,24.15,118533.15,28.04,561,24.7,30,0,RENT,other,Not Verified,0
+46087.3,60,6.98,31565.49,34.42,423,19.1,4,0,MORTGAGE,car,Verified,0
+34622.53,36,6.18,135699.78,26.69,769,1.9,16,2,MORTGAGE,debt_consolidation,Verified,0
+53083.48,48,5.49,125783.26,40.11,440,19.6,16,5,OWN,car,Not Verified,0
+46753.61,60,9.72,181242.72,37.8,469,27.3,16,0,OWN,other,Verified,0
+15038.15,36,15.36,137573.69,1.07,759,11.4,7,3,MORTGAGE,debt_consolidation,Source Verified,0
+65878.5,48,28.4,82829.44,32.47,470,25.1,18,0,MORTGAGE,debt_consolidation,Source Verified,0
+25523.63,12,16.43,193920.63,5.31,526,9.4,24,0,RENT,debt_consolidation,Verified,0
+63860.86,48,12.26,164291.51,1.58,491,17.1,21,0,OWN,debt_consolidation,Not Verified,0
+66769.1,60,19.05,133475.17,47.47,364,19.5,1,0,MORTGAGE,home_improvement,Verified,0
+19442.36,24,7.8,72726.54,15.52,321,20.3,3,0,MORTGAGE,debt_consolidation,Verified,0
+10828.21,12,20.24,87237.25,20.44,698,26.5,25,5,OWN,debt_consolidation,Verified,0
+79172.35,36,19.21,140594.59,3.85,655,7.0,21,0,RENT,debt_consolidation,Verified,0
+48681.04,60,24.8,32956.55,10.77,455,7.9,8,0,RENT,home_improvement,Source Verified,1
+10525.56,24,29.67,66202.51,45.94,463,21.1,1,0,MORTGAGE,home_improvement,Source Verified,1
+99512.3,48,11.27,148502.17,29.61,820,5.3,30,2,RENT,home_improvement,Not Verified,0
+10489.15,24,17.74,106403.33,52.84,843,13.9,7,4,MORTGAGE,debt_consolidation,Not Verified,0
+71028.35,60,27.72,92430.84,23.83,560,0.6,7,0,RENT,home_improvement,Verified,1
+98449.5,60,24.63,47262.37,16.12,741,4.2,8,0,OWN,debt_consolidation,Verified,0
+27722.11,24,17.19,99532.83,20.86,705,20.4,19,0,RENT,other,Not Verified,0
+18513.69,48,28.63,158724.55,42.77,464,22.4,17,1,OWN,debt_consolidation,Verified,0
+16531.57,24,6.43,67522.31,33.3,332,3.5,11,0,MORTGAGE,debt_consolidation,Not Verified,1
+33811.14,60,28.27,20971.74,54.25,378,6.8,15,1,MORTGAGE,debt_consolidation,Not Verified,1
+14599.35,60,6.26,140330.88,36.13,761,3.0,9,2,OWN,debt_consolidation,Not Verified,0
+70755.33,36,18.68,195072.79,29.58,702,13.0,17,1,RENT,debt_consolidation,Source Verified,0
+10917.72,36,27.26,129228.78,47.15,665,3.8,11,0,MORTGAGE,home_improvement,Verified,0
+53395.1,12,11.57,41585.93,56.85,372,13.1,6,0,RENT,car,Source Verified,1
+99686.2,60,16.81,77731.96,21.35,652,22.0,9,1,RENT,debt_consolidation,Not Verified,0
+82327.18,36,13.11,176175.49,14.99,725,20.5,30,1,RENT,home_improvement,Verified,0
+63445.85,24,28.8,61862.25,36.97,773,8.4,18,0,MORTGAGE,car,Not Verified,0
+34094.09,48,25.59,129385.26,29.93,307,20.2,20,3,RENT,debt_consolidation,Verified,1
+64270.1,24,22.73,92480.82,59.35,676,27.8,2,1,MORTGAGE,debt_consolidation,Source Verified,0
+55068.94,48,19.69,57411.87,27.74,311,10.4,4,0,OWN,debt_consolidation,Not Verified,1
+45477.92,36,25.51,166413.24,4.46,689,9.9,18,0,OWN,other,Verified,0
+17417.49,12,14.81,153709.63,58.64,650,17.1,28,6,RENT,car,Verified,0
+89227.4,24,16.19,139086.39,50.62,382,7.4,1,0,RENT,debt_consolidation,Verified,1
+47729.54,24,23.25,62540.59,10.7,721,19.5,11,4,MORTGAGE,debt_consolidation,Verified,0
+23489.14,24,13.94,37614.26,54.28,338,25.0,3,0,MORTGAGE,car,Verified,0
+39937.14,48,6.6,123708.68,20.44,755,13.8,8,0,RENT,home_improvement,Verified,0
+44342.33,36,6.86,119662.01,22.63,444,20.4,5,2,MORTGAGE,car,Verified,0
+83616.1,24,7.88,53909.3,54.38,679,19.6,20,0,RENT,debt_consolidation,Not Verified,0
+74693.37,24,26.74,30124.4,31.81,808,1.2,21,0,OWN,other,Not Verified,0
+78083.96,12,16.81,34527.52,8.27,487,5.5,22,0,MORTGAGE,car,Source Verified,1
+6047.97,12,22.82,198698.78,22.14,577,26.8,22,3,MORTGAGE,debt_consolidation,Verified,0
+44534.63,36,14.82,161045.1,43.33,555,28.2,5,1,MORTGAGE,home_improvement,Verified,0
+50727.69,36,11.47,185957.75,10.45,387,23.4,28,0,RENT,debt_consolidation,Not Verified,0
+6823.27,60,13.68,55109.85,35.41,625,27.6,11,0,RENT,debt_consolidation,Source Verified,0
+29682.25,12,24.85,192902.34,41.72,709,9.2,12,1,OWN,home_improvement,Not Verified,0
+77227.53,60,20.63,45677.78,20.63,804,7.4,22,0,MORTGAGE,debt_consolidation,Verified,0
+18025.42,48,28.44,111634.73,41.63,768,11.5,9,0,MORTGAGE,home_improvement,Not Verified,0
+55854.46,60,21.99,169345.22,53.05,581,1.7,21,0,OWN,debt_consolidation,Source Verified,0
+25444.18,24,19.25,82964.6,28.33,695,24.3,13,1,MORTGAGE,car,Not Verified,0
+6151.47,60,20.25,96469.14,22.97,740,29.5,22,0,RENT,debt_consolidation,Source Verified,0
+27914.14,36,28.56,43073.32,15.07,571,24.7,20,1,MORTGAGE,car,Source Verified,0
+97708.01,48,24.71,42125.94,36.25,363,16.6,29,1,OWN,debt_consolidation,Source Verified,1
+81146.03,24,5.6,131522.28,52.79,541,8.9,3,5,OWN,debt_consolidation,Not Verified,1
+96159.78,60,18.35,141595.83,19.48,763,5.9,13,2,RENT,home_improvement,Verified,0
+51346.13,48,22.21,159919.85,23.77,628,10.9,28,0,RENT,debt_consolidation,Verified,0
+15424.94,48,23.72,120202.77,24.4,698,20.0,22,2,MORTGAGE,debt_consolidation,Source Verified,0
+57056.15,24,10.33,136236.67,33.65,402,13.4,11,5,MORTGAGE,debt_consolidation,Verified,0
+48165.85,60,26.68,22433.11,13.7,830,28.0,11,1,MORTGAGE,other,Source Verified,0
+85213.92,48,28.9,49190.73,49.33,522,25.6,21,0,MORTGAGE,debt_consolidation,Not Verified,1
+14317.85,48,10.92,197284.66,17.74,659,3.1,20,0,RENT,car,Source Verified,0
+51382.91,12,27.07,33678.83,42.32,310,3.9,21,3,MORTGAGE,home_improvement,Source Verified,1
+19254.62,48,7.42,142181.88,30.79,370,20.3,7,0,MORTGAGE,debt_consolidation,Source Verified,0
+35844.21,12,6.39,51694.87,35.15,730,6.9,17,0,RENT,home_improvement,Not Verified,0
+75048.92,60,8.23,149009.35,10.78,832,23.7,16,1,OWN,other,Not Verified,0
+50221.72,60,6.44,147078.27,44.1,476,17.7,14,3,MORTGAGE,home_improvement,Source Verified,0
+40709.39,60,26.13,62155.83,11.32,320,6.9,1,0,RENT,other,Source Verified,1
+42475.25,36,6.48,68534.19,6.81,498,14.4,11,2,MORTGAGE,debt_consolidation,Verified,0
+48647.44,60,11.79,137858.73,32.8,310,12.2,13,3,RENT,home_improvement,Source Verified,1
+79576.57,48,7.59,90215.49,42.56,406,26.2,1,1,RENT,debt_consolidation,Verified,0
+89748.05,24,12.39,55018.63,3.0,714,1.0,2,1,RENT,debt_consolidation,Verified,0
+95756.8,12,7.26,151702.33,4.16,815,26.9,9,1,OWN,home_improvement,Source Verified,0
+79755.82,36,21.7,47746.55,48.16,348,19.6,13,4,RENT,home_improvement,Source Verified,1
+34963.66,60,8.33,174015.86,48.54,607,22.1,5,2,OWN,debt_consolidation,Verified,0
+70372.8,60,26.3,112640.51,14.72,440,0.1,30,4,RENT,debt_consolidation,Not Verified,0
+46572.3,24,25.43,39026.11,36.91,376,18.8,9,0,MORTGAGE,home_improvement,Source Verified,0
+29193.71,24,5.34,144933.02,26.59,420,17.7,13,0,RENT,home_improvement,Source Verified,0
+84882.8,36,27.39,113449.35,37.96,618,16.1,5,0,MORTGAGE,debt_consolidation,Not Verified,0
+8650.5,12,5.72,73650.36,51.77,336,23.6,15,1,RENT,debt_consolidation,Source Verified,0
+90667.39,60,10.99,96057.09,4.79,539,16.7,30,3,MORTGAGE,car,Verified,0
+48840.36,36,5.81,73700.79,46.68,374,25.7,7,0,MORTGAGE,car,Not Verified,0
+65534.14,48,13.4,67344.65,29.58,450,7.0,14,0,RENT,debt_consolidation,Verified,0
+67638.62,48,17.85,49449.52,33.85,405,24.2,30,0,MORTGAGE,debt_consolidation,Source Verified,1
+90036.19,36,24.92,85298.08,39.24,786,5.4,16,0,RENT,debt_consolidation,Verified,0
+65483.62,60,13.45,65177.7,55.36,689,24.4,6,0,RENT,other,Source Verified,0
+63323.69,36,22.64,143018.21,3.4,778,28.2,2,0,MORTGAGE,car,Verified,0
+11331.94,60,9.69,143097.81,1.77,511,10.1,16,2,OWN,debt_consolidation,Not Verified,0
+54248.76,24,23.76,110331.24,10.7,472,15.9,19,0,OWN,car,Verified,0
+19266.06,36,10.9,160030.01,59.19,509,19.7,5,1,MORTGAGE,debt_consolidation,Not Verified,0
+75056.21,60,8.59,171441.15,42.9,310,2.4,4,1,MORTGAGE,debt_consolidation,Not Verified,0
+53661.08,36,9.64,124357.96,36.88,699,14.8,14,2,MORTGAGE,other,Source Verified,0
+69621.64,36,9.55,131408.33,2.82,492,10.8,27,0,OWN,other,Source Verified,0
+8958.93,60,17.82,70919.46,52.75,472,26.2,6,4,MORTGAGE,car,Not Verified,0
+13055.24,60,26.12,181076.46,48.77,629,26.3,8,1,MORTGAGE,home_improvement,Verified,0
+73050.72,12,6.99,24357.09,39.89,540,21.0,24,0,MORTGAGE,debt_consolidation,Verified,1
+11848.01,36,22.67,82748.44,20.35,839,19.7,3,0,RENT,other,Verified,0
+11769.39,48,21.36,149924.08,4.23,496,22.0,4,0,MORTGAGE,home_improvement,Source Verified,0
+6150.31,36,26.81,34416.11,34.8,638,11.0,1,2,MORTGAGE,debt_consolidation,Verified,0
+95867.63,36,11.1,52970.51,43.18,471,12.1,2,1,RENT,home_improvement,Verified,1
+75063.29,60,16.25,126071.43,5.65,845,16.6,13,0,MORTGAGE,other,Source Verified,0
+38558.88,36,28.15,120798.86,38.03,545,28.1,9,0,RENT,other,Verified,0
+33170.88,36,21.5,153007.09,17.18,649,21.7,12,3,RENT,home_improvement,Verified,0
+38221.81,48,14.72,166270.28,45.85,370,16.5,10,3,MORTGAGE,car,Not Verified,0
+78592.09,60,8.29,43144.32,32.38,703,23.1,10,1,MORTGAGE,debt_consolidation,Source Verified,0
+67830.21,36,11.56,23308.58,7.74,448,11.1,18,1,RENT,home_improvement,Verified,1
+22593.58,24,19.53,144134.93,31.59,547,21.9,12,2,OWN,home_improvement,Verified,0
+21540.39,12,22.95,74250.52,23.74,786,12.3,22,2,MORTGAGE,debt_consolidation,Source Verified,0
+14347.59,48,8.11,132677.1,10.82,834,8.4,30,0,MORTGAGE,car,Verified,0
+67728.76,36,19.99,47098.03,50.49,534,18.3,16,0,MORTGAGE,other,Not Verified,1
+77615.4,24,18.76,104427.21,0.66,759,20.6,23,2,MORTGAGE,debt_consolidation,Source Verified,0
+30179.41,36,17.85,110796.45,18.73,329,13.8,6,0,MORTGAGE,car,Not Verified,0
+6989.77,36,22.25,125314.01,0.76,766,17.0,24,0,RENT,home_improvement,Not Verified,0
+12806.31,60,25.94,112370.6,5.76,646,20.8,25,3,MORTGAGE,home_improvement,Source Verified,0
+96946.7,60,13.07,109224.34,17.83,569,23.0,24,1,RENT,car,Source Verified,0
+33067.25,60,27.23,79892.15,3.26,789,26.9,21,3,MORTGAGE,debt_consolidation,Not Verified,0
+78076.2,24,9.02,32812.44,35.8,765,10.6,24,1,RENT,car,Source Verified,1
+64343.04,36,9.33,36113.64,5.21,463,28.5,10,4,RENT,debt_consolidation,Verified,0
+41284.27,12,11.67,98080.09,42.1,735,19.1,15,0,MORTGAGE,car,Source Verified,0
+24540.29,48,7.99,84042.76,3.16,355,23.6,26,2,MORTGAGE,home_improvement,Verified,0
+16531.71,60,10.76,112904.26,3.56,753,21.0,9,0,MORTGAGE,debt_consolidation,Not Verified,0
+63426.23,60,7.66,74870.87,18.32,672,6.2,30,0,MORTGAGE,debt_consolidation,Source Verified,0
+78590.21,36,25.54,143823.82,53.79,348,2.1,24,0,OWN,debt_consolidation,Not Verified,1
+66170.9,36,8.47,175511.87,38.48,676,21.8,2,2,MORTGAGE,debt_consolidation,Source Verified,0
+55378.7,24,23.68,73795.37,46.21,619,15.3,18,0,RENT,debt_consolidation,Not Verified,1
+8985.37,24,6.2,54737.12,8.49,627,21.1,12,1,OWN,car,Verified,0
+97006.43,60,28.71,40912.5,50.05,460,14.3,3,0,OWN,other,Verified,1
+80877.85,36,22.78,130925.73,0.49,447,9.4,7,0,MORTGAGE,other,Not Verified,0
+32818.09,12,5.17,99894.08,12.78,719,8.6,9,1,MORTGAGE,other,Not Verified,0
+98097.18,48,24.1,53842.83,36.97,441,21.9,8,5,MORTGAGE,car,Source Verified,1
+62178.75,36,17.85,137564.61,22.51,545,8.3,25,0,RENT,debt_consolidation,Verified,0
+60330.15,36,24.48,46726.97,59.05,682,21.4,6,1,RENT,car,Source Verified,1
+76066.95,24,18.06,119774.13,1.82,344,11.5,1,5,RENT,car,Not Verified,0
+82118.13,48,21.03,114886.71,59.92,627,23.1,14,1,OWN,debt_consolidation,Verified,0
+67365.47,60,24.66,152161.0,37.42,624,4.3,16,1,RENT,home_improvement,Not Verified,0
+17169.1,36,15.13,29919.74,33.52,676,6.1,28,0,MORTGAGE,home_improvement,Source Verified,0
+37135.41,60,5.07,179817.13,3.57,503,20.6,16,1,MORTGAGE,other,Verified,0
+93167.95,36,26.25,146538.51,16.4,547,16.8,4,0,RENT,home_improvement,Not Verified,0
+26338.48,60,14.52,58902.68,55.48,481,6.1,29,1,RENT,other,Verified,1
+40355.87,48,17.4,53012.96,21.25,744,27.1,6,2,MORTGAGE,debt_consolidation,Verified,0
+46047.3,24,5.19,97698.84,39.7,372,8.3,15,1,MORTGAGE,debt_consolidation,Not Verified,0
+46743.47,48,17.3,167161.76,59.97,830,12.6,28,0,MORTGAGE,other,Not Verified,0
+63229.26,12,29.66,171731.0,15.78,649,6.1,22,4,RENT,debt_consolidation,Verified,0
+94592.2,24,11.96,113682.1,34.56,788,11.6,8,1,RENT,debt_consolidation,Not Verified,0
+27865.81,48,14.89,174945.96,41.79,534,14.7,1,4,MORTGAGE,home_improvement,Verified,0
+16542.63,12,22.18,20979.87,9.88,483,8.9,13,1,RENT,other,Not Verified,1
+23759.7,36,25.37,26331.43,8.92,795,23.1,27,0,MORTGAGE,debt_consolidation,Not Verified,0
+89257.87,36,15.43,184127.89,27.38,354,11.8,18,1,RENT,debt_consolidation,Source Verified,0
+66352.03,60,12.74,159559.75,23.15,364,21.9,18,1,RENT,home_improvement,Verified,0
+32161.14,24,28.45,101127.09,42.85,465,6.2,13,0,MORTGAGE,home_improvement,Verified,0
+82514.96,36,21.93,155649.82,4.17,828,11.3,22,1,RENT,debt_consolidation,Verified,0
+86830.15,24,7.98,192015.1,58.33,648,0.2,30,1,MORTGAGE,other,Source Verified,1
+85418.86,36,6.72,158976.11,0.86,605,22.8,14,1,RENT,car,Source Verified,0
+92298.02,60,17.09,171626.84,36.08,688,18.8,11,0,MORTGAGE,other,Verified,0
+28962.9,48,10.5,156909.18,33.76,530,24.5,7,1,RENT,debt_consolidation,Not Verified,0
+76728.98,60,11.35,50278.0,8.08,717,13.7,18,0,OWN,home_improvement,Verified,0
+48751.25,12,26.94,170043.34,9.05,516,24.0,21,0,RENT,other,Source Verified,0
+84989.86,36,7.24,55119.59,47.56,754,19.4,22,0,MORTGAGE,home_improvement,Verified,0
+74206.61,12,22.88,180670.04,53.25,447,0.1,4,0,MORTGAGE,debt_consolidation,Not Verified,0
+78762.51,12,11.78,102556.98,16.98,453,7.6,17,0,RENT,other,Source Verified,0
+67335.37,24,24.01,141855.82,26.28,587,14.8,19,0,MORTGAGE,home_improvement,Not Verified,0
+21855.73,36,23.06,109503.35,21.3,537,18.6,14,0,MORTGAGE,car,Verified,0
+56777.56,12,5.18,36918.37,4.35,656,2.0,10,6,MORTGAGE,debt_consolidation,Verified,0
+98543.63,48,17.73,72330.02,40.39,500,21.2,25,1,MORTGAGE,home_improvement,Verified,1
+94051.87,12,8.48,197071.73,49.51,427,16.3,29,1,MORTGAGE,other,Verified,0
+9101.5,48,26.66,192928.66,18.29,558,15.8,6,5,MORTGAGE,home_improvement,Verified,0
+20657.41,24,26.79,77687.64,59.41,609,8.8,18,4,OWN,debt_consolidation,Source Verified,1
+17514.23,12,15.46,199333.42,4.55,378,17.8,25,3,OWN,debt_consolidation,Source Verified,0
+73968.09,60,16.11,172199.22,39.71,606,0.8,4,0,MORTGAGE,debt_consolidation,Not Verified,0
+82689.61,24,12.58,129972.71,26.89,476,1.9,11,1,OWN,debt_consolidation,Source Verified,0
+25283.58,48,22.92,27222.43,26.8,516,22.0,13,2,RENT,car,Source Verified,1
+53056.01,24,13.97,182260.43,27.46,454,9.7,8,3,MORTGAGE,debt_consolidation,Not Verified,0
+84866.79,12,11.69,120337.27,15.52,812,10.4,10,1,RENT,debt_consolidation,Source Verified,0
+74616.15,36,15.81,176325.71,42.93,676,6.3,23,0,MORTGAGE,debt_consolidation,Source Verified,0
+56512.53,36,7.29,170197.24,43.29,444,13.4,28,6,MORTGAGE,home_improvement,Not Verified,0
+61083.03,48,23.67,169941.12,16.94,655,1.6,11,1,MORTGAGE,home_improvement,Not Verified,0
+53294.25,48,5.31,145671.29,50.12,767,9.0,3,0,RENT,car,Source Verified,0
+33267.1,36,21.11,72454.72,19.01,521,15.8,15,0,RENT,other,Source Verified,0
+58677.09,48,9.57,80508.85,43.51,756,14.0,8,0,MORTGAGE,debt_consolidation,Source Verified,0
+70444.1,24,10.81,75524.46,7.26,385,30.0,20,0,RENT,home_improvement,Not Verified,0
+87965.68,60,20.89,23608.28,10.12,753,11.7,18,0,RENT,debt_consolidation,Not Verified,1
+65447.68,60,29.82,124862.4,18.95,597,11.6,27,7,MORTGAGE,debt_consolidation,Verified,0
+77306.55,24,24.44,145790.06,35.63,423,15.1,21,0,RENT,home_improvement,Not Verified,0
+20206.81,60,10.65,173695.88,38.73,524,5.7,1,1,MORTGAGE,car,Source Verified,0
+48847.96,12,9.4,45229.78,23.78,843,26.3,29,3,MORTGAGE,debt_consolidation,Verified,0
+5886.5,24,26.66,117952.97,4.67,731,17.2,24,1,OWN,debt_consolidation,Not Verified,0
+28434.49,48,16.1,21441.47,22.42,616,5.8,30,0,OWN,car,Source Verified,0
+74013.86,24,8.43,37116.86,41.33,363,23.8,8,1,RENT,home_improvement,Verified,1
+99221.95,36,26.56,29758.11,40.26,530,1.0,3,0,RENT,debt_consolidation,Not Verified,1
+14421.92,48,25.4,150586.05,9.61,445,29.5,1,0,MORTGAGE,home_improvement,Source Verified,0
+43141.96,36,29.6,34590.72,0.47,339,26.0,20,1,OWN,other,Source Verified,0
+81006.74,48,27.74,148961.54,45.18,598,17.4,25,4,RENT,debt_consolidation,Not Verified,0
+24383.39,60,26.29,64932.45,6.38,789,3.3,16,2,MORTGAGE,debt_consolidation,Not Verified,0
+57733.07,24,6.31,177988.33,4.94,672,6.5,9,0,MORTGAGE,debt_consolidation,Not Verified,0
+74641.77,12,7.61,166367.0,0.16,437,8.4,17,0,RENT,car,Source Verified,0
+63518.62,48,19.22,192409.44,25.96,615,7.2,27,0,MORTGAGE,debt_consolidation,Source Verified,0
+22862.35,48,18.29,179077.16,30.2,819,14.9,16,1,RENT,other,Verified,0
+38761.53,36,16.45,187999.3,38.26,698,28.3,23,0,MORTGAGE,car,Source Verified,0
+79460.22,60,14.92,174573.63,17.76,679,13.3,6,3,MORTGAGE,debt_consolidation,Not Verified,0
+57651.52,36,15.78,144808.74,42.63,832,19.8,30,0,MORTGAGE,debt_consolidation,Not Verified,0
+5496.81,36,19.23,50646.65,10.16,739,20.7,23,0,MORTGAGE,home_improvement,Verified,0
+77294.12,60,5.05,68907.35,49.92,375,26.1,7,1,RENT,debt_consolidation,Verified,1
+8354.58,12,11.52,58290.85,34.31,491,1.0,24,0,MORTGAGE,other,Not Verified,0
+75844.71,36,17.96,128645.44,35.03,831,12.1,16,2,MORTGAGE,debt_consolidation,Not Verified,0
+24235.65,36,23.06,110651.59,12.59,569,23.5,8,4,RENT,debt_consolidation,Source Verified,0
+96016.98,48,9.35,176074.4,4.45,361,24.4,10,0,RENT,home_improvement,Source Verified,0
+39954.37,60,18.67,191481.12,27.88,552,27.8,14,0,MORTGAGE,debt_consolidation,Verified,0
+36058.5,24,22.86,92874.78,36.94,683,21.1,11,9,RENT,home_improvement,Not Verified,1
+19144.36,12,16.12,111143.1,5.7,849,7.4,2,2,MORTGAGE,debt_consolidation,Source Verified,0
+34032.4,12,5.68,194872.94,57.03,478,15.2,12,5,MORTGAGE,home_improvement,Source Verified,0
+88281.82,60,16.23,69723.01,58.82,583,1.0,28,0,MORTGAGE,home_improvement,Source Verified,1
+99651.76,48,12.41,162630.34,32.73,784,19.4,28,0,OWN,home_improvement,Source Verified,0
+39989.41,48,28.24,60543.18,57.0,495,16.6,20,0,RENT,home_improvement,Verified,1
+47618.01,60,8.12,142662.82,10.77,360,20.0,20,0,RENT,debt_consolidation,Not Verified,0
+73596.74,48,21.31,65650.81,1.53,822,27.9,13,2,MORTGAGE,home_improvement,Not Verified,0
+89188.6,12,6.32,179072.01,2.36,569,20.6,15,0,MORTGAGE,debt_consolidation,Not Verified,0
+61339.21,12,16.15,121066.03,35.25,577,9.6,27,1,MORTGAGE,home_improvement,Not Verified,0
+42194.94,24,18.85,53468.06,3.7,642,6.0,26,0,MORTGAGE,other,Source Verified,0
+44199.07,60,12.45,60386.45,57.51,302,25.6,12,2,MORTGAGE,debt_consolidation,Verified,1
+71083.72,36,16.38,108892.86,8.52,812,5.8,13,0,RENT,home_improvement,Not Verified,0
+5305.74,36,9.09,193088.36,18.28,499,4.8,8,0,MORTGAGE,debt_consolidation,Verified,0
+63860.99,24,12.6,158535.59,49.35,518,6.2,16,1,OWN,home_improvement,Source Verified,0
+38771.84,24,20.53,107895.74,13.12,396,15.3,30,0,RENT,car,Verified,0
+80448.75,48,12.55,80789.45,14.58,508,3.7,29,1,RENT,debt_consolidation,Source Verified,0
+13834.11,24,27.49,118868.33,38.54,742,28.1,29,0,RENT,car,Source Verified,0
+60879.22,24,20.71,154704.95,16.57,740,29.0,3,3,RENT,debt_consolidation,Verified,0
+50692.42,36,15.97,161107.15,13.05,815,29.2,28,1,OWN,home_improvement,Verified,0
+66020.92,48,5.97,78429.58,15.25,522,1.2,29,1,RENT,car,Source Verified,0
+11161.09,24,17.49,149808.67,29.44,690,28.4,13,5,MORTGAGE,debt_consolidation,Not Verified,0
+60098.46,24,24.12,138401.98,57.97,579,29.9,12,7,RENT,car,Source Verified,1
+58341.04,48,11.64,192640.21,49.93,742,28.3,19,1,MORTGAGE,debt_consolidation,Verified,0
+58262.71,60,25.17,187596.25,17.08,692,20.1,29,1,RENT,car,Source Verified,0
+62331.33,48,11.3,162088.28,21.8,502,21.0,2,1,RENT,home_improvement,Not Verified,0
+69264.45,36,25.59,150211.04,27.87,485,3.7,1,0,OWN,home_improvement,Source Verified,0
+81473.95,60,7.13,69327.49,58.74,439,26.2,8,7,RENT,other,Verified,1
+30632.97,12,26.65,172273.75,10.34,617,1.8,30,2,MORTGAGE,debt_consolidation,Not Verified,0
+83379.69,48,17.48,96951.03,21.45,830,9.5,9,0,RENT,debt_consolidation,Verified,0
+52334.29,36,12.41,69003.3,43.77,410,29.7,25,0,OWN,other,Verified,0
+12320.54,60,11.63,89148.94,57.84,352,12.7,27,0,RENT,debt_consolidation,Source Verified,0
+10562.34,48,15.8,170468.39,9.34,366,3.9,8,0,MORTGAGE,home_improvement,Verified,0
+36752.64,24,29.98,46753.98,13.64,731,29.1,21,0,MORTGAGE,other,Not Verified,0
+79565.21,48,10.51,102108.57,13.54,493,29.5,17,0,RENT,home_improvement,Verified,0
+72229.69,12,7.58,108624.37,1.26,423,5.6,9,0,RENT,debt_consolidation,Verified,0
+79918.42,48,19.63,26593.35,36.25,494,25.9,6,1,RENT,debt_consolidation,Source Verified,1
+54140.56,60,17.21,55234.29,40.24,655,11.7,28,0,OWN,debt_consolidation,Source Verified,0
+46818.9,60,18.1,168813.64,36.15,601,11.4,15,0,RENT,debt_consolidation,Verified,0
+19007.99,48,21.67,169538.13,4.28,709,7.9,23,1,MORTGAGE,debt_consolidation,Verified,0
+36178.31,60,11.68,72634.72,4.15,486,1.3,24,3,MORTGAGE,car,Verified,0
+46231.84,24,27.77,177481.5,12.62,549,8.0,13,1,MORTGAGE,debt_consolidation,Source Verified,0
+13417.04,48,15.89,158920.93,17.42,356,1.6,21,0,MORTGAGE,other,Not Verified,0
+25958.14,24,8.23,95223.35,47.19,340,27.7,22,1,RENT,car,Source Verified,0
+61831.4,24,23.56,154713.14,9.56,554,19.9,12,0,RENT,other,Source Verified,0
+74888.0,36,21.08,193040.23,2.65,466,26.6,13,0,RENT,debt_consolidation,Source Verified,0
+99843.01,48,12.89,102614.55,23.64,637,21.5,7,0,MORTGAGE,home_improvement,Not Verified,0
+93645.77,60,20.54,62916.89,24.98,324,3.9,23,1,OWN,debt_consolidation,Source Verified,1
+66043.69,24,10.5,189526.97,27.05,367,28.2,18,1,MORTGAGE,debt_consolidation,Verified,0
+45018.57,36,16.12,128673.97,49.61,776,27.0,14,1,RENT,home_improvement,Source Verified,0
+65436.85,48,27.49,38947.73,5.88,611,10.4,11,0,RENT,car,Source Verified,1
+79636.9,48,8.34,123082.91,42.24,692,3.3,28,2,MORTGAGE,debt_consolidation,Source Verified,0
+16241.94,12,14.67,110104.56,20.28,763,21.1,14,0,OWN,debt_consolidation,Verified,0
+43940.96,12,25.53,174006.0,18.6,555,21.9,17,0,RENT,debt_consolidation,Verified,0
+84781.22,24,29.24,115525.13,55.95,719,26.9,24,0,RENT,car,Not Verified,0
+41464.13,12,16.35,65941.84,14.91,589,1.6,21,1,RENT,other,Verified,0
+59327.87,24,17.67,141615.93,38.55,423,4.3,26,0,MORTGAGE,debt_consolidation,Source Verified,0
+60838.09,60,19.3,117663.58,16.51,486,17.9,2,1,MORTGAGE,debt_consolidation,Verified,0
+22525.24,24,28.31,61948.03,30.43,570,18.6,19,3,RENT,other,Verified,1
+39412.37,12,26.46,123253.01,47.18,474,1.0,16,0,RENT,debt_consolidation,Verified,1
+36778.57,60,9.27,167876.4,52.9,485,11.9,22,1,OWN,car,Verified,0
+7488.69,12,15.92,25142.77,50.32,486,17.5,10,0,MORTGAGE,debt_consolidation,Verified,0
+7298.22,24,16.6,133553.19,34.93,368,22.1,22,0,RENT,debt_consolidation,Source Verified,0
+84011.22,36,24.73,82925.34,14.93,347,9.5,8,0,RENT,home_improvement,Source Verified,1
+30941.73,48,20.07,72680.86,39.67,326,14.5,21,5,RENT,car,Not Verified,1
+54217.48,12,21.36,90665.8,42.59,361,24.4,5,0,RENT,debt_consolidation,Verified,0
+33378.93,24,29.95,81564.08,0.64,489,28.6,7,2,MORTGAGE,debt_consolidation,Not Verified,0
+94364.53,60,6.87,169803.04,26.35,627,6.9,26,0,MORTGAGE,debt_consolidation,Not Verified,0
+29633.19,12,10.58,69463.61,50.6,403,7.6,13,2,RENT,home_improvement,Verified,1
+45817.4,12,15.2,151967.54,29.38,788,28.2,16,3,MORTGAGE,other,Not Verified,0
+87909.37,48,13.69,36930.77,18.68,745,11.9,30,2,RENT,car,Verified,0
+84983.69,24,5.54,191251.35,52.31,586,21.6,5,4,OWN,debt_consolidation,Source Verified,0
+22679.63,36,7.29,132016.99,9.35,698,18.4,16,0,OWN,other,Verified,0
+81251.11,60,22.02,147209.34,12.39,501,8.6,15,1,RENT,debt_consolidation,Source Verified,0
+48527.75,24,26.98,73647.08,41.24,320,19.6,9,1,MORTGAGE,debt_consolidation,Source Verified,1
+50882.04,60,17.86,94177.38,21.15,797,19.7,22,1,MORTGAGE,car,Source Verified,0
+17680.6,12,18.48,60280.11,42.78,370,17.8,23,3,OWN,debt_consolidation,Not Verified,1
+12657.14,48,11.38,187856.5,9.46,821,3.0,12,0,RENT,debt_consolidation,Source Verified,0
+74154.23,48,24.2,107858.8,15.14,615,29.9,8,0,RENT,debt_consolidation,Source Verified,0
+52163.81,36,23.79,133480.66,9.4,468,12.0,13,0,MORTGAGE,car,Not Verified,0
+46500.82,48,19.71,152168.97,57.17,573,19.1,5,3,MORTGAGE,home_improvement,Not Verified,0
+74303.28,12,10.32,86799.1,24.32,576,26.6,14,5,RENT,debt_consolidation,Not Verified,0
+77723.73,36,7.43,149618.3,20.23,313,12.7,16,1,MORTGAGE,car,Not Verified,0
+20096.28,24,6.61,141678.65,0.85,496,23.2,11,1,MORTGAGE,car,Verified,0
+62971.39,48,19.82,147018.68,9.21,707,29.2,20,1,RENT,car,Verified,0
+17858.64,36,25.63,108061.38,25.27,581,10.8,12,1,RENT,home_improvement,Verified,0
+76380.63,12,26.46,88928.73,4.11,434,12.2,15,0,MORTGAGE,debt_consolidation,Not Verified,0
+67410.74,60,16.59,59974.79,30.64,484,27.2,24,1,OWN,debt_consolidation,Verified,0
+95878.39,60,24.61,168432.74,27.3,775,4.8,12,1,RENT,car,Source Verified,0
+11551.01,12,28.67,129503.01,46.03,589,0.9,26,1,RENT,car,Verified,1
+10420.2,12,11.88,99983.4,39.59,591,27.3,9,0,RENT,other,Verified,0
+31807.77,60,14.95,189919.26,26.76,829,24.6,1,2,MORTGAGE,debt_consolidation,Verified,0
