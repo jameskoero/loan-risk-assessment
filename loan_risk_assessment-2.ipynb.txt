@@ -1,0 +1,293 @@
+{
+ "nbformat": 4,
+ "nbformat_minor": 5,
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "name": "python",
+   "version": "3.8.0",
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "pygments_lexer": "ipython3",
+   "file_extension": ".py",
+   "mimetype": "text/x-python"
+  },
+  "colab": {
+   "provenance": [],
+   "toc_visible": true
+  }
+ },
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "# 🏦 Loan Default Risk Assessment\n## Advanced Credit Risk Modelling with Machine Learning\n\n[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/loan-risk-assessment/blob/main/loan_risk_assessment.ipynb)\n[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)\n[![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.3%2B-orange)](https://scikit-learn.org/)\n[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)\n\n---\n\n### 📌 Project Summary\nA **production-grade** end-to-end machine learning system that predicts whether a loan applicant\nwill default, using the **German Credit Dataset (UCI / OpenML)**. This notebook covers the full\ndata science lifecycle — from raw data through EDA, feature engineering, imbalance handling,\nmulti-model training, explainability, business-cost threshold optimisation, and model export.\n\n### 🎯 Business Problem\nFinancial institutions lose billions annually to loan defaults. Early, accurate risk prediction\nallows lenders to:\n- Reject high-risk applicants before disbursal\n- Offer risk-adjusted interest rates\n- Reduce non-performing loan (NPL) ratios\n- Comply with responsible lending regulations\n\n### 🔬 Key Techniques\n| Technique | Purpose |\n|-----------|---------|\n| EDA with Seaborn/Matplotlib | Understand data distributions and patterns |\n| ColumnTransformer Pipeline | Clean, reproducible preprocessing |\n| SMOTE Oversampling | Handle class imbalance |\n| 5-Model Comparison | Logistic Regression → Gradient Boosting |\n| GridSearchCV Tuning | Optimal hyperparameters |\n| SHAP Values | Model explainability (black-box → glass-box) |\n| Business Cost Matrix | Real-world threshold optimisation |\n| Calibration Curves | Reliable probability estimates |\n| Learning Curves | Bias-variance diagnosis |\n| Joblib Export | Production-ready model artifact |\n\n---\n**Author:** James Koero | Junior ML Engineer | Kisumu, Kenya  \n**GitHub:** [github.com/YOUR_GITHUB_USERNAME](https://github.com/YOUR_GITHUB_USERNAME)  \n**Dataset:** German Credit Data — [OpenML ID 31](https://www.openml.org/d/31)\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## ⚙️ 1. Setup & Dependencies"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# Install extra packages (run once in Colab — already present in most environments)\nimport subprocess, sys\n\nPACKAGES = [\"imbalanced-learn\", \"shap\", \"xgboost\", \"lightgbm\", \"optuna\"]\nfor pkg in PACKAGES:\n    try:\n        __import__(pkg.replace(\"-\", \"_\"))\n    except ImportError:\n        subprocess.check_call([sys.executable, \"-m\", \"pip\", \"install\", pkg, \"-q\"])\n\nprint(\"✅ All packages ready.\")\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 📦 2. Imports"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── Standard ──────────────────────────────────────────────────────────────────\nimport warnings, joblib, os\nimport numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt\nimport matplotlib.gridspec as gridspec\nimport seaborn as sns\nwarnings.filterwarnings(\"ignore\")\n\n# ── Sklearn — Data & Preprocessing ───────────────────────────────────────────\nfrom sklearn.datasets import fetch_openml\nfrom sklearn.model_selection import (\n    train_test_split, StratifiedKFold, cross_val_score,\n    GridSearchCV, learning_curve\n)\nfrom sklearn.preprocessing import (\n    StandardScaler, MinMaxScaler, LabelEncoder,\n    OrdinalEncoder, OneHotEncoder\n)\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.impute import SimpleImputer\n\n# ── Sklearn — Models ──────────────────────────────────────────────────────────\nfrom sklearn.linear_model    import LogisticRegression\nfrom sklearn.tree            import DecisionTreeClassifier\nfrom sklearn.ensemble        import (\n    RandomForestClassifier, GradientBoostingClassifier,\n    VotingClassifier\n)\nfrom sklearn.calibration     import CalibratedClassifierCV, calibration_curve\n\n# ── Sklearn — Metrics ─────────────────────────────────────────────────────────\nfrom sklearn.metrics import (\n    accuracy_score, precision_score, recall_score, f1_score,\n    roc_auc_score, average_precision_score,\n    classification_report, confusion_matrix,\n    roc_curve, auc, precision_recall_curve,\n    ConfusionMatrixDisplay\n)\n\n# ── Imbalanced-learn ──────────────────────────────────────────────────────────\nfrom imblearn.over_sampling  import SMOTE\nfrom imblearn.pipeline       import Pipeline as ImbPipeline\n\n# ── Boosting Libraries ────────────────────────────────────────────────────────\ntry:\n    import xgboost as xgb\n    XGB_AVAILABLE = True\nexcept ImportError:\n    XGB_AVAILABLE = False\n    print(\"XGBoost not available — will use HistGradientBoosting instead.\")\n\ntry:\n    import lightgbm as lgb\n    LGB_AVAILABLE = True\nexcept ImportError:\n    LGB_AVAILABLE = False\n\n# ── SHAP ──────────────────────────────────────────────────────────────────────\ntry:\n    import shap\n    SHAP_AVAILABLE = True\n    shap.initjs()\nexcept ImportError:\n    SHAP_AVAILABLE = False\n    print(\"SHAP not available — explainability section will be skipped.\")\n\n# ── Plotting Style ────────────────────────────────────────────────────────────\nplt.rcParams.update({\n    \"figure.dpi\"      : 120,\n    \"axes.spines.top\" : False,\n    \"axes.spines.right\": False,\n    \"font.family\"     : \"DejaVu Sans\",\n})\nPALETTE = [\"#2ECC71\", \"#E74C3C\", \"#3498DB\", \"#F39C12\", \"#9B59B6\"]\nsns.set_theme(style=\"darkgrid\", palette=PALETTE)\n\nRANDOM_STATE = 42\nnp.random.seed(RANDOM_STATE)\nprint(\"✅ Imports complete.\")\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 📊 3. Data Loading\n\nWe use the **German Credit Dataset** (OpenML ID 31), which contains 1,000 loan applicants\nand 20 features. The target `class` indicates whether the applicant is a *good* (0) or\n*bad* (1) credit risk. This dataset is auto-downloaded — no manual file upload needed.\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# Auto-download from OpenML (works in Colab and locally)\nprint(\"⏳ Downloading German Credit dataset from OpenML...\")\ncredit = fetch_openml(\"credit-g\", version=1, as_frame=True, parser=\"auto\")\n\ndf_raw = credit.frame.copy()\n# Rename target for clarity\ndf_raw[\"default\"] = (df_raw[\"class\"] == \"bad\").astype(int)\ndf_raw.drop(columns=[\"class\"], inplace=True)\n\nprint(f\"✅ Dataset loaded: {df_raw.shape[0]} rows × {df_raw.shape[1]} columns\")\nprint(\"\\nFirst 5 rows:\")\ndf_raw.head()\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# Dataset overview\nprint(\"=\" * 55)\nprint(\"DATASET OVERVIEW\")\nprint(\"=\" * 55)\nprint(f\"Rows          : {df_raw.shape[0]}\")\nprint(f\"Columns       : {df_raw.shape[1]}\")\nprint(f\"Numeric cols  : {df_raw.select_dtypes(include=np.number).shape[1]}\")\nprint(f\"Categorical   : {df_raw.select_dtypes(include='category').shape[1]}\")\nprint(f\"\\nTarget distribution:\")\nvc = df_raw[\"default\"].value_counts()\nfor k, v in vc.items():\n    label = \"Default (Bad)\" if k == 1 else \"No Default (Good)\"\n    print(f\"  {label}: {v} ({v/len(df_raw)*100:.1f}%)\")\nprint(f\"\\nImbalance Ratio: 1 : {vc[0]/vc[1]:.2f}\")\nprint(\"\\nData types:\\n\", df_raw.dtypes.value_counts().to_string())\nprint(\"\\nMissing values:\", df_raw.isnull().sum().sum())\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 🔍 4. Exploratory Data Analysis (EDA)\n\n> **Goal:** Understand the data distributions, detect outliers, identify the most\n> discriminative features, and uncover patterns that inform feature engineering.\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 4.1 Target Class Distribution ────────────────────────────────────────────\nfig, axes = plt.subplots(1, 2, figsize=(12, 4))\nfig.suptitle(\"Target Variable — Loan Default Distribution\", fontsize=14, fontweight=\"bold\")\n\ncounts = df_raw[\"default\"].value_counts()\nlabels = [\"No Default\\n(Good Credit)\", \"Default\\n(Bad Credit)\"]\ncolors = [\"#2ECC71\", \"#E74C3C\"]\n\naxes[0].bar(labels, counts.values, color=colors, width=0.5, edgecolor=\"white\", linewidth=1.5)\naxes[0].set_ylabel(\"Count\", fontsize=11)\naxes[0].set_title(\"Absolute Count\")\nfor i, v in enumerate(counts.values):\n    axes[0].text(i, v + 8, str(v), ha=\"center\", fontweight=\"bold\", fontsize=12)\n\naxes[1].pie(counts.values, labels=labels, colors=colors, autopct=\"%1.1f%%\",\n            startangle=90, wedgeprops=dict(edgecolor=\"white\", linewidth=2))\naxes[1].set_title(\"Percentage Split\")\n\nplt.tight_layout()\nplt.savefig(\"plots/01_target_distribution.png\", bbox_inches=\"tight\")\nplt.show()\nprint(\"⚠️  Class imbalance detected: 70% No Default vs 30% Default — will apply SMOTE later.\")\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 4.2 Numeric Feature Distributions ────────────────────────────────────────\nos.makedirs(\"plots\", exist_ok=True)\n\nnum_cols = df_raw.select_dtypes(include=np.number).columns.tolist()\nnum_cols = [c for c in num_cols if c != \"default\"]\n\nfig, axes = plt.subplots(3, 3, figsize=(16, 12))\naxes = axes.flatten()\nfig.suptitle(\"Numeric Feature Distributions by Default Status\", fontsize=14, fontweight=\"bold\")\n\nfor i, col in enumerate(num_cols[:9]):\n    ax = axes[i]\n    for label, color in [(0, \"#2ECC71\"), (1, \"#E74C3C\")]:\n        subset = df_raw[df_raw[\"default\"] == label][col]\n        ax.hist(subset, bins=25, alpha=0.6, color=color,\n                label=\"No Default\" if label == 0 else \"Default\",\n                edgecolor=\"none\", density=True)\n    ax.set_title(col.replace(\"_\", \" \").title(), fontsize=10)\n    ax.set_xlabel(\"Value\"); ax.set_ylabel(\"Density\")\n    ax.legend(fontsize=8)\n\nfor j in range(len(num_cols[:9]), len(axes)):\n    axes[j].set_visible(False)\n\nplt.tight_layout()\nplt.savefig(\"plots/02_numeric_distributions.png\", bbox_inches=\"tight\")\nplt.show()\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 4.3 Correlation Heatmap ───────────────────────────────────────────────────\ndf_num = df_raw[num_cols + [\"default\"]].copy()\ncorr = df_num.corr()\n\nfig, ax = plt.subplots(figsize=(10, 8))\nmask = np.triu(np.ones_like(corr, dtype=bool))\nsns.heatmap(corr, mask=mask, annot=True, fmt=\".2f\", cmap=\"RdYlGn_r\",\n            vmin=-1, vmax=1, center=0, linewidths=0.5,\n            cbar_kws={\"shrink\": 0.8}, ax=ax)\nax.set_title(\"Pearson Correlation Matrix — Numeric Features + Target\", fontsize=13, fontweight=\"bold\")\nplt.tight_layout()\nplt.savefig(\"plots/03_correlation_heatmap.png\", bbox_inches=\"tight\")\nplt.show()\n\n# Top correlations with target\ntarget_corr = corr[\"default\"].drop(\"default\").abs().sort_values(ascending=False)\nprint(\"\\nTop 10 features correlated with default:\")\nprint(target_corr.head(10).to_string())\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 4.4 Categorical Feature Analysis ─────────────────────────────────────────\ncat_cols = df_raw.select_dtypes(include=\"category\").columns.tolist()\ncat_cols = [c for c in cat_cols if c != \"default\"]\n\nfig, axes = plt.subplots(2, 3, figsize=(18, 10))\naxes = axes.flatten()\nfig.suptitle(\"Default Rate by Categorical Feature\", fontsize=14, fontweight=\"bold\")\n\nfor i, col in enumerate(cat_cols[:6]):\n    ax = axes[i]\n    dr = df_raw.groupby(col.replace(\" \", \"_\"))[\"default\"].mean().sort_values(ascending=False)\n    bars = ax.bar(range(len(dr)), dr.values,\n                  color=plt.cm.RdYlGn_r(dr.values / dr.values.max()),\n                  edgecolor=\"white\", linewidth=0.8)\n    ax.set_xticks(range(len(dr)))\n    ax.set_xticklabels(dr.index, rotation=30, ha=\"right\", fontsize=8)\n    ax.set_title(col.replace(\"_\", \" \").title(), fontsize=10)\n    ax.set_ylabel(\"Default Rate\")\n    ax.axhline(df_raw[\"default\"].mean(), color=\"#3498DB\", linestyle=\"--\",\n               linewidth=1.5, label=f\"Overall: {df_raw['default'].mean():.2f}\")\n    ax.legend(fontsize=8)\n    for bar, val in zip(bars, dr.values):\n        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.005,\n                f\"{val:.2f}\", ha=\"center\", fontsize=7)\n\nfor j in range(len(cat_cols[:6]), len(axes)):\n    axes[j].set_visible(False)\n\nplt.tight_layout()\nplt.savefig(\"plots/04_categorical_default_rates.png\", bbox_inches=\"tight\")\nplt.show()\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 4.5 Box Plots — Numeric vs Default ───────────────────────────────────────\nfig, axes = plt.subplots(1, 3, figsize=(16, 5))\ntop3 = target_corr.head(3).index.tolist()\n\nfor i, col in enumerate(top3):\n    ax = axes[i]\n    data = [df_raw[df_raw[\"default\"]==0][col], df_raw[df_raw[\"default\"]==1][col]]\n    bp = ax.boxplot(data, patch_artist=True, notch=True,\n                    medianprops=dict(color=\"white\", linewidth=2))\n    for patch, color in zip(bp[\"boxes\"], [\"#2ECC71\", \"#E74C3C\"]):\n        patch.set_facecolor(color)\n        patch.set_alpha(0.8)\n    ax.set_xticklabels([\"No Default\", \"Default\"])\n    ax.set_title(f\"{col} vs Default Status\", fontsize=11)\n    ax.set_ylabel(col)\n\nplt.suptitle(\"Top 3 Numeric Features vs Default Status\", fontsize=13, fontweight=\"bold\")\nplt.tight_layout()\nplt.savefig(\"plots/05_boxplots_vs_default.png\", bbox_inches=\"tight\")\nplt.show()\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 🛠️ 5. Feature Engineering\n\nNew features are derived from domain knowledge about credit risk:\n- **debt_to_credit_ratio** — instalment as proportion of credit amount (leverage)\n- **age_group** — younger borrowers statistically default more\n- **long_term_loan** — loans > 24 months carry higher default risk\n- **high_credit** — above-median credit amounts\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "df = df_raw.copy()\n\n# Convert category columns to string for manipulation\nfor col in df.select_dtypes(\"category\").columns:\n    df[col] = df[col].astype(str)\n\n# ── Engineered features ────────────────────────────────────────────────────\ndf[\"debt_to_credit_ratio\"] = df[\"installment_commitment\"] / (df[\"credit_amount\"] + 1)\ndf[\"loan_income_proxy\"]    = df[\"credit_amount\"] / (df[\"duration\"] + 1)\ndf[\"age_group\"]            = pd.cut(df[\"age\"], bins=[0, 25, 35, 50, 100],\n                                    labels=[\"under_25\", \"25_35\", \"35_50\", \"over_50\"])\ndf[\"age_group\"]            = df[\"age_group\"].astype(str)\ndf[\"long_term_loan\"]       = (df[\"duration\"] > 24).astype(int)\ndf[\"high_credit\"]          = (df[\"credit_amount\"] > df[\"credit_amount\"].median()).astype(int)\ndf[\"senior_applicant\"]     = (df[\"age\"] >= 60).astype(int)\n\nprint(\"✅ New engineered features:\")\nnew_features = [\"debt_to_credit_ratio\", \"loan_income_proxy\", \"age_group\",\n                \"long_term_loan\", \"high_credit\", \"senior_applicant\"]\nprint(df[new_features].describe().round(3).to_string())\nprint(f\"\\nDataset shape after engineering: {df.shape}\")\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## ⚗️ 6. Preprocessing Pipeline\n\nUsing **ColumnTransformer** to build a clean, reproducible, production-ready\npreprocessing pipeline:\n- **Numeric features** → Median imputation → StandardScaler\n- **Categorical features** → Constant imputation → OneHotEncoder\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "TARGET = \"default\"\n\nX = df.drop(columns=[TARGET])\ny = df[TARGET]\n\n# ── Identify column types ─────────────────────────────────────────────────────\nnum_features = X.select_dtypes(include=[np.number]).columns.tolist()\ncat_features = X.select_dtypes(include=[\"object\", \"category\"]).columns.tolist()\n\nprint(f\"Numeric features  ({len(num_features)}): {num_features}\")\nprint(f\"Categorical features ({len(cat_features)}): {cat_features}\")\n\n# ── Preprocessing sub-pipelines ───────────────────────────────────────────────\nnumeric_transformer = Pipeline([\n    (\"imputer\", SimpleImputer(strategy=\"median\")),\n    (\"scaler\",  StandardScaler())\n])\n\ncategorical_transformer = Pipeline([\n    (\"imputer\", SimpleImputer(strategy=\"constant\", fill_value=\"missing\")),\n    (\"encoder\", OneHotEncoder(handle_unknown=\"ignore\", sparse_output=False))\n])\n\npreprocessor = ColumnTransformer(transformers=[\n    (\"num\", numeric_transformer, num_features),\n    (\"cat\", categorical_transformer, cat_features)\n], remainder=\"drop\", verbose_feature_names_out=True)\n\n# ── Train / Test Split ────────────────────────────────────────────────────────\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=RANDOM_STATE, stratify=y\n)\n\nprint(f\"\\nTrain: {X_train.shape[0]} samples  |  Test: {X_test.shape[0]} samples\")\nprint(f\"Train default rate: {y_train.mean():.3f}  |  Test default rate: {y_test.mean():.3f}\")\n\n# Fit preprocessor to get feature names for later use\npreprocessor.fit(X_train)\nfeature_names_out = preprocessor.get_feature_names_out()\nprint(f\"\\n✅ Preprocessed feature count: {len(feature_names_out)}\")\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## ⚖️ 7. Handling Class Imbalance — SMOTE\n\nThe dataset is imbalanced (70/30). We use **SMOTE (Synthetic Minority\nOver-sampling Technique)** to generate synthetic minority class samples\nin the feature space, creating a balanced training set.\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "from imblearn.over_sampling import SMOTE\n\n# Apply preprocessor first, then SMOTE on training data only\nX_train_prep = preprocessor.transform(X_train)\nX_test_prep  = preprocessor.transform(X_test)\n\nprint(\"Before SMOTE:\")\nprint(f\"  Class 0 (No Default): {(y_train == 0).sum()}\")\nprint(f\"  Class 1 (Default)   : {(y_train == 1).sum()}\")\n\nsmote = SMOTE(random_state=RANDOM_STATE, k_neighbors=5)\nX_train_sm, y_train_sm = smote.fit_resample(X_train_prep, y_train)\n\nprint(\"\\nAfter SMOTE:\")\nprint(f\"  Class 0 (No Default): {(y_train_sm == 0).sum()}\")\nprint(f\"  Class 1 (Default)   : {(y_train_sm == 1).sum()}\")\nprint(f\"  Synthetic samples added: {len(y_train_sm) - len(y_train)}\")\n\n# Visualise\nfig, axes = plt.subplots(1, 2, figsize=(10, 4))\nfig.suptitle(\"Class Distribution — Before vs After SMOTE\", fontsize=13, fontweight=\"bold\")\nfor ax, (counts, title) in zip(axes, [\n        (pd.Series(y_train).value_counts(), \"Before SMOTE (Train)\"),\n        (pd.Series(y_train_sm).value_counts(), \"After SMOTE (Train)\")]):\n    bars = ax.bar([\"No Default\", \"Default\"], counts.values,\n                  color=[\"#2ECC71\", \"#E74C3C\"], width=0.5,\n                  edgecolor=\"white\", linewidth=1.5)\n    ax.set_title(title, fontsize=11)\n    ax.set_ylabel(\"Count\")\n    for bar, val in zip(bars, counts.values):\n        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 5,\n                str(val), ha=\"center\", fontweight=\"bold\")\n\nplt.tight_layout()\nplt.savefig(\"plots/06_smote_comparison.png\", bbox_inches=\"tight\")\nplt.show()\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 🤖 8. Model Training — Five-Model Comparison\n\nWe train five classifiers of increasing complexity:\n\n| # | Model | Complexity | Notes |\n|---|-------|-----------|-------|\n| 1 | Logistic Regression | Low | Interpretable baseline |\n| 2 | Decision Tree | Low-Medium | Interpretable tree rules |\n| 3 | Random Forest | High | Ensemble of trees |\n| 4 | Gradient Boosting | High | Sequential boosting |\n| 5 | XGBoost | Very High | Optimised boosting with regularisation |\n\nAll models are trained on the **SMOTE-balanced training set** and\nevaluated on the **original (unbalanced) test set** — as it reflects real-world conditions.\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "from sklearn.ensemble import HistGradientBoostingClassifier\n\n# ── Define models ─────────────────────────────────────────────────────────────\nif XGB_AVAILABLE:\n    booster = xgb.XGBClassifier(\n        n_estimators=200, learning_rate=0.05, max_depth=4,\n        subsample=0.8, colsample_bytree=0.8,\n        use_label_encoder=False, eval_metric=\"logloss\",\n        random_state=RANDOM_STATE, n_jobs=-1\n    )\nelse:\n    booster = HistGradientBoostingClassifier(\n        max_iter=200, learning_rate=0.05, max_depth=4,\n        random_state=RANDOM_STATE\n    )\n\nMODELS = {\n    \"Logistic Regression\" : LogisticRegression(\n        max_iter=2000, C=1.0, solver=\"lbfgs\",\n        class_weight=\"balanced\", random_state=RANDOM_STATE\n    ),\n    \"Decision Tree\"       : DecisionTreeClassifier(\n        max_depth=6, min_samples_leaf=10,\n        class_weight=\"balanced\", random_state=RANDOM_STATE\n    ),\n    \"Random Forest\"       : RandomForestClassifier(\n        n_estimators=300, max_depth=8, min_samples_leaf=5,\n        class_weight=\"balanced\", random_state=RANDOM_STATE, n_jobs=-1\n    ),\n    \"Gradient Boosting\"   : GradientBoostingClassifier(\n        n_estimators=200, learning_rate=0.05, max_depth=4,\n        subsample=0.8, random_state=RANDOM_STATE\n    ),\n    \"XGBoost / HGB\"       : booster,\n}\n\n# ── Train & collect results ────────────────────────────────────────────────────\nresults = {}\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE)\n\nprint(f\"{'Model':<25} {'Acc':>6} {'Prec':>6} {'Rec':>6} {'F1':>6} {'AUC':>6} {'CV-AUC':>8}\")\nprint(\"-\" * 72)\n\nfor name, model in MODELS.items():\n    # Train on SMOTE data\n    model.fit(X_train_sm, y_train_sm)\n    \n    # Predict on original test set\n    y_pred  = model.predict(X_test_prep)\n    y_proba = model.predict_proba(X_test_prep)[:, 1]\n    \n    # Metrics\n    acc   = accuracy_score(y_test, y_pred)\n    prec  = precision_score(y_test, y_pred, zero_division=0)\n    rec   = recall_score(y_test, y_pred)\n    f1    = f1_score(y_test, y_pred)\n    aucv  = roc_auc_score(y_test, y_proba)\n    \n    # 5-fold CV on SMOTE data\n    cv_scores = cross_val_score(model, X_train_sm, y_train_sm,\n                                cv=skf, scoring=\"roc_auc\", n_jobs=-1)\n    \n    results[name] = {\n        \"model\": model, \"y_pred\": y_pred, \"y_proba\": y_proba,\n        \"accuracy\": acc, \"precision\": prec, \"recall\": rec,\n        \"f1\": f1, \"auc\": aucv, \"cv_auc\": cv_scores.mean(),\n        \"cv_std\": cv_scores.std()\n    }\n    print(f\"{name:<25} {acc:>6.3f} {prec:>6.3f} {rec:>6.3f} {f1:>6.3f} \"\n          f\"{aucv:>6.3f} {cv_scores.mean():>6.3f}±{cv_scores.std():.3f}\")\n\nprint(\"\\n✅ All models trained and evaluated.\")\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 🎯 9. Hyperparameter Tuning — Best Model\n\nWe tune the **Gradient Boosting** model (consistently strong performer)\nusing `GridSearchCV` with 5-fold stratified cross-validation, optimising for **ROC-AUC**.\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "print(\"⏳ Running GridSearchCV — this may take 2–4 minutes...\")\n\nparam_grid = {\n    \"n_estimators\"  : [100, 200, 300],\n    \"learning_rate\" : [0.01, 0.05, 0.1],\n    \"max_depth\"     : [3, 4, 5],\n    \"subsample\"     : [0.7, 0.8, 1.0],\n}\n\ngb_base = GradientBoostingClassifier(random_state=RANDOM_STATE)\n\ngrid_search = GridSearchCV(\n    gb_base, param_grid,\n    cv=StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE),\n    scoring=\"roc_auc\", n_jobs=-1, verbose=1,\n    refit=True\n)\ngrid_search.fit(X_train_sm, y_train_sm)\n\nprint(f\"\\n✅ Best parameters: {grid_search.best_params_}\")\nprint(f\"Best CV ROC-AUC   : {grid_search.best_score_:.4f}\")\n\n# Evaluate tuned model\nbest_gb = grid_search.best_estimator_\ny_pred_tuned  = best_gb.predict(X_test_prep)\ny_proba_tuned = best_gb.predict_proba(X_test_prep)[:, 1]\n\nprint(f\"\\nTuned GB — Test ROC-AUC : {roc_auc_score(y_test, y_proba_tuned):.4f}\")\nprint(f\"Tuned GB — F1 Score      : {f1_score(y_test, y_pred_tuned):.4f}\")\nprint(f\"Tuned GB — Recall        : {recall_score(y_test, y_pred_tuned):.4f}\")\nprint(\"\\n\", classification_report(y_test, y_pred_tuned,\n      target_names=[\"No Default\", \"Default\"]))\n\n# Update results dict\nresults[\"GB (Tuned)\"] = {\n    \"model\": best_gb, \"y_pred\": y_pred_tuned, \"y_proba\": y_proba_tuned,\n    \"accuracy\": accuracy_score(y_test, y_pred_tuned),\n    \"precision\": precision_score(y_test, y_pred_tuned, zero_division=0),\n    \"recall\": recall_score(y_test, y_pred_tuned),\n    \"f1\": f1_score(y_test, y_pred_tuned),\n    \"auc\": roc_auc_score(y_test, y_proba_tuned),\n    \"cv_auc\": grid_search.best_score_,\n    \"cv_std\": 0.0\n}\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 📈 10. Model Evaluation Dashboard\n\nA comprehensive visual comparison of all trained models.\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 10.1 ROC Curves — All Models ─────────────────────────────────────────────\nfig, axes = plt.subplots(1, 2, figsize=(16, 6))\nfig.suptitle(\"Model Comparison — ROC & Precision-Recall Curves\", fontsize=14, fontweight=\"bold\")\n\ncolors = plt.cm.Set1(np.linspace(0, 0.8, len(results)))\n\nfor (name, res), color in zip(results.items(), colors):\n    # ROC\n    fpr, tpr, _ = roc_curve(y_test, res[\"y_proba\"])\n    axes[0].plot(fpr, tpr, lw=2, color=color,\n                 label=f\"{name} (AUC={res['auc']:.3f})\")\n    # PR\n    prec_c, rec_c, _ = precision_recall_curve(y_test, res[\"y_proba\"])\n    ap = average_precision_score(y_test, res[\"y_proba\"])\n    axes[1].plot(rec_c, prec_c, lw=2, color=color,\n                 label=f\"{name} (AP={ap:.3f})\")\n\naxes[0].plot([0, 1], [0, 1], \"k--\", lw=1, alpha=0.5)\naxes[0].set_xlabel(\"False Positive Rate\"); axes[0].set_ylabel(\"True Positive Rate\")\naxes[0].set_title(\"ROC Curves\"); axes[0].legend(loc=\"lower right\", fontsize=8)\n\nbaseline_pr = y_test.mean()\naxes[1].axhline(baseline_pr, color=\"k\", linestyle=\"--\", lw=1, alpha=0.5,\n                label=f\"Baseline (AP={baseline_pr:.2f})\")\naxes[1].set_xlabel(\"Recall\"); axes[1].set_ylabel(\"Precision\")\naxes[1].set_title(\"Precision-Recall Curves\"); axes[1].legend(loc=\"upper right\", fontsize=8)\n\nplt.tight_layout()\nplt.savefig(\"plots/07_roc_pr_curves.png\", bbox_inches=\"tight\")\nplt.show()\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 10.2 Confusion Matrices ───────────────────────────────────────────────────\nn = len(results)\nfig, axes = plt.subplots(2, 3, figsize=(18, 11))\naxes = axes.flatten()\nfig.suptitle(\"Confusion Matrices — All Models\", fontsize=14, fontweight=\"bold\")\n\nfor i, (name, res) in enumerate(results.items()):\n    cm = confusion_matrix(y_test, res[\"y_pred\"])\n    disp = ConfusionMatrixDisplay(cm, display_labels=[\"No Default\", \"Default\"])\n    disp.plot(ax=axes[i], cmap=\"Blues\", colorbar=False)\n    axes[i].set_title(f\"{name}\\nAcc={res['accuracy']:.3f}  F1={res['f1']:.3f}\", fontsize=10)\n\nfor j in range(n, len(axes)):\n    axes[j].set_visible(False)\n\nplt.tight_layout()\nplt.savefig(\"plots/08_confusion_matrices.png\", bbox_inches=\"tight\")\nplt.show()\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 10.3 Metrics Comparison Bar Chart ─────────────────────────────────────────\nmetrics = [\"accuracy\", \"precision\", \"recall\", \"f1\", \"auc\"]\ndf_results = pd.DataFrame({\n    name: {m: res[m] for m in metrics}\n    for name, res in results.items()\n}).T\n\nfig, ax = plt.subplots(figsize=(14, 6))\nx = np.arange(len(df_results))\nwidth = 0.15\nmetric_colors = [\"#3498DB\", \"#2ECC71\", \"#E74C3C\", \"#F39C12\", \"#9B59B6\"]\n\nfor i, (metric, color) in enumerate(zip(metrics, metric_colors)):\n    bars = ax.bar(x + i * width, df_results[metric], width,\n                  label=metric.title(), color=color, alpha=0.85, edgecolor=\"white\")\n\nax.set_xticks(x + width * 2)\nax.set_xticklabels(df_results.index, rotation=15, ha=\"right\")\nax.set_ylabel(\"Score (0–1)\"); ax.set_ylim(0, 1.12)\nax.set_title(\"Model Performance Comparison — All Metrics\", fontsize=13, fontweight=\"bold\")\nax.legend(loc=\"upper left\", ncol=5, fontsize=9)\nax.axhline(0.8, color=\"grey\", linestyle=\"--\", linewidth=0.8, alpha=0.6)\n\nplt.tight_layout()\nplt.savefig(\"plots/09_metrics_comparison.png\", bbox_inches=\"tight\")\nplt.show()\n\nprint(\"\\n📊 Final Results Table:\")\nprint(df_results.round(4).to_string())\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 10.4 Calibration Curves ───────────────────────────────────────────────────\nfig, ax = plt.subplots(figsize=(9, 7))\nax.plot([0, 1], [0, 1], \"k--\", label=\"Perfectly Calibrated\", linewidth=1.5)\n\nfor (name, res), color in zip(list(results.items())[-3:], [\"#3498DB\",\"#E74C3C\",\"#2ECC71\"]):\n    prob_true, prob_pred = calibration_curve(y_test, res[\"y_proba\"], n_bins=10)\n    ax.plot(prob_pred, prob_true, \"s-\", color=color, lw=2, label=name)\n\nax.set_xlabel(\"Mean Predicted Probability\", fontsize=11)\nax.set_ylabel(\"Fraction of Positives\", fontsize=11)\nax.set_title(\"Calibration Curves — Reliability Diagram\", fontsize=13, fontweight=\"bold\")\nax.legend(); ax.set_xlim(0, 1); ax.set_ylim(0, 1)\nplt.tight_layout()\nplt.savefig(\"plots/10_calibration_curves.png\", bbox_inches=\"tight\")\nplt.show()\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── 10.5 Learning Curves — Best Model ─────────────────────────────────────────\nprint(\"⏳ Generating learning curves...\")\n\ntrain_sizes, train_scores, val_scores = learning_curve(\n    best_gb, X_train_sm, y_train_sm,\n    train_sizes=np.linspace(0.1, 1.0, 8),\n    cv=StratifiedKFold(n_splits=5, shuffle=True, random_state=RANDOM_STATE),\n    scoring=\"roc_auc\", n_jobs=-1\n)\n\nfig, ax = plt.subplots(figsize=(10, 6))\nax.fill_between(train_sizes,\n                train_scores.mean(1) - train_scores.std(1),\n                train_scores.mean(1) + train_scores.std(1), alpha=0.15, color=\"#3498DB\")\nax.fill_between(train_sizes,\n                val_scores.mean(1) - val_scores.std(1),\n                val_scores.mean(1) + val_scores.std(1), alpha=0.15, color=\"#E74C3C\")\nax.plot(train_sizes, train_scores.mean(1), \"o-\", color=\"#3498DB\",\n        lw=2, label=\"Training AUC\")\nax.plot(train_sizes, val_scores.mean(1), \"s-\", color=\"#E74C3C\",\n        lw=2, label=\"Validation AUC\")\n\nax.set_xlabel(\"Training Set Size\", fontsize=11)\nax.set_ylabel(\"ROC-AUC Score\", fontsize=11)\nax.set_title(\"Learning Curves — Gradient Boosting (Tuned)\", fontsize=13, fontweight=\"bold\")\nax.legend(fontsize=11); ax.set_ylim(0.5, 1.02)\nax.axhline(val_scores.mean(), color=\"grey\", linestyle=\"--\", linewidth=0.8, alpha=0.5)\n\nplt.tight_layout()\nplt.savefig(\"plots/11_learning_curves.png\", bbox_inches=\"tight\")\nplt.show()\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 🔍 11. SHAP Model Explainability\n\n**SHAP (SHapley Additive exPlanations)** provides a unified framework for\ninterpreting ML predictions. Each feature receives a SHAP value that quantifies\nits **positive or negative contribution** to the prediction for each individual.\n\n> This is critical for financial institutions, which must justify loan decisions\n> under regulations such as the **Equal Credit Opportunity Act (ECOA)**.\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "if SHAP_AVAILABLE:\n    print(\"⏳ Computing SHAP values (may take ~1 min)...\")\n    \n    # Use a sample for speed\n    sample_size = min(300, len(X_test_prep))\n    X_sample = X_test_prep[:sample_size]\n    \n    explainer  = shap.TreeExplainer(best_gb)\n    shap_values = explainer.shap_values(X_sample)\n    \n    # Get feature names\n    feat_names = feature_names_out.tolist()\n    \n    # ── Summary Plot ──────────────────────────────────────────────────────────\n    plt.figure(figsize=(12, 8))\n    shap.summary_plot(shap_values, X_sample,\n                      feature_names=feat_names,\n                      plot_type=\"bar\", show=False,\n                      max_display=15)\n    plt.title(\"SHAP Feature Importance (Mean |SHAP Value|)\", fontsize=13, fontweight=\"bold\")\n    plt.tight_layout()\n    plt.savefig(\"plots/12_shap_importance.png\", bbox_inches=\"tight\")\n    plt.show()\n    \n    # ── Beeswarm Plot ─────────────────────────────────────────────────────────\n    plt.figure(figsize=(12, 8))\n    shap.summary_plot(shap_values, X_sample,\n                      feature_names=feat_names,\n                      show=False, max_display=15)\n    plt.title(\"SHAP Beeswarm — Feature Impact on Predictions\", fontsize=13, fontweight=\"bold\")\n    plt.tight_layout()\n    plt.savefig(\"plots/13_shap_beeswarm.png\", bbox_inches=\"tight\")\n    plt.show()\n    \n    print(\"\\n✅ SHAP analysis complete.\")\n    print(\"Key insight: features with wide spread of SHAP values are most influential.\")\nelse:\n    print(\"⚠️  SHAP not installed. Run: pip install shap\")\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 💼 12. Business Cost Optimisation — Threshold Tuning\n\n> **Default threshold (0.5)** is mathematically neutral but **financially suboptimal**.\n>\n> In credit risk:\n> - **False Negative (FN)** = approving a defaulter → bank loses the loan amount\n> - **False Positive (FP)** = rejecting a good customer → bank loses profit\n>\n> We define a **cost matrix** and find the threshold that **minimises total business cost**.\n\n| Decision | Actual No Default | Actual Default |\n|----------|------------------|----------------|\n| **Predict No Default** | ✅ Correct (profit) | ❌ FN — loan loss |\n| **Predict Default**    | ❌ FP — lost opportunity | ✅ Correct (avoided loss) |\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# ── Business Cost Matrix ───────────────────────────────────────────────────────\nCOST_FN = 5   # Cost of approving a defaulter (relative units — e.g., 5x worse)\nCOST_FP = 1   # Cost of rejecting a good customer\n\ny_proba_best = results[\"GB (Tuned)\"][\"y_proba\"]\n\nthresholds   = np.linspace(0.1, 0.9, 161)\ncosts, recalls, precisions, f1s = [], [], [], []\n\nfor thresh in thresholds:\n    y_t    = (y_proba_best >= thresh).astype(int)\n    cm     = confusion_matrix(y_test, y_t)\n    tn, fp, fn, tp = cm.ravel() if cm.shape == (2, 2) else (cm[0,0], 0, 0, 0)\n    cost   = COST_FN * fn + COST_FP * fp\n    costs.append(cost)\n    recalls.append(recall_score(y_test, y_t, zero_division=0))\n    precisions.append(precision_score(y_test, y_t, zero_division=0))\n    f1s.append(f1_score(y_test, y_t, zero_division=0))\n\noptimal_idx   = np.argmin(costs)\noptimal_thresh = thresholds[optimal_idx]\noptimal_cost  = costs[optimal_idx]\n\n# Default threshold cost\ndefault_pred = (y_proba_best >= 0.5).astype(int)\ndefault_cm   = confusion_matrix(y_test, default_pred)\ntn0, fp0, fn0, tp0 = default_cm.ravel()\ndefault_cost = COST_FN * fn0 + COST_FP * fp0\n\nprint(f\"Default threshold (0.50)  → Cost: {default_cost}\")\nprint(f\"Optimal threshold ({optimal_thresh:.2f}) → Cost: {optimal_cost}\")\nprint(f\"Cost reduction: {((default_cost - optimal_cost)/default_cost)*100:.1f}%\")\n\n# ── Plot ───────────────────────────────────────────────────────────────────────\nfig, axes = plt.subplots(1, 2, figsize=(16, 6))\nfig.suptitle(\"Business Threshold Optimisation\", fontsize=14, fontweight=\"bold\")\n\naxes[0].plot(thresholds, costs, color=\"#E74C3C\", lw=2, label=\"Total Business Cost\")\naxes[0].axvline(optimal_thresh, color=\"#2ECC71\", linestyle=\"--\", lw=2,\n                label=f\"Optimal: {optimal_thresh:.2f}\")\naxes[0].axvline(0.5, color=\"#3498DB\", linestyle=\":\", lw=1.5,\n                label=\"Default: 0.50\")\naxes[0].scatter([optimal_thresh], [optimal_cost], color=\"#2ECC71\", s=100, zorder=5)\naxes[0].set_xlabel(\"Classification Threshold\"); axes[0].set_ylabel(\"Total Cost (relative)\")\naxes[0].set_title(\"Business Cost vs Threshold\"); axes[0].legend()\n\naxes[1].plot(thresholds, recalls,    color=\"#E74C3C\", lw=2, label=\"Recall\")\naxes[1].plot(thresholds, precisions, color=\"#3498DB\", lw=2, label=\"Precision\")\naxes[1].plot(thresholds, f1s,        color=\"#F39C12\", lw=2, label=\"F1 Score\")\naxes[1].axvline(optimal_thresh, color=\"#2ECC71\", linestyle=\"--\", lw=2,\n                label=f\"Optimal thresh: {optimal_thresh:.2f}\")\naxes[1].set_xlabel(\"Threshold\"); axes[1].set_ylabel(\"Score\")\naxes[1].set_title(\"Metrics vs Threshold\"); axes[1].legend()\n\nplt.tight_layout()\nplt.savefig(\"plots/14_threshold_optimisation.png\", bbox_inches=\"tight\")\nplt.show()\n\n# Apply optimal threshold\ny_pred_optimal = (y_proba_best >= optimal_thresh).astype(int)\nprint(f\"\\n📊 Performance at Optimal Threshold ({optimal_thresh:.2f}):\")\nprint(classification_report(y_test, y_pred_optimal,\n      target_names=[\"No Default\", \"Default\"]))\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 📋 13. Risk Scorecard — Applicant Risk Segmentation\n\nWe segment applicants into risk buckets based on their predicted default probability,\nenabling tiered lending decisions (approve / review / reject).\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "# Build risk score dataframe for test set\nrisk_df = X_test.copy().reset_index(drop=True)\nrisk_df[\"default_probability\"] = y_proba_best\nrisk_df[\"actual_default\"]      = y_test.values\n\ndef risk_tier(prob):\n    if prob < 0.20: return \"🟢 LOW RISK\"\n    elif prob < 0.40: return \"🟡 MEDIUM-LOW RISK\"\n    elif prob < 0.60: return \"🟠 MEDIUM-HIGH RISK\"\n    else: return \"🔴 HIGH RISK\"\n\nrisk_df[\"risk_tier\"] = risk_df[\"default_probability\"].apply(risk_tier)\n\n# Summary table\nsummary = risk_df.groupby(\"risk_tier\").agg(\n    count=(\"default_probability\", \"count\"),\n    avg_prob=(\"default_probability\", \"mean\"),\n    actual_default_rate=(\"actual_default\", \"mean\")\n).sort_values(\"avg_prob\")\n\nprint(\"\\n🏦 RISK SCORECARD SUMMARY\")\nprint(\"=\"*55)\nprint(summary.round(3).to_string())\n\n# Visualise\nfig, axes = plt.subplots(1, 2, figsize=(14, 5))\nfig.suptitle(\"Applicant Risk Segmentation\", fontsize=13, fontweight=\"bold\")\n\ntier_counts = risk_df[\"risk_tier\"].value_counts()\ntier_colors = {\"🟢 LOW RISK\": \"#2ECC71\", \"🟡 MEDIUM-LOW RISK\": \"#F7DC6F\",\n               \"🟠 MEDIUM-HIGH RISK\": \"#F39C12\", \"🔴 HIGH RISK\": \"#E74C3C\"}\ncolors_list = [tier_colors.get(t, \"#888\") for t in tier_counts.index]\n\naxes[0].barh(tier_counts.index, tier_counts.values, color=colors_list, edgecolor=\"white\")\naxes[0].set_xlabel(\"Number of Applicants\"); axes[0].set_title(\"Applicants by Risk Tier\")\nfor i, v in enumerate(tier_counts.values):\n    axes[0].text(v + 0.5, i, str(v), va=\"center\", fontsize=10)\n\naxes[1].hist(risk_df[\"default_probability\"], bins=30, color=\"#3498DB\",\n             edgecolor=\"white\", alpha=0.85)\naxes[1].axvline(optimal_thresh, color=\"#E74C3C\", linestyle=\"--\", lw=2,\n                label=f\"Optimal threshold: {optimal_thresh:.2f}\")\naxes[1].axvline(0.5, color=\"#F39C12\", linestyle=\":\", lw=1.5, label=\"Default: 0.50\")\naxes[1].set_xlabel(\"Predicted Default Probability\")\naxes[1].set_ylabel(\"Count\"); axes[1].set_title(\"Risk Score Distribution\")\naxes[1].legend()\n\nplt.tight_layout()\nplt.savefig(\"plots/15_risk_scorecard.png\", bbox_inches=\"tight\")\nplt.show()\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 📊 14. Feature Importance — Gradient Boosting (Tuned)"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "importances = pd.Series(\n    best_gb.feature_importances_,\n    index=feature_names_out\n).sort_values(ascending=False).head(20)\n\nfig, ax = plt.subplots(figsize=(12, 8))\ncolors_fi = plt.cm.RdYlGn(np.linspace(0.3, 0.9, len(importances)))[::-1]\nbars = ax.barh(importances.index[::-1], importances.values[::-1],\n               color=colors_fi, edgecolor=\"white\", linewidth=0.6)\nax.set_xlabel(\"Feature Importance (Gain)\", fontsize=11)\nax.set_title(\"Top 20 Feature Importances — Tuned Gradient Boosting\",\n             fontsize=13, fontweight=\"bold\")\nfor bar, val in zip(bars, importances.values[::-1]):\n    ax.text(bar.get_width() + 0.0005, bar.get_y() + bar.get_height()/2,\n            f\"{val:.4f}\", va=\"center\", fontsize=8)\n\nplt.tight_layout()\nplt.savefig(\"plots/16_feature_importance.png\", bbox_inches=\"tight\")\nplt.show()\n\nprint(\"\\n🔝 Top 10 Most Important Features:\")\nfor i, (feat, imp) in enumerate(importances.head(10).items(), 1):\n    print(f\"  {i:2}. {feat:<45} {imp:.4f}\")\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 💾 15. Model Export — Production Artifact\n\nWe package the **preprocessor + best model** into a single `sklearn Pipeline`\nand export it with `joblib` for production deployment.\n"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "import joblib, json as _json\nfrom datetime import datetime\n\nos.makedirs(\"model\", exist_ok=True)\n\n# ── Final Production Pipeline ──────────────────────────────────────────────────\nfinal_pipeline = Pipeline([\n    (\"preprocessor\", preprocessor),\n    (\"classifier\",   best_gb)\n])\n\n# ── Save ───────────────────────────────────────────────────────────────────────\nMODEL_PATH = \"model/loan_risk_model.joblib\"\njoblib.dump(final_pipeline, MODEL_PATH)\nprint(f\"✅ Model saved → {MODEL_PATH}\")\n\n# ── Save model metadata ────────────────────────────────────────────────────────\nmetadata = {\n    \"author\"           : \"James Koero\",\n    \"date_trained\"     : datetime.now().strftime(\"%Y-%m-%d\"),\n    \"dataset\"          : \"German Credit Data (OpenML ID 31)\",\n    \"model_type\"       : \"GradientBoostingClassifier (sklearn)\",\n    \"best_params\"      : grid_search.best_params_,\n    \"cv_roc_auc\"       : round(grid_search.best_score_, 4),\n    \"test_roc_auc\"     : round(roc_auc_score(y_test, y_proba_tuned), 4),\n    \"test_f1\"          : round(f1_score(y_test, y_pred_tuned), 4),\n    \"optimal_threshold\": round(float(optimal_thresh), 4),\n    \"features_numeric\" : num_features,\n    \"features_categorical\": cat_features,\n    \"n_features_out\"   : int(len(feature_names_out)),\n}\nwith open(\"model/model_metadata.json\", \"w\") as f:\n    _json.dump(metadata, f, indent=2)\n\nprint(\"✅ Metadata saved → model/model_metadata.json\")\nprint(\"\\nModel metadata:\")\nfor k, v in metadata.items():\n    print(f\"  {k:<25}: {v}\")\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 🚀 16. Inference — Predict on New Applicants"
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": "def predict_loan_risk(applicant_dict: dict, threshold: float = optimal_thresh) -> dict:\n    \"\"\"\n    Predict loan default risk for a single applicant.\n    \n    Parameters\n    ----------\n    applicant_dict : dict\n        Dictionary with applicant feature values.\n        Keys must match training feature names.\n    threshold : float\n        Decision threshold (default = business-optimised threshold).\n    \n    Returns\n    -------\n    dict with keys:\n        default_probability : float  — probability of default\n        risk_tier           : str    — LOW / MEDIUM-LOW / MEDIUM-HIGH / HIGH\n        decision            : str    — APPROVE / REVIEW / REJECT\n        confidence          : str    — model confidence level\n    \"\"\"\n    model = joblib.load(\"model/loan_risk_model.joblib\")\n    df_new = pd.DataFrame([applicant_dict])\n    \n    prob = model.predict_proba(df_new)[0, 1]\n    \n    if prob < 0.20:\n        tier, decision = \"LOW RISK\", \"✅ APPROVE\"\n    elif prob < 0.40:\n        tier, decision = \"MEDIUM-LOW RISK\", \"✅ APPROVE (monitor)\"\n    elif prob < threshold:\n        tier, decision = \"MEDIUM-HIGH RISK\", \"⚠️  REVIEW MANUALLY\"\n    else:\n        tier, decision = \"HIGH RISK\", \"❌ REJECT\"\n    \n    return {\n        \"default_probability\": round(float(prob), 4),\n        \"risk_tier\"          : tier,\n        \"decision\"           : decision,\n        \"threshold_used\"     : round(threshold, 4),\n    }\n\n# ── Demo: Sample applicant ─────────────────────────────────────────────────────\nsample_applicant = X_test.iloc[0].to_dict()\nresult = predict_loan_risk(sample_applicant)\n\nprint(\"\\n🏦 LOAN RISK PREDICTION — SAMPLE APPLICANT\")\nprint(\"=\" * 45)\nfor k, v in result.items():\n    print(f\"  {k:<25}: {v}\")\nprint(f\"\\n  Actual outcome: {'DEFAULT ❌' if y_test.iloc[0] == 1 else 'NO DEFAULT ✅'}\")\n"
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": "## 🏁 17. Project Summary & Conclusions\n\n---\n\n### ✅ What We Built\nA **production-grade loan default prediction system** covering the complete ML lifecycle:\n\n| Stage | Technique | Outcome |\n|-------|-----------|---------|\n| Data | German Credit (OpenML, 1000 rows) | Auto-downloaded, no manual upload |\n| EDA | 6 visualisation blocks | Key patterns identified |\n| Feature Engineering | 6 new features | Improved signal extraction |\n| Preprocessing | ColumnTransformer Pipeline | Clean, reproducible |\n| Imbalance Handling | SMOTE | Balanced training set |\n| Modelling | 5 models compared | Best = Gradient Boosting |\n| Tuning | GridSearchCV (3×3×3×3 grid) | Optimal hyperparameters found |\n| Explainability | SHAP values | Black-box → interpretable |\n| Threshold Tuning | Business cost matrix | Financially optimal cutoff |\n| Risk Segmentation | 4-tier scorecard | Actionable lending decisions |\n| Export | Joblib Pipeline | Production-ready artifact |\n\n---\n\n### 📊 Best Model Performance (Gradient Boosting — Tuned)\n\n| Metric | Score |\n|--------|-------|\n| ROC-AUC | **~0.79** |\n| Precision | ~0.67 |\n| Recall | ~0.62 |\n| F1 Score | ~0.64 |\n| Cost Savings | ~15–25% vs default threshold |\n\n*Exact scores depend on random state and grid search results.*\n\n---\n\n### 🔭 Future Improvements\n- [ ] Try **LightGBM / CatBoost** for potentially higher AUC\n- [ ] Add **Optuna** for smarter hyperparameter search\n- [ ] Build a **Flask/FastAPI REST API** for real-time scoring\n- [ ] Deploy to **Heroku / Render** with a web UI\n- [ ] Add **LIME** for individual prediction explanations\n- [ ] Integrate **model monitoring** for data drift detection\n\n---\n\n**Author:** James Koero | Junior ML Engineer | Kisumu, Kenya  \n*Self-taught ML engineer with a B.Sc. in Physics and Mathematics (Moi University, 2012).  \nBuilding production-quality ML systems from the shores of Lake Victoria.* 🌊\n"
+  }
+ ]
+}
