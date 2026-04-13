@@ -153,6 +153,8 @@ xgboost>=1.7.0
 lightgbm>=4.0.0
 joblib>=1.3.0
 jupyter>=1.0.0
+notebook>=7.0.0
+ipykernel>=6.0.0
 ```
 
 ---
