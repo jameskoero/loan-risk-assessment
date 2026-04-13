@@ -95,7 +95,7 @@ scipy==1.13.0          # Statistical tests (chi-squared, KS test) during EDA
 # ------ Machine Learning ------
 scikit-learn==1.4.2    # Core ML: Logistic Regression, Random Forest, GridSearchCV, metrics
 xgboost==2.0.3         # Gradient-boosted trees; best tabular performance + feature importance
-lightgbm==4.3.0        # Microsoft's fast GBM variant; second ensemble candidate
+lightgbm==4.6.0        # Microsoft's fast GBM variant; second ensemble candidate
 imbalanced-learn==0.12.3  # SMOTE oversampling for class-imbalance correction
 
 # ------ Model Interpretability ------
