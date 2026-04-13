@@ -77,7 +77,7 @@ except ImportError:
 RANDOM_STATE = 42
 np.random.seed(RANDOM_STATE)
 os.makedirs("plots", exist_ok=True)
-os.makedirs("model", exist_ok=True)
+os.makedirs("models", exist_ok=True)
 
 COST_FN = 5   # Relative cost of approving a defaulter
 COST_FP = 1   # Relative cost of rejecting a good customer
@@ -411,7 +411,7 @@ def plot_feature_importance(model, feature_names, top_n=20):
 # 10. SAVE MODEL
 # ═════════════════════════════════════════════════════════════════════════════
 def save_model(pipeline, best_params, best_cv_auc, y_te, y_pred, y_proba, threshold):
-    joblib.dump(pipeline, "model/loan_risk_model.joblib")
+    joblib.dump(pipeline, "models/loan_risk_model.joblib")
     meta = {
         "author"           : "James Koero",
         "dataset"          : "German Credit Data — OpenML ID 31",
@@ -422,10 +422,10 @@ def save_model(pipeline, best_params, best_cv_auc, y_te, y_pred, y_proba, thresh
         "test_f1"          : round(f1_score(y_te, y_pred), 4),
         "optimal_threshold": round(float(threshold), 4),
     }
-    with open("model/model_metadata.json", "w") as f:
+    with open("models/model_metadata.json", "w") as f:
         json.dump(meta, f, indent=2)
-    print("\n✅ Model saved → model/loan_risk_model.joblib")
-    print("✅ Metadata saved → model/model_metadata.json")
+    print("\n✅ Model saved → models/loan_risk_model.joblib")
+    print("✅ Metadata saved → models/model_metadata.json")
 
 # ═════════════════════════════════════════════════════════════════════════════
 # MAIN
@@ -504,7 +504,7 @@ def main():
 
     print("\n" + "█"*60)
     print("  ✅  ALL STEPS COMPLETE — plots saved to plots/")
-    print("  ✅  Model saved → model/loan_risk_model.joblib")
+    print("  ✅  Model saved → models/loan_risk_model.joblib")
     print("█"*60)
 
 if __name__ == "__main__":

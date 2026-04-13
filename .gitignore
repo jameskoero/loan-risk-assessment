@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ML artifacts (generated at runtime)
+model/
+models/
+plots/
+
+# Data
+data/
+*.csv
+*.parquet
+*.feather
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+*.manifest
+*.spec
