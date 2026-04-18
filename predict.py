@@ -17,10 +17,10 @@ Output columns added to the input CSV (or printed for --json):
 Requirements
 ------------
   pip install scikit-learn joblib pandas
-  The trained model must exist at:  model/loan_risk_model.joblib
+  The trained model must exist at:  models/loan_risk_model.joblib
   Metadata (including the optimal threshold) must exist at:
-                                     model/model_metadata.json
-  Run loan_risk_assessment.py first to generate these files.
+                                     models/model_metadata.json
+  Run src/loan_risk_assessment.py first to generate these files.
 """
 
 import argparse
@@ -29,8 +29,8 @@ import sys
 import joblib
 import pandas as pd
 
-MODEL_PATH    = "model/loan_risk_model.joblib"
-METADATA_PATH = "model/model_metadata.json"
+MODEL_PATH    = "models/loan_risk_model.joblib"
+METADATA_PATH = "models/model_metadata.json"
 
 # Default threshold used when metadata is not available
 DEFAULT_THRESHOLD = 0.5
@@ -42,7 +42,7 @@ def load_pipeline():
     except FileNotFoundError:
         sys.exit(
             f"❌  Model not found at '{MODEL_PATH}'.\n"
-            "    Run  python loan_risk_assessment.py  first to train and save the model."
+            "    Run  python src/loan_risk_assessment.py  first to train and save the model."
         )
     return pipeline
 

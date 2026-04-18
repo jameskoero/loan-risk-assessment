@@ -9,7 +9,7 @@ setup:
 
 ## Run the full ML pipeline (downloads data, trains, evaluates, saves model + plots)
 run:
-	python loan_risk_assessment.py
+	python src/loan_risk_assessment.py
 
 ## Run the test suite
 test:
@@ -21,7 +21,7 @@ api:
 
 ## Remove generated artefacts (plots, model files, __pycache__)
 clean:
-	rm -rf plots/ images/ model/ __pycache__ .pytest_cache tests/__pycache__
+	rm -rf plots/ images/ models/ __pycache__ .pytest_cache tests/__pycache__
 
 ## Show this help message
 help:

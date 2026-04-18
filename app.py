@@ -53,9 +53,9 @@ Usage
 
 Requirements
 ------------
-  Trained model at:  model/loan_risk_model.joblib
-  Metadata at:       model/model_metadata.json
-  Run loan_risk_assessment.py first to generate these files.
+  Trained model at:  models/loan_risk_model.joblib
+  Metadata at:       models/model_metadata.json
+  Run src/loan_risk_assessment.py first to generate these files.
 """
 
 import json
@@ -66,8 +66,8 @@ import joblib
 import pandas as pd
 from flask import Flask, jsonify, request
 
-MODEL_PATH    = "model/loan_risk_model.joblib"
-METADATA_PATH = "model/model_metadata.json"
+MODEL_PATH    = "models/loan_risk_model.joblib"
+METADATA_PATH = "models/model_metadata.json"
 DEFAULT_THRESHOLD = 0.5
 
 app = Flask(__name__)
@@ -79,7 +79,7 @@ try:
 except FileNotFoundError:
     print(
         f"❌  Model not found at '{MODEL_PATH}'.\n"
-        "    Run  python loan_risk_assessment.py  first.",
+        "    Run  python src/loan_risk_assessment.py  first.",
         file=sys.stderr,
     )
     _pipeline = None
