@@ -53,13 +53,13 @@ Financial institutions lose billions of dollars annually to loan defaults. Tradi
 
 ```mermaid
 flowchart TD
-    A[📂 Raw Loan Data] --> B[🧹 Data Cleaning\nMissing Value Imputation]
-    B --> C[🔧 Feature Engineering\nRatios · Flags · Encodings]
-    C --> D[✂️ Train / Test Split\n80/20 Stratified]
-    D --> E[🤖 GradientBoosting\nClassifier Training]
-    E --> F[📊 Model Evaluation\nAccuracy · ROC-AUC · F1]
-    F --> G[🔍 SHAP Explainability\nGlobal + Per-Prediction]
-    G --> H[✅ Output\nRisk Score + Explanation]
+    A["Raw Loan Data"] --> B["Data Cleaning<br/>Missing Value Imputation"]
+    B --> C["Feature Engineering<br/>Ratios / Flags / Encodings"]
+    C --> D["Train / Test Split<br/>80/20 Stratified"]
+    D --> E["Gradient Boosting<br/>Classifier Training"]
+    E --> F["Model Evaluation<br/>Accuracy / ROC-AUC / F1"]
+    F --> G["SHAP Explainability<br/>Global + Per-Prediction"]
+    G --> H["Output<br/>Risk Score + Explanation"]
 
     style A fill:#1f6feb,color:#fff
     style H fill:#238636,color:#fff
