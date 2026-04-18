@@ -25,3 +25,5 @@ images/
 .vscode/
 .idea/
 models/*.pkl
+models/*.pkl
+models/*.joblib
