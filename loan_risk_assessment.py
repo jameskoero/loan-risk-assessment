@@ -78,9 +78,17 @@ RANDOM_STATE = 42
 np.random.seed(RANDOM_STATE)
 os.makedirs("plots", exist_ok=True)
 os.makedirs("model", exist_ok=True)
+os.makedirs("images", exist_ok=True)
 
-COST_FN = 5   # Relative cost of approving a defaulter
-COST_FP = 1   # Relative cost of rejecting a good customer
+# Business cost matrix for threshold optimisation.
+# COST_FN: penalty for a False Negative — we approved a loan that defaulted.
+#   Set higher when the financial loss from a bad loan is large.
+# COST_FP: penalty for a False Positive — we rejected a creditworthy customer.
+#   Set higher when customer acquisition is expensive or market share matters.
+# Example tuning: conservative lender → COST_FN=10, COST_FP=1
+#                 growth-focused lender → COST_FN=3, COST_FP=1
+COST_FN = 5   # Relative cost of approving a defaulter (false negative)
+COST_FP = 1   # Relative cost of rejecting a good customer (false positive)
 
 plt.rcParams.update({"figure.dpi": 120, "axes.spines.top": False,
                      "axes.spines.right": False})
@@ -315,6 +323,7 @@ def evaluation_plots(results, y_te, best_model, X_te, y_proba_best):
     axes[1].set_xlabel("Recall"); axes[1].set_ylabel("Precision"); axes[1].legend(fontsize=8)
     plt.tight_layout()
     plt.savefig("plots/07_roc_pr_curves.png", bbox_inches="tight")
+    plt.savefig("images/roc_curve.png", bbox_inches="tight", dpi=150)
     plt.show(block=True)
 
     # Confusion matrices
@@ -332,6 +341,7 @@ def evaluation_plots(results, y_te, best_model, X_te, y_proba_best):
         axes_flat[j].set_visible(False)
     plt.tight_layout()
     plt.savefig("plots/08_confusion_matrices.png", bbox_inches="tight")
+    plt.savefig("images/confusion_matrix.png", bbox_inches="tight", dpi=150)
     plt.show(block=True)
 
     # Metrics bar chart
@@ -402,13 +412,118 @@ def plot_feature_importance(model, feature_names, top_n=20):
     ax.set_xlabel("Importance (Gain)")
     plt.tight_layout()
     plt.savefig("plots/16_feature_importance.png", bbox_inches="tight")
+    plt.savefig("images/feature_importance.png", bbox_inches="tight", dpi=150)
     plt.show(block=True)
     print("\n🔝 Top 10 features:")
     for i, (f, v) in enumerate(fi.head(10).items(), 1):
         print(f"  {i:2}. {f:<45} {v:.5f}")
 
 # ═════════════════════════════════════════════════════════════════════════════
-# 10. SAVE MODEL
+# 10. SHAP EXPLAINABILITY
+# ═════════════════════════════════════════════════════════════════════════════
+def run_shap_analysis(model, X_te, feature_names):
+    """
+    Generate SHAP summary and waterfall plots for the best model.
+    Requires the `shap` package (SHAP_OK flag must be True).
+    """
+    if not SHAP_OK:
+        print("⚠️  SHAP not available — pip install shap")
+        return
+    print("\n" + "="*60)
+    print("STEP 10 — SHAP EXPLAINABILITY")
+    print("="*60)
+
+    X_df = pd.DataFrame(X_te, columns=feature_names)
+    explainer   = shap.Explainer(model, X_df)
+    shap_values = explainer(X_df)
+
+    # Global summary plot — shows the most impactful features overall
+    fig, ax = plt.subplots(figsize=(12, 8))
+    shap.summary_plot(shap_values, X_df, show=False)
+    plt.title("SHAP Summary — Global Feature Importance", fontweight="bold", pad=14)
+    plt.tight_layout()
+    plt.savefig("plots/17_shap_summary.png", bbox_inches="tight")
+    plt.savefig("images/shap_summary.png", bbox_inches="tight", dpi=150)
+    plt.show(block=True)
+    print("✅ SHAP summary plot saved")
+
+    # Waterfall plot for the first test-set sample — explains one prediction
+    fig, ax = plt.subplots(figsize=(12, 6))
+    shap.plots.waterfall(shap_values[0], show=False)
+    plt.title("SHAP Waterfall — Individual Prediction Breakdown", fontweight="bold", pad=14)
+    plt.tight_layout()
+    plt.savefig("plots/18_shap_waterfall.png", bbox_inches="tight")
+    plt.savefig("images/shap_waterfall.png", bbox_inches="tight", dpi=150)
+    plt.show(block=True)
+    print("✅ SHAP waterfall plot saved")
+
+# ═════════════════════════════════════════════════════════════════════════════
+# 11. LEARNING CURVES
+# ═════════════════════════════════════════════════════════════════════════════
+def plot_learning_curve(model, X_tr, y_tr):
+    """
+    Plot training vs. cross-validation score as a function of training set size.
+    Useful for diagnosing bias (underfitting) vs. variance (overfitting).
+    """
+    print("\n" + "="*60)
+    print("STEP 11 — LEARNING CURVES")
+    print("="*60)
+    train_sizes, train_scores, val_scores = learning_curve(
+        model, X_tr, y_tr,
+        train_sizes=np.linspace(0.1, 1.0, 10),
+        cv=StratifiedKFold(5, shuffle=True, random_state=RANDOM_STATE),
+        scoring="roc_auc", n_jobs=-1
+    )
+    train_mean = train_scores.mean(axis=1)
+    train_std  = train_scores.std(axis=1)
+    val_mean   = val_scores.mean(axis=1)
+    val_std    = val_scores.std(axis=1)
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.plot(train_sizes, train_mean, "o-", color="#2ECC71", lw=2, label="Training AUC")
+    ax.fill_between(train_sizes, train_mean - train_std, train_mean + train_std,
+                    color="#2ECC71", alpha=0.15)
+    ax.plot(train_sizes, val_mean, "o-", color="#E74C3C", lw=2, label="CV AUC")
+    ax.fill_between(train_sizes, val_mean - val_std, val_mean + val_std,
+                    color="#E74C3C", alpha=0.15)
+    ax.set_xlabel("Training Set Size")
+    ax.set_ylabel("ROC-AUC")
+    ax.set_title("Learning Curves — Bias vs. Variance Diagnosis", fontweight="bold")
+    ax.legend(); ax.set_ylim(0.5, 1.05)
+    plt.tight_layout()
+    plt.savefig("plots/19_learning_curves.png", bbox_inches="tight")
+    plt.show(block=True)
+    print("✅ Learning curve saved")
+
+# ═════════════════════════════════════════════════════════════════════════════
+# 12. CALIBRATION CURVE
+# ═════════════════════════════════════════════════════════════════════════════
+def plot_calibration(model, X_te, y_te):
+    """
+    Check whether predicted probabilities match observed default rates.
+    A well-calibrated model's curve should lie close to the diagonal.
+    In finance, calibration matters: '70% risk' should mean ~70% actually default.
+    """
+    print("\n" + "="*60)
+    print("STEP 12 — CALIBRATION CURVE")
+    print("="*60)
+    y_proba = model.predict_proba(X_te)[:, 1]
+    prob_true, prob_pred = calibration_curve(y_te, y_proba, n_bins=10, strategy="quantile")
+
+    fig, ax = plt.subplots(figsize=(8, 6))
+    ax.plot([0, 1], [0, 1], "k--", lw=1.5, label="Perfect calibration")
+    ax.plot(prob_pred, prob_true, "o-", color="#9B59B6", lw=2, label="Model")
+    ax.set_xlabel("Mean Predicted Probability")
+    ax.set_ylabel("Fraction of Positives (Observed Default Rate)")
+    ax.set_title("Calibration Curve", fontweight="bold")
+    ax.legend(); ax.set_xlim(0, 1); ax.set_ylim(0, 1)
+    plt.tight_layout()
+    plt.savefig("plots/20_calibration_curve.png", bbox_inches="tight")
+    plt.show(block=True)
+    print("✅ Calibration curve saved")
+
+# ═════════════════════════════════════════════════════════════════════════════
+# 13. SAVE MODEL
 # ═════════════════════════════════════════════════════════════════════════════
 def save_model(pipeline, best_params, best_cv_auc, y_te, y_pred, y_proba, threshold):
     joblib.dump(pipeline, "model/loan_risk_model.joblib")
@@ -497,13 +612,22 @@ def main():
     # 9. Feature Importance
     plot_feature_importance(best_model, feature_names)
 
-    # 10. Save
+    # 10. SHAP Explainability
+    run_shap_analysis(best_model, X_test_p, feature_names)
+
+    # 11. Learning Curves
+    plot_learning_curve(best_model, X_train_sm, y_train_sm)
+
+    # 12. Calibration
+    plot_calibration(best_model, X_test_p, y_test)
+
+    # 13. Save
     final_pipe = Pipeline([("prep", prep), ("model", best_model)])
     save_model(final_pipe, gs.best_params_, gs.best_score_,
                y_test, y_pred_best, y_proba_best, opt_thresh)
 
     print("\n" + "█"*60)
-    print("  ✅  ALL STEPS COMPLETE — plots saved to plots/")
+    print("  ✅  ALL STEPS COMPLETE — plots saved to plots/ and images/")
     print("  ✅  Model saved → model/loan_risk_model.joblib")
     print("█"*60)
 
