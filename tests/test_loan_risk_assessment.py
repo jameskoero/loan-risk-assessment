@@ -1,23 +1,22 @@
 """
-tests/test_pipeline.py — Basic unit tests for the loan risk assessment pipeline.
+tests/test_loan_risk_assessment.py — Basic unit tests for the loan risk assessment pipeline.
 
 Run with:
-    pytest tests/test_pipeline.py -v
+    pytest tests/test_loan_risk_assessment.py -v
 """
 
 import json
 import os
 import sys
-import tempfile
 
 import numpy as np
 import pandas as pd
 import pytest
 
-# Add parent directory so we can import the main module
+# Add parent directory so we can import the package module
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
-from loan_risk_assessment import (
+from src.loan_risk_assessment import (
     build_preprocessor,
     engineer_features,
 )
@@ -186,25 +185,25 @@ class TestPredictHelpers:
 # ── Saved model round-trip (skipped if model not yet generated) ───────────────
 
 @pytest.mark.skipif(
-    not os.path.exists("model/loan_risk_model.joblib"),
-    reason="Trained model not found — run loan_risk_assessment.py first"
+    not os.path.exists("models/loan_risk_model.joblib"),
+    reason="Trained model not found — run src/loan_risk_assessment.py first"
 )
 class TestSavedModel:
     def test_model_loads(self):
         import joblib
-        pipeline = joblib.load("model/loan_risk_model.joblib")
+        pipeline = joblib.load("models/loan_risk_model.joblib")
         assert pipeline is not None
 
     def test_model_predicts(self, sample_df):
         import joblib
-        pipeline = joblib.load("model/loan_risk_model.joblib")
+        pipeline = joblib.load("models/loan_risk_model.joblib")
         X = engineer_features(sample_df).drop(columns=["default"])
         proba = pipeline.predict_proba(X)[:, 1]
         assert proba.shape == (len(X),)
         assert ((proba >= 0) & (proba <= 1)).all()
 
     def test_metadata_has_required_keys(self):
-        with open("model/model_metadata.json") as f:
+        with open("models/model_metadata.json") as f:
             meta = json.load(f)
         required = {"model_type", "cv_roc_auc", "test_roc_auc", "optimal_threshold"}
         assert required.issubset(meta.keys())
