@@ -18,7 +18,6 @@ dist/
 # ML artifacts
 models/
 plots/
-images/
 
 # OS/editor
 .DS_Store
