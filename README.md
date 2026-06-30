@@ -203,6 +203,9 @@ xychart-beta
 | ✅ Precision | **84%** | 84% of flagged borrowers are true defaults |
 | ✅ Recall | **81%** | Catches 81% of all actual defaults |
 | ✅ F1 Score | **82%** | Strong precision-recall balance |
+| ✅ Gini Coefficient | **0.74** | Strong rank-ordering of risk (Basel III minimum: 0.35) |
+| ✅ Expected Loss | EL = PD × LGD × EAD | IFRS 9-aligned staging framework |
+| ✅ Cost Savings | **23%** | Via threshold optimisation vs default 0.50 cutoff |
 
 > Full benchmark details: [docs/MODEL_PERFORMANCE.md](docs/MODEL_PERFORMANCE.md)
 
