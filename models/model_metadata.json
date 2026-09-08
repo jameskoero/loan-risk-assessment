@@ -1,0 +1,22 @@
+{
+  "model_type": "GradientBoostingClassifier (sklearn, GridSearchCV-tuned, SMOTE-balanced)",
+  "dataset": "German Credit Data (OpenML 'credit-g', id=31)",
+  "best_params": {
+    "learning_rate": 0.05,
+    "max_depth": 4,
+    "n_estimators": 100,
+    "subsample": 0.8
+  },
+  "cv_roc_auc": 0.916,
+  "test_roc_auc": 0.791,
+  "test_f1_at_default_threshold": 0.632,
+  "optimal_threshold": 0.22,
+  "test_precision_at_optimal_threshold": 0.45,
+  "test_recall_at_optimal_threshold": 0.833,
+  "test_f1_at_optimal_threshold": 0.585,
+  "cost_fn": 5,
+  "cost_fp": 1,
+  "gini_coefficient": 0.582,
+  "basel_framing": "EL = PD x LGD x EAD; Gini = 2*AUC-1; threshold selected via business cost matrix (COST_FN=5, COST_FP=1), consistent with IFRS 9 staging logic",
+  "random_state": 42
+}
