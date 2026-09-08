@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Loan Default Risk Assessment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+  :root {
+    --navy: #0A1628;
+    --gold: #C9A84C;
+    --bg: #F7F5F0;
+    --card: #FFFFFF;
+    --text: #1A1A1A;
+    --muted: #666666;
+    --danger: #B3261E;
+    --safe: #1E7B4D;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', Roboto, sans-serif; background: var(--bg); color: var(--text); }
+  header { background: var(--navy); color: white; padding: 24px 20px; }
+  header h1 { margin: 0; font-size: 1.4rem; }
+  header p { margin: 6px 0 0; color: #C9C9C9; font-size: 0.9rem; }
+  main { max-width: 720px; margin: 0 auto; padding: 20px; }
+  .card { background: var(--card); border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .config label { font-size: 0.8rem; color: var(--muted); }
+  .config input { width: 100%; padding: 8px; margin-top: 4px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.9rem; }
+  form { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 16px; }
+  form .full { grid-column: 1 / -1; }
+  label { display: block; font-size: 0.8rem; color: var(--muted); margin-bottom: 4px; }
+  input, select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 6px; font-size: 0.9rem; }
+  button { grid-column: 1 / -1; background: var(--navy); color: white; border: none; padding: 12px; border-radius: 8px; font-size: 1rem; cursor: pointer; margin-top: 8px; }
+  button:disabled { opacity: 0.6; }
+  #result { display: none; }
+  #result.show { display: block; }
+  .risk-badge { display: inline-block; padding: 6px 14px; border-radius: 20px; font-weight: bold; color: white; }
+  .risk-low { background: var(--safe); }
+  .risk-high { background: var(--danger); }
+  #raw { font-family: monospace; font-size: 0.8rem; background: #f0f0f0; padding: 10px; border-radius: 6px; white-space: pre-wrap; word-break: break-all; }
+  #error { color: var(--danger); font-size: 0.9rem; display: none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Loan Default Risk Assessment</h1>
+  <p>GradientBoostingClassifier · Basel III / IFRS 9 expected-loss framing</p>
+</header>
+
+<main>
+
+  <div class="card config">
+    <label for="apiBase">API base URL (your Render deployment)</label>
+    <input id="apiBase" type="text" placeholder="https://loan-risk-assessment.onrender.com" />
+  </div>
+
+  <div class="card">
+    <form id="loanForm">
+      <div>
+        <label>Checking account status</label>
+        <select name="checking_status">
+          <option value="A11">&lt; 0 DM</option>
+          <option value="A12">0 – 200 DM</option>
+          <option value="A13">≥ 200 DM</option>
+          <option value="A14">no checking account</option>
+        </select>
+      </div>
+      <div>
+        <label>Duration (months)</label>
+        <input name="duration" type="number" value="24" />
+      </div>
+      <div>
+        <label>Credit history</label>
+        <select name="credit_history">
+          <option value="A30">no credits taken</option>
+          <option value="A31">all credits paid duly (this bank)</option>
+          <option value="A32" selected>existing credits paid duly</option>
+          <option value="A33">delay in past payments</option>
+          <option value="A34">critical account</option>
+        </select>
+      </div>
+      <div>
+        <label>Purpose</label>
+        <select name="purpose">
+          <option value="A40">new car</option>
+          <option value="A41">used car</option>
+          <option value="A42" selected>furniture/equipment</option>
+          <option value="A43">radio/TV</option>
+          <option value="A46">education</option>
+          <option value="A49">business</option>
+        </select>
+      </div>
+      <div>
+        <label>Credit amount (DM)</label>
+        <input name="credit_amount" type="number" value="3500" />
+      </div>
+      <div>
+        <label>Savings account</label>
+        <select name="savings_status">
+          <option value="A61">&lt; 100 DM</option>
+          <option value="A62">100 – 500 DM</option>
+          <option value="A63">500 – 1000 DM</option>
+          <option value="A64">≥ 1000 DM</option>
+          <option value="A65" selected>unknown / none</option>
+        </select>
+      </div>
+      <div>
+        <label>Employment length</label>
+        <select name="employment">
+          <option value="A71">unemployed</option>
+          <option value="A72">&lt; 1 year</option>
+          <option value="A73" selected>1 – 4 years</option>
+          <option value="A74">4 – 7 years</option>
+          <option value="A75">≥ 7 years</option>
+        </select>
+      </div>
+      <div>
+        <label>Installment rate (% of income)</label>
+        <input name="installment_commitment" type="number" value="3" />
+      </div>
+      <div>
+        <label>Personal status / sex</label>
+        <select name="personal_status">
+          <option value="A91">male, divorced/separated</option>
+          <option value="A92">female, divorced/separated/married</option>
+          <option value="A93" selected>male, single</option>
+          <option value="A94">male, married/widowed</option>
+        </select>
+      </div>
+      <div>
+        <label>Other debtors / guarantors</label>
+        <select name="other_parties">
+          <option value="A101" selected>none</option>
+          <option value="A102">co-applicant</option>
+          <option value="A103">guarantor</option>
+        </select>
+      </div>
+      <div>
+        <label>Residence since (years)</label>
+        <input name="residence_since" type="number" value="2" />
+      </div>
+      <div>
+        <label>Property</label>
+        <select name="property_magnitude">
+          <option value="A121">real estate</option>
+          <option value="A122" selected>building society savings / life insurance</option>
+          <option value="A123">car or other</option>
+          <option value="A124">unknown / none</option>
+        </select>
+      </div>
+      <div>
+        <label>Age</label>
+        <input name="age" type="number" value="35" />
+      </div>
+      <div>
+        <label>Other installment plans</label>
+        <select name="other_payment_plans">
+          <option value="A141">bank</option>
+          <option value="A142">stores</option>
+          <option value="A143" selected>none</option>
+        </select>
+      </div>
+      <div>
+        <label>Housing</label>
+        <select name="housing">
+          <option value="A151">rent</option>
+          <option value="A152" selected>own</option>
+          <option value="A153">for free</option>
+        </select>
+      </div>
+      <div>
+        <label>Existing credits at this bank</label>
+        <input name="existing_credits" type="number" value="1" />
+      </div>
+      <div>
+        <label>Job</label>
+        <select name="job">
+          <option value="A171">unemployed / unskilled non-resident</option>
+          <option value="A172">unskilled resident</option>
+          <option value="A173" selected>skilled employee/official</option>
+          <option value="A174">management / self-employed</option>
+        </select>
+      </div>
+      <div>
+        <label>Number of dependents</label>
+        <input name="num_dependents" type="number" value="1" />
+      </div>
+      <div>
+        <label>Has telephone</label>
+        <select name="own_telephone">
+          <option value="A191">none</option>
+          <option value="A192" selected>yes</option>
+        </select>
+      </div>
+      <div>
+        <label>Foreign worker</label>
+        <select name="foreign_worker">
+          <option value="A201" selected>yes</option>
+          <option value="A202">no</option>
+        </select>
+      </div>
+
+      <button type="submit" id="submitBtn">Assess Risk</button>
+    </form>
+    <p id="error"></p>
+  </div>
+
+  <div class="card" id="result">
+    <h3>Result</h3>
+    <p id="riskBadgeWrap"></p>
+    <div id="raw"></div>
+  </div>
+
+</main>
+
+<script>
+const form = document.getElementById('loanForm');
+const submitBtn = document.getElementById('submitBtn');
+const resultCard = document.getElementById('result');
+const errorEl = document.getElementById('error');
+const badgeWrap = document.getElementById('riskBadgeWrap');
+const rawEl = document.getElementById('raw');
+
+let apiBase = '';
+document.getElementById('apiBase').addEventListener('input', (e) => {
+  apiBase = e.target.value.trim().replace(/\/$/, '');
+});
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  errorEl.style.display = 'none';
+  resultCard.classList.remove('show');
+
+  if (!apiBase) {
+    errorEl.textContent = 'Enter your Render API base URL above first.';
+    errorEl.style.display = 'block';
+    return;
+  }
+
+  const formData = new FormData(form);
+  const payload = {};
+  for (const [key, value] of formData.entries()) {
+    const numericFields = ['duration','credit_amount','installment_commitment',
+      'residence_since','age','existing_credits','num_dependents'];
+    payload[key] = numericFields.includes(key) ? Number(value) : value;
+  }
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Assessing...';
+
+  try {
+    const res = await fetch(`${apiBase}/predict`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+
+    if (!res.ok) {
+      throw new Error(`API returned ${res.status}`);
+    }
+
+    const data = await res.json();
+    rawEl.textContent = JSON.stringify(data, null, 2);
+
+    const prob = data.risk_score;
+    const isHigh = typeof prob === 'number' && prob >= 0.22;
+    badgeWrap.innerHTML = typeof prob === 'number'
+      ? `<span class="risk-badge ${isHigh ? 'risk-high' : 'risk-low'}">
+           ${isHigh ? 'HIGH RISK' : 'LOW RISK'} — ${(prob * 100).toFixed(1)}%
+         </span>`
+      : '';
+
+    resultCard.classList.add('show');
+  } catch (err) {
+    errorEl.textContent = `Request failed: ${err.message}. Check the API is awake (Render free tier cold-starts in 30–60s) and the base URL is correct.`;
+    errorEl.style.display = 'block';
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = 'Assess Risk';
+  }
+});
+</script>
+
+</body>
+</html>
