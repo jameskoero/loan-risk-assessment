@@ -51,11 +51,11 @@ Regenerated directly from the current SMOTE-corrected model, matching the metric
 
 ### Confusion Matrix
 
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](images/confusion_matrix_v2.png)
 
 ### ROC Curve
 
-![ROC Curve](images/roc_curve.png)
+![ROC Curve](images/roc_curve_v2.png)
 
 ### Feature Importance
 
@@ -67,7 +67,7 @@ Regenerated directly from the current SMOTE-corrected model, matching the metric
 
 ### SHAP Waterfall
 
-![SHAP Waterfall](images/shap_waterfall.png)
+![SHAP Waterfall](images/shap_waterfall_v2.png)
 
 ---
 
