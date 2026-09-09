@@ -1,5 +1,4 @@
-
- 🏦 Loan Default Risk Assessment
+# 🏦 Loan Default Risk Assessment
 
 
 
@@ -37,7 +36,7 @@
 
 
 
-> **Live, deployed ML system for predicting loan default risk**, trained on the German Credit dataset with SMOTE class balancing and a business-cost-optimized decision threshold. Full training pipeline, REST API, and interactive frontend, all live and reproducible.
+> **Live, deployed ML system for predicting loan default risk**, trained on the German Credit dataset with SMOTE class balancing and a business-cost-optimized decision threshold.
 
 ---
 
@@ -61,22 +60,20 @@ This repository trains and serves a GradientBoostingClassifier that predicts loa
 
 ## 📊 Model Performance
 
-All figures below are from a single reproducible training run — no placeholder or template numbers.
-
 | Metric | Score | Notes |
 |---|---|---|
 | **CV ROC-AUC** (5-fold, GridSearchCV) | **0.916** | On SMOTE-balanced training folds |
 | **Test ROC-AUC** (held-out 20%) | **0.791** | Real-world generalization estimate |
 | **Gini Coefficient** | **0.582** | = 2×AUC−1; Basel III minimum acceptable is 0.35 |
-| **Optimal threshold** | **0.22** | Selected via cost matrix (false negative penalty 5×, false positive penalty 1×) |
+| **Optimal threshold** | **0.22** | Selected via cost matrix (FN penalty 5×, FP penalty 1×) |
 | **F1 at default 0.5 threshold** | 0.632 | If deployed without cost-based tuning |
 | **Precision at 0.22 threshold** | 0.45 | Of applicants flagged high-risk, 45% actually default |
 | **Recall at 0.22 threshold** | 0.833 | Catches 83.3% of real defaulters |
 | **F1 at 0.22 threshold** | 0.585 | Deployed operating point |
 
-**Why precision is lower at the deployed threshold:** the cost matrix (COST_FN=5, COST_FP=1) is deliberately conservative — missing a real defaulter is weighted 5× worse than wrongly flagging a good applicant. This trades precision for recall, appropriate for a lender prioritizing loss avoidance over approval volume. A higher threshold would raise precision and lower recall; the 0.22 cutoff is a business choice, not a model limitation.
+**Why precision is lower at the deployed threshold:** the cost matrix (COST_FN=5, COST_FP=1) is deliberately conservative — missing a real defaulter is weighted 5× worse than wrongly flagging a good applicant.
 
-Best hyperparameters (GridSearchCV): `learning_rate=0.05, max_depth=4, n_estimators=100, subsample=0.8`
+Best hyperparameters: `learning_rate=0.05, max_depth=4, n_estimators=100, subsample=0.8`
 
 ---
 
@@ -91,10 +88,102 @@ Best hyperparameters (GridSearchCV): `learning_rate=0.05, max_depth=4, n_estimat
 | Frontend | Static HTML/JS, zero build step |
 | Backend hosting | Render |
 | Frontend hosting | Vercel |
-| Training environment | Google Colab (Termux/mobile insufficient for this workload) |
+| Training environment | Google Colab |
 
-> **Version pinning matters here**: an earlier deploy attempt failed because the serving environment's scikit-learn/numpy versions didn't match the versions used to train and pickle the model. `requirements.txt` is now pinned exactly to the training environment to prevent `InconsistentVersionWarning` crashes on load.
+> **Version pinning matters here**: an earlier deploy attempt failed because the serving environment's scikit-learn/numpy versions didn't match the training environment. `requirements.txt` is now pinned exactly.
 
 ---
 
-## 📁 Project Structure
+## 🌐 API Reference
+
+**Base URL:** `https://loan-risk-assessment-nsdw.onrender.com`
+
+### GET /health
+Returns `{ "status": "ok" }`
+
+### POST /predict
+
+Request uses the German Credit Data schema (20 fields): checking_status, duration, credit_history, purpose, credit_amount, savings_status, employment, installment_commitment, personal_status, other_parties, residence_since, property_magnitude, age, other_payment_plans, housing, existing_credits, job, num_dependents, own_telephone, foreign_worker.
+
+Response: `{ "risk_score": 0.0 }` — a probability between 0.0 and 1.0. The frontend flags anything at or above 0.22 as HIGH RISK, matching the cost-optimized threshold.
+
+---
+
+## 💼 Business Framing
+
+Expected Loss is modelled as EL = PD x LGD x EAD, consistent with IFRS 9 staging. The Gini coefficient (0.582) exceeds the Basel III regulatory minimum of 0.35.
+
+---
+
+## 📊 Model Performance
+
+| Metric | Score | Notes |
+|---|---|---|
+| **CV ROC-AUC** (5-fold, GridSearchCV) | **0.916** | On SMOTE-balanced training folds |
+| **Test ROC-AUC** (held-out 20%) | **0.791** | Real-world generalization estimate |
+| **Gini Coefficient** | **0.582** | = 2×AUC−1; Basel III minimum acceptable is 0.35 |
+| **Optimal threshold** | **0.22** | Selected via cost matrix (FN penalty 5×, FP penalty 1×) |
+| **F1 at default 0.5 threshold** | 0.632 | If deployed without cost-based tuning |
+| **Precision at 0.22 threshold** | 0.45 | Of applicants flagged high-risk, 45% actually default |
+| **Recall at 0.22 threshold** | 0.833 | Catches 83.3% of real defaulters |
+| **F1 at 0.22 threshold** | 0.585 | Deployed operating point |
+
+**Why precision is lower at the deployed threshold:** the cost matrix (COST_FN=5, COST_FP=1) is deliberately conservative — missing a real defaulter is weighted 5× worse than wrongly flagging a good applicant.
+
+Best hyperparameters: `learning_rate=0.05, max_depth=4, n_estimators=100, subsample=0.8`
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Tool |
+|---|---|
+| Language | Python 3.11 |
+| ML | scikit-learn 1.6.1, GradientBoostingClassifier |
+| Imbalance handling | imbalanced-learn 0.14.2 (SMOTE) |
+| API | Flask 3.1.3 + gunicorn 23.0.0 |
+| Frontend | Static HTML/JS, zero build step |
+| Backend hosting | Render |
+| Frontend hosting | Vercel |
+| Training environment | Google Colab |
+
+> **Version pinning matters here**: an earlier deploy attempt failed because the serving environment's scikit-learn/numpy versions didn't match the training environment. `requirements.txt` is now pinned exactly.
+
+---
+
+## 🌐 API Reference
+
+**Base URL:** `https://loan-risk-assessment-nsdw.onrender.com`
+
+### GET /health
+Returns `{ "status": "ok" }`
+
+### POST /predict
+
+Request uses the German Credit Data schema (20 fields): checking_status, duration, credit_history, purpose, credit_amount, savings_status, employment, installment_commitment, personal_status, other_parties, residence_since, property_magnitude, age, other_payment_plans, housing, existing_credits, job, num_dependents, own_telephone, foreign_worker.
+
+Response: `{ "risk_score": 0.0 }` — a probability between 0.0 and 1.0. The frontend flags anything at or above 0.22 as HIGH RISK, matching the cost-optimized threshold.
+
+---
+
+## 💼 Business Framing
+
+Expected Loss is modelled as EL = PD x LGD x EAD, consistent with IFRS 9 staging. The Gini coefficient (0.582) exceeds the Basel III regulatory minimum of 0.35.
+
+---
+
+## 👤 Author
+
+**James Koero**
+BSc Physics & Mathematics — Moi University, Kenya (2012)
+Self-taught ML Engineer | Kisumu, Kenya
+Email: jmskoero@gmail.com
+GitHub: github.com/jameskoero
+
+Academic Mentor: Prof. Johan Loeckx — Vrije Universiteit Brussel (VUB), Belgium
+
+---
+
+## 📄 License
+
+Licensed under the MIT License — see LICENSE for details.
