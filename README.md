@@ -51,23 +51,23 @@ Regenerated directly from the current SMOTE-corrected model, matching the metric
 
 ### Confusion Matrix
 
-![Confusion Matrix](images/confusion_matrix.png)
+![Confusion Matrix](https://raw.githubusercontent.com/jameskoero/loan-risk-assessment/main/images/confusion_matrix.png)
 
 ### ROC Curve
 
-![ROC Curve](images/roc_curve.png)
+![ROC Curve](https://raw.githubusercontent.com/jameskoero/loan-risk-assessment/main/images/roc_curve.png)
 
 ### Feature Importance
 
-![Feature Importance](images/feature_importance.png)
+![Feature Importance](https://raw.githubusercontent.com/jameskoero/loan-risk-assessment/main/images/feature_importance.png)
 
 ### SHAP Summary
 
-![SHAP Summary](images/shap_summary.png)
+![SHAP Summary](https://raw.githubusercontent.com/jameskoero/loan-risk-assessment/main/images/shap_summary.png)
 
 ### SHAP Waterfall
 
-![SHAP Waterfall](images/shap_waterfall.png)
+![SHAP Waterfall](https://raw.githubusercontent.com/jameskoero/loan-risk-assessment/main/images/shap_waterfall.png)
 
 ---
 
